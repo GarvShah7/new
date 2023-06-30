@@ -1,0 +1,55 @@
+@import '../../styles/config/variables';
+
+.borderTitleSection{
+    .container{
+        .borderTitleContent{
+            .borderTitleGrid{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                @include media(small){
+                    flex-wrap: nowrap;
+                    justify-content: flex-start;
+                    white-space: nowrap;
+                    overflow: auto;
+                    &::-webkit-scrollbar { width: 0 !important }
+                }
+                @keyframes dash {
+                    to {
+                        background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
+                    }
+                }
+                .borderTitleBox{
+                    padding: 1.250em 3.125em;
+                    border-radius: 10px;
+                    margin: 0 0 2.5em;
+                    background: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 50%, transparent 50%), 
+                    linear-gradient(90deg, rgba(0, 0, 0, 0.4) 50%, transparent 50%), 
+                    linear-gradient(0deg, rgba(0, 0, 0, 0.4) 50%, transparent 50%), 
+                    linear-gradient(0deg, rgba(0, 0, 0, 0.4) 50%, transparent 50%);
+                    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+                    background-size: 16px 3px, 16px 3px, 3px 16px, 3px 16px;
+                    background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
+                    animation: dash 10s linear infinite;
+                    margin: 1.250em;
+                    @include media(medium){
+                        padding: 1.250em 2.125em;
+                    }
+                    h6{
+                        font-weight: $font-weight-500;
+                        font-size: $font-size-22;
+                        letter-spacing: 0.025em;
+                        color: $black-color;
+                        @include media(medium){
+                            font-size: $font-size-20;
+                        }
+                        @include media(small){
+                            font-size: $font-size-19;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+.titlewithfourimageSection .container.fullWidth .titlewithfourimageContent h3 {
+  font-size: 3.5em;
+  text-align: center;
+}
+@media (max-width: 1440px) {
+  .titlewithfourimageSection .container.fullWidth .titlewithfourimageContent h3 {
+    font-size: 3em;
+  }
+}
+@media (max-width: 1280px) {
+  .titlewithfourimageSection .container.fullWidth .titlewithfourimageContent h3 {
+    font-size: 2.5em;
+  }
+}
+@media (max-width: 1100px) {
+  .titlewithfourimageSection .container.fullWidth .titlewithfourimageContent h3 {
+    padding: 0.7em 0;
+  }
+}
+@media (max-width: 999px) {
+  .titlewithfourimageSection .container.fullWidth .titlewithfourimageContent h3 {
+    font-size: 2.25em;
+    padding: 0.5em 0;
+  }
+}
+@media (max-width: 640px) {
+  .titlewithfourimageSection .container.fullWidth .titlewithfourimageContent h3 {
+    padding: 0.3em 0;
+  }
+}
+.titlewithfourimageSection .container.fullWidth .titlewithfourimageContent .fourImgWrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 0;
+}
+@media (max-width: 1100px) {
+  .titlewithfourimageSection .container.fullWidth .titlewithfourimageContent .fourImgWrap {
+    grid-template-columns: 1fr;
+  }
+}
+.titlewithfourimageSection .container.fullWidth .titlewithfourimageContent .fourImgWrap .leftBox, .titlewithfourimageSection .container.fullWidth .titlewithfourimageContent .fourImgWrap .rightBox {
+  height: 100%;
+}
+.titlewithfourimageSection .container.fullWidth .titlewithfourimageContent .fourImgWrap .leftBox img, .titlewithfourimageSection .container.fullWidth .titlewithfourimageContent .fourImgWrap .rightBox img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 1100px) {
+  .titlewithfourimageSection .container.fullWidth .titlewithfourimageContent .fourImgWrap .leftBox img, .titlewithfourimageSection .container.fullWidth .titlewithfourimageContent .fourImgWrap .rightBox img {
+    height: 500px;
+    object-fit: cover;
+  }
+}
+@media (max-width: 767px) {
+  .titlewithfourimageSection .container.fullWidth .titlewithfourimageContent .fourImgWrap .leftBox img, .titlewithfourimageSection .container.fullWidth .titlewithfourimageContent .fourImgWrap .rightBox img {
+    height: 400px;
+  }
+}
+@media (max-width: 480px) {
+  .titlewithfourimageSection .container.fullWidth .titlewithfourimageContent .fourImgWrap .leftBox img, .titlewithfourimageSection .container.fullWidth .titlewithfourimageContent .fourImgWrap .rightBox img {
+    height: 300px;
+  }
+}
+.titlewithfourimageSection .container.fullWidth .titlewithfourimageContent .fourImgWrap .middleBox > img {
+  height: 300px;
+  max-width: 100%;
+  width: 100%;
+}
+@media (max-width: 1440px) {
+  .titlewithfourimageSection .container.fullWidth .titlewithfourimageContent .fourImgWrap .middleBox > img {
+    height: 250px;
+  }
+}
+@media (max-width: 1100px) {
+  .titlewithfourimageSection .container.fullWidth .titlewithfourimageContent .fourImgWrap .middleBox > img {
+    height: 300px;
+    object-fit: cover;
+  }
+}
+@media (max-width: 767px) {
+  .titlewithfourimageSection .container.fullWidth .titlewithfourimageContent .fourImgWrap .middleBox > img {
+    height: 250px;
+  }
+}
+@media (max-width: 480px) {
+  .titlewithfourimageSection .container.fullWidth .titlewithfourimageContent .fourImgWrap .middleBox > img {
+    height: 200px;
+  }
+}
+
+/*# sourceMappingURL=titlewithfourimage.css.map */

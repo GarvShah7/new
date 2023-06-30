@@ -1,0 +1,32 @@
+@import "../../../styles/config/variables";
+
+.mapSection{
+    .container{
+        .contactus-map{
+            iframe{
+                max-width: 100%;
+                width: 100%;
+                height: 34.563em;
+                border-radius: $border-radius-regular;
+                @include media(extra-large){
+                    height: 34em;
+                }
+                @include media(large){
+                    height: 30em;
+                }
+                @include media(medium){
+                    height: 28em;
+                }
+                @include media(small){
+                    height: 26em;
+                }
+                @include media(medium-small){
+                    height: 24em;
+                }
+                @include media(very-small){
+                    height: 20em;
+                }
+            }
+        }
+    }
+}

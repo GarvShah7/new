@@ -1,0 +1,11 @@
+fragment JamstackResourceSection on JamstackResourceSection {
+  _key
+  _type
+  title
+  resourceDetailCard {
+    ...ResourceDetailCard
+  }
+  button {
+    ...Button
+  }
+}

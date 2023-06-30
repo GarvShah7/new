@@ -1,0 +1,190 @@
+.imageTitleDescriptionSection {
+  overflow-x: auto;
+}
+.imageTitleDescriptionSection.isImage .container .imageTitleDescriptionContent .gifBox img {
+  max-width: 10.375em;
+  width: 100%;
+  height: 10.375em;
+  object-fit: contain;
+}
+.imageTitleDescriptionSection .container .imageTitleDescriptionContent .imgTitleDescWrap.halfWidth {
+  max-width: 70%;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 1280px) {
+  .imageTitleDescriptionSection .container .imageTitleDescriptionContent .imgTitleDescWrap.halfWidth {
+    max-width: 80%;
+  }
+}
+@media (max-width: 999px) {
+  .imageTitleDescriptionSection .container .imageTitleDescriptionContent .imgTitleDescWrap.halfWidth {
+    max-width: 100%;
+  }
+}
+.imageTitleDescriptionSection .container .imageTitleDescriptionContent .imgTitleDescWrap.withoutSlider.withBorder {
+  grid-template-columns: 18em 18em 16em;
+  grid-column-gap: 0;
+  justify-content: center;
+}
+@media (max-width: 1280px) {
+  .imageTitleDescriptionSection .container .imageTitleDescriptionContent .imgTitleDescWrap.withoutSlider.withBorder {
+    grid-template-columns: 20em 20em 18em;
+  }
+}
+@media (max-width: 999px) {
+  .imageTitleDescriptionSection .container .imageTitleDescriptionContent .imgTitleDescWrap.withoutSlider.withBorder {
+    grid-template-columns: 1fr;
+    grid-row-gap: 3em;
+  }
+}
+.imageTitleDescriptionSection .container .imageTitleDescriptionContent .imgTitleDescWrap.withoutSlider.withBorder > .imgTitleDescBox {
+  position: relative;
+  padding-right: 2em;
+  margin-right: 2em;
+}
+@media (max-width: 999px) {
+  .imageTitleDescriptionSection .container .imageTitleDescriptionContent .imgTitleDescWrap.withoutSlider.withBorder > .imgTitleDescBox {
+    padding-right: 0;
+    margin-right: 0;
+  }
+}
+@media (max-width: 999px) {
+  .imageTitleDescriptionSection .container .imageTitleDescriptionContent .imgTitleDescWrap.withoutSlider.withBorder > .imgTitleDescBox p br {
+    display: none;
+  }
+}
+@media (max-width: 999px) {
+  .imageTitleDescriptionSection .container .imageTitleDescriptionContent .imgTitleDescWrap.withoutSlider.withBorder > .imgTitleDescBox:not(:last-child) {
+    padding-right: 0;
+    margin-right: 0;
+  }
+}
+.imageTitleDescriptionSection .container .imageTitleDescriptionContent .imgTitleDescWrap.withoutSlider.withBorder > .imgTitleDescBox:not(:last-child):after {
+  content: "";
+  background-image: url(/assets/images/grad-line.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 0.1em;
+  left: 100%;
+}
+@media (max-width: 999px) {
+  .imageTitleDescriptionSection .container .imageTitleDescriptionContent .imgTitleDescWrap.withoutSlider.withBorder > .imgTitleDescBox:not(:last-child):after {
+    content: none;
+  }
+}
+.imageTitleDescriptionSection .container .imageTitleDescriptionContent .imgTitleDescWrap.withoutSlider.col-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 999px) {
+  .imageTitleDescriptionSection .container .imageTitleDescriptionContent .imgTitleDescWrap.withoutSlider.col-3 {
+    grid-column-gap: 3em;
+  }
+}
+@media (max-width: 767px) {
+  .imageTitleDescriptionSection .container .imageTitleDescriptionContent .imgTitleDescWrap.withoutSlider.col-3 {
+    grid-template-columns: 1fr;
+  }
+}
+.imageTitleDescriptionSection .container .imageTitleDescriptionContent .imgTitleDescWrap.withoutSlider.col-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+@media (max-width: 1280px) {
+  .imageTitleDescriptionSection .container .imageTitleDescriptionContent .imgTitleDescWrap.withoutSlider.col-4 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .imageTitleDescriptionSection .container .imageTitleDescriptionContent .imgTitleDescWrap.withoutSlider.col-4 {
+    grid-template-columns: 1fr;
+  }
+}
+.imageTitleDescriptionSection .container .imageTitleDescriptionContent .imgTitleDescWrap.withoutSlider.col-5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+@media (max-width: 1280px) {
+  .imageTitleDescriptionSection .container .imageTitleDescriptionContent .imgTitleDescWrap.withoutSlider.col-5 {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 4em;
+  }
+}
+@media (max-width: 767px) {
+  .imageTitleDescriptionSection .container .imageTitleDescriptionContent .imgTitleDescWrap.withoutSlider.col-5 {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 640px) {
+  .imageTitleDescriptionSection .container .imageTitleDescriptionContent .imgTitleDescWrap {
+    text-align: center !important;
+  }
+}
+.imageTitleDescriptionSection .container .imageTitleDescriptionContent .imgTitleDescWrap .leftSpace {
+  padding-left: 1.875em;
+}
+@media (max-width: 640px) {
+  .imageTitleDescriptionSection .container .imageTitleDescriptionContent .imgTitleDescWrap .leftSpace {
+    padding-left: 0;
+  }
+}
+.imageTitleDescriptionSection .container .imageTitleDescriptionContent .gifBox {
+  margin: 0 0 1em;
+}
+.imageTitleDescriptionSection .container .imageTitleDescriptionContent .gifBox img {
+  max-width: 3.375em;
+  width: 100%;
+  height: 3.375em;
+  object-fit: contain;
+}
+.imageTitleDescriptionSection .container .imageTitleDescriptionContent h4 {
+  font-weight: 500;
+  font-size: 1.375em;
+  color: #000000;
+  padding-bottom: 0.5em;
+}
+@media (max-width: 767px) {
+  .imageTitleDescriptionSection .container .imageTitleDescriptionContent h4 {
+    font-size: 1.25em;
+  }
+}
+@media (max-width: 480px) {
+  .imageTitleDescriptionSection .container .imageTitleDescriptionContent h4 {
+    font-size: 1.188em;
+  }
+}
+.imageTitleDescriptionSection .container .imageTitleDescriptionContent p {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.4;
+  letter-spacing: 0.07em;
+  color: #000000;
+  padding-bottom: 0;
+}
+@media (max-width: 999px) {
+  .imageTitleDescriptionSection .container .imageTitleDescriptionContent p br {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .imageTitleDescriptionSection .container .imageTitleDescriptionContent p {
+    font-size: 0.938em;
+  }
+}
+@media (max-width: 480px) {
+  .imageTitleDescriptionSection .container .imageTitleDescriptionContent p {
+    font-size: 0.875em;
+  }
+}
+@media (max-width: 480px) and (max-width: 640px) {
+  .imageTitleDescriptionSection .container .imageTitleDescriptionContent p br {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=imgtitledesc.css.map */

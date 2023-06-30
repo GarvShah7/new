@@ -1,0 +1,8 @@
+fragment Link on Link {
+  _key
+  _type
+  title
+  href
+  linkTarget
+  linkType
+}

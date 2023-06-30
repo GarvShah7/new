@@ -1,0 +1,12 @@
+fragment OurProcessSection on OurProcessSection {
+  _id
+  _type
+  _key
+  titleSubtitle {
+    ...TitleSubtitle
+  }
+  ourProcessAppIconImage {
+    ...IconTitleArray
+  }
+  sectionTheme
+}

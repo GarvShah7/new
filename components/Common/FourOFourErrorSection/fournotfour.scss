@@ -1,0 +1,78 @@
+@import '../../styles/config/variables';
+
+.fnfPageSection{
+    .container{
+        .fnfPageContent{
+            text-align: center;
+            padding: 2em 0 4em;
+            @include media(medium){
+                padding: 1em 0 3em;
+            }
+            @include media(small){
+                padding: 0 0 2em;
+            }
+            @include media(medium-small){
+                padding: 0 0 1em;
+            }
+            @include media(very-small){
+                padding: 0 0 0;
+            }
+            .errorImage{
+                text-align: center;
+                margin:0 0 2em;
+                img{
+                    height: 15.250em;
+                    max-width: 100%;
+                    width: 100%;
+                    object-fit:contain;
+                    @include media(medium){
+                        height: 15em;
+                    }
+                    @include media(small){
+                        height: 14em;
+                    }
+                }
+            }
+            h1{
+                font-weight:$font-weight-600;
+                font-size: $font-size-32;
+                letter-spacing: 4px;
+                color: $black-color;
+                padding:0 0 0.3em;
+                @include media(small){
+                    font-size: $font-size-30;
+                }
+                @include media(very-small){
+                    font-size: $font-size-28;
+                }
+            }
+            p{                
+                font-weight: $font-weight-400;
+                font-size: $font-size-16;
+                color: $black-color;
+                max-width:30%;
+                width:100%;
+                margin:0 auto;
+                padding-bottom: 0;
+                @include media(extra-large){
+                    max-width:40%;
+                }
+                @include media(large){
+                    max-width:50%;
+                }
+                @include media(medium){
+                    max-width:60%;
+                }
+                @include media(small){
+                    max-width:70%;
+                }
+                @include media(medium-small){
+                    max-width:80%;
+                }
+                @include media(very-small){
+                    max-width:90%;
+                }
+            }
+        }
+    }
+}

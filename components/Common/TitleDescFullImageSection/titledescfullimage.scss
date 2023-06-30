@@ -1,0 +1,22 @@
+@import '../../styles/config/variables';
+
+.titleDescFullImgSection{
+    .container{
+        .titleDescFullImgContent{
+            .fullImage{
+                img{
+                    max-width: 100%;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .button{
+                margin: 0 0 0 2em;
+                background-color: $blue-color;
+                color:$white-color;
+                padding-right: 4em;            
+                background-image: url("/assets/images/white-arrow.svg");
+            }
+        }
+    }
+}

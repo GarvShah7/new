@@ -1,0 +1,16 @@
+fragment HomeVideoSection on HomeVideoSection {
+  _key
+  _type
+  image {
+    ...Image
+  }
+  sectionTheme
+  video {
+    _key
+    _type
+    asset {
+      path
+      url
+    }
+  }
+}

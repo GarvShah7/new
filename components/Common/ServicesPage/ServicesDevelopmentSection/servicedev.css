@@ -1,0 +1,182 @@
+.serviceDevSection .container .middleText {
+  max-width: 80%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.serviceDevSection .container .middleText h4 {
+  font-weight: 400;
+}
+@media (max-width: 999px) {
+  .serviceDevSection .container .serviceDevContent .serDevCard + .serDevCard {
+    margin: 3em 0 0;
+  }
+}
+.serviceDevSection .container .serviceDevContent .serDevCard.gridBox {
+  grid-column-gap: 10.938em;
+}
+@media (max-width: 999px) {
+  .serviceDevSection .container .serviceDevContent .serDevCard.gridBox {
+    grid-template-columns: 1fr;
+  }
+}
+.serviceDevSection .container .serviceDevContent .serDevCard.gridBox:first-child .rightSide img {
+  border-radius: 10px 10px 0 0;
+}
+@media (max-width: 999px) {
+  .serviceDevSection .container .serviceDevContent .serDevCard.gridBox:first-child .rightSide img {
+    border-radius: 10px;
+  }
+}
+.serviceDevSection .container .serviceDevContent .serDevCard.gridBox:last-child .rightSide img {
+  border-radius: 0 0 10px 10px;
+}
+@media (max-width: 999px) {
+  .serviceDevSection .container .serviceDevContent .serDevCard.gridBox:last-child .rightSide img {
+    border-radius: 10px;
+  }
+}
+@media (max-width: 1440px) {
+  .serviceDevSection .container .serviceDevContent .serDevCard.gridBox {
+    grid-column-gap: 10.5em;
+  }
+}
+@media (max-width: 1280px) {
+  .serviceDevSection .container .serviceDevContent .serDevCard.gridBox {
+    grid-column-gap: 10em;
+  }
+}
+@media (max-width: 999px) {
+  .serviceDevSection .container .serviceDevContent .serDevCard.gridBox {
+    grid-column-gap: 8em;
+  }
+}
+.serviceDevSection .container .serviceDevContent .serDevCard.gridBox .leftSide h4 {
+  font-weight: 500;
+  font-size: 2em;
+  line-height: 1.4;
+  color: #000000;
+  padding: 0 0 0.625em;
+}
+@media (max-width: 1440px) {
+  .serviceDevSection .container .serviceDevContent .serDevCard.gridBox .leftSide h4 {
+    font-size: 1.875em;
+  }
+}
+@media (max-width: 1280px) {
+  .serviceDevSection .container .serviceDevContent .serDevCard.gridBox .leftSide h4 {
+    font-size: 1.75em;
+  }
+}
+@media (max-width: 999px) {
+  .serviceDevSection .container .serviceDevContent .serDevCard.gridBox .leftSide h4 {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 640px) {
+  .serviceDevSection .container .serviceDevContent .serDevCard.gridBox .leftSide h4 {
+    font-size: 1.375em;
+  }
+}
+.serviceDevSection .container .serviceDevContent .serDevCard.gridBox .leftSide p {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.7;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: justify;
+}
+.serviceDevSection .container .serviceDevContent .serDevCard.gridBox .leftSide p strong {
+  font-weight: 600;
+}
+.serviceDevSection .container .serviceDevContent .serDevCard.gridBox .leftSide ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1em;
+  margin: 3.125em 0 0;
+}
+@media (max-width: 1440px) {
+  .serviceDevSection .container .serviceDevContent .serDevCard.gridBox .leftSide ul {
+    margin: 3em 0 0;
+  }
+}
+@media (max-width: 1280px) {
+  .serviceDevSection .container .serviceDevContent .serDevCard.gridBox .leftSide ul {
+    margin: 2.5em 0 0;
+  }
+}
+@media (max-width: 999px) {
+  .serviceDevSection .container .serviceDevContent .serDevCard.gridBox .leftSide ul {
+    margin: 1em 0 0;
+  }
+}
+@media (max-width: 640px) {
+  .serviceDevSection .container .serviceDevContent .serDevCard.gridBox .leftSide ul {
+    grid-template-columns: 1fr;
+  }
+}
+.serviceDevSection .container .serviceDevContent .serDevCard.gridBox .leftSide ul li {
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 1;
+  text-align: justify;
+  letter-spacing: 0.045em;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0 0 1.5em;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .serviceDevSection .container .serviceDevContent .serDevCard.gridBox .leftSide ul li {
+    font-size: 0.938em;
+  }
+}
+.serviceDevSection .container .serviceDevContent .serDevCard.gridBox .leftSide ul li:before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #000000;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 10px 0 0;
+}
+.serviceDevSection .container .serviceDevContent .serDevCard.gridBox .rightSide img {
+  max-width: 100%;
+  width: 100%;
+  height: 40em;
+  object-fit: cover;
+}
+@media (max-width: 1440px) {
+  .serviceDevSection .container .serviceDevContent .serDevCard.gridBox .rightSide img {
+    height: 36em;
+  }
+}
+@media (max-width: 1280px) {
+  .serviceDevSection .container .serviceDevContent .serDevCard.gridBox .rightSide img {
+    height: 32em;
+  }
+}
+@media (max-width: 999px) {
+  .serviceDevSection .container .serviceDevContent .serDevCard.gridBox .rightSide img {
+    height: 28em;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .serviceDevSection .container .serviceDevContent .serDevCard.gridBox .rightSide img {
+    height: 20em;
+  }
+}
+@media (max-width: 640px) {
+  .serviceDevSection .container .serviceDevContent .serDevCard.gridBox .rightSide img {
+    height: 14em;
+  }
+}
+@media (max-width: 480px) {
+  .serviceDevSection .container .serviceDevContent .serDevCard.gridBox .rightSide img {
+    height: 12em;
+  }
+}
+
+/*# sourceMappingURL=servicedev.css.map */

@@ -1,0 +1,84 @@
+@import "../../../styles/config/variables";
+
+.ourProsConsSection{
+    .container{
+        .ourProsConsContent{
+            &.gridBox{
+                grid-column-gap: 6em;
+                @include media(extra-large){
+                    grid-column-gap: 5em;
+                }
+                @include media(large){
+                    grid-column-gap: 4em;
+                }
+                @include media(medium){
+                    grid-column-gap: 3.5em;
+                    grid-template-columns: 1fr;
+                }
+                @include media(small){
+                    grid-column-gap: 3em;
+                }
+            }
+            padding: 4.375em 4em;
+            @include media(extra-large){
+                padding: 4em 3.5em;
+            }
+            @include media(large){
+                padding: 3.5em 3em;
+            }
+            @include media(medium){
+                padding: 3em 3.5em;
+            }
+            @include media(small){
+                padding: 2.7em 3em;
+            }
+            @include media(medium-small){
+                padding: 2.3em 2.5em;
+            }
+            @include media(very-small){
+                padding: 2.3em 2em;
+            }
+            border-radius: $border-radius-regular;
+            h2{
+                line-height: $line-height-medium;
+                @include media(wide){
+                    font-size: $font-size-56;
+                }
+                @include media(extra-large){
+                    font-size: $font-size-52;
+                }
+                @include media(large){
+                    font-size: $font-size-50;
+                }
+                @include media(medium){
+                    font-size: $font-size-48;
+                }
+                @include media(small){
+                    font-size: $font-size-45;
+                }
+                @include media(very-small){
+                    font-size: $font-size-42;
+                }
+            }
+            h4{
+                font-weight: $font-weight-500;
+                padding: 0 0 0.667em;
+                @include media(medium-small){
+                    font-size:  $font-size-22;
+                }
+            }
+            p {
+                color: $white-color;
+                line-height: $line-height-extra-large;
+            }
+            .rightSide{
+                p{
+                    padding: 0 0 1em;
+                    &:last-child(){
+                        padding-bottom:0;
+                    }
+                }
+            }
+        }
+    }
+}

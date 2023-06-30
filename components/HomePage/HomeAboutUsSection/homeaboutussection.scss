@@ -1,0 +1,55 @@
+@import "../../../styles/config/variables";
+
+.homeAboutUsSection{
+    .container{
+        .homeAboutUsSectionContent{
+            .homeAboutUsSectionContentGrid{
+                grid-column-gap: 12.5em;
+                @include media(extra-large){
+                    grid-column-gap: 12em;  
+                }
+                @include media(large){
+                    grid-column-gap: 10em;  
+                }
+                @include media(medium){
+                    grid-column-gap: 8em;  
+                    grid-row-gap: 3em;
+                    grid-template-columns: 1fr;
+                }
+                align-items: center;
+                .leftSide{
+                    h4{
+                        color: $white-color;
+                        font-weight: $font-weight-500;
+                        padding: 0 0 0.7em;
+                        text-transform:initial;
+                    }
+                    p{
+                        font-size: $font-size-16;
+                        color:$white-opc-50;
+                        line-height: $line-height-large;
+                        @include media(medium){
+                            font-size: $font-size-15;
+                        }
+                        &:last-child(){
+                            padding-bottom:0;
+                        }
+                    }
+                }
+                .rightSide{
+                    @include media(medium){
+                        text-align:center;
+                    }
+                    img{
+                        
+                        height: 100%;
+                        object-fit: contain;
+                        @include media(medium){
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

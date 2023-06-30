@@ -1,0 +1,15 @@
+fragment CompanyVisionsection on CompanyVisionsection {
+  _key
+  _type
+  title
+  description {
+    ...RichText
+  }
+  missionVisionCard {
+    ...ImageRichTextCardSection
+  }
+  companyVisionFeatures {
+    ...ServicesDetails
+  }
+  sectionTheme
+}

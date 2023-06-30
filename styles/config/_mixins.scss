@@ -1,0 +1,16 @@
+@mixin box-sizing {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+@mixin placeholder {
+    opacity: 1;
+    font-size: $font-size-16;
+    color: $black-color;
+    font-weight: $font-weight-400;
+}
+
+
+

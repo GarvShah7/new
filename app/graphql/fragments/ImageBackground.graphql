@@ -1,0 +1,8 @@
+fragment ImageBackground on ImageBackground {
+  _key
+  _type
+  image {
+    ...Image
+  }
+  backgroundColor
+}

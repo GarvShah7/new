@@ -1,0 +1,10 @@
+fragment ContactHeroSection on ContactHeroSection{
+  _key
+  _type
+  title
+  mainTitle
+  description{
+   ...RichText
+  }
+  sectionTheme
+}

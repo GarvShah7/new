@@ -1,0 +1,66 @@
+@import '../../styles/config/variables';
+
+.quoteSection{
+    margin: 3.125em 0;
+    .quoteContent{
+        background-color: $light-blue-color;
+        border-radius:$border-radius-regular;
+        padding:2.5em 3.750em;
+        position:relative;
+        @include media(extra-large){
+            padding:2.3em 3.7em;
+        }
+        @include media(large){
+            padding:2em 3.5em;
+        }
+        @include media(medium){
+            padding:1.7em 3.3em;
+        }
+        @include media(small){
+            padding:1.5em 3em;
+        }
+        @include media(medium-small){
+            padding:1.5em 2em;
+        }
+        .quoteMark{
+            margin: 0 0 1.5em;
+            img{
+                max-width: 2.5em;
+                width: 100%;
+                height: auto;
+                @include media(medium){
+                    max-width: 2.3em;
+                }
+                @include media(small){
+                    max-width: 2em;
+                }
+            }
+        }
+        p{
+            font-weight: $font-weight-400;
+            font-size: $font-size-16;
+            line-height: $line-height-extra-large;
+            text-align: justify;
+            letter-spacing: 0.025em;
+            color: $black-color;
+            @include media(small){
+                font-size: $font-size-15; 
+            }
+        }
+        h6{
+            font-weight: $font-weight-500;
+            font-size: $font-size-20;
+            line-height: $line-height-normal;
+            color: $black-color;
+            @include media(medium){
+                font-size: $font-size-19; 
+            }
+            @include media(small){
+                font-size: $font-size-18; 
+            }
+            @include media(medium-small){
+                font-size: $font-size-17; 
+            }
+        }
+    }
+}

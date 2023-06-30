@@ -1,0 +1,10 @@
+fragment ImageArraySection on ImageArraySection{
+  _key
+  _type
+  title
+  imageArray:image{
+    ...Image
+  }
+  isBigger
+  sectionTheme
+}

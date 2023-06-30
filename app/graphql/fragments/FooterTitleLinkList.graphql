@@ -1,0 +1,8 @@
+fragment FooterTitleLinkList on FooterTitleLinkList {
+  _key
+  _type
+  title
+  linkList {
+    ...NavbarLinks
+  }
+}

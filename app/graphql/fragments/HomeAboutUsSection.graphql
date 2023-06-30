@@ -1,0 +1,14 @@
+fragment HomeAboutUsSection on HomeAboutUsSection {
+  _key
+  _type
+  titleSubtitle {
+    ...TitleSubtitle
+  }
+  sectionTheme
+  aboutDescription: description {
+    ...RichText
+  }
+  image {
+    ...Image
+  }
+}

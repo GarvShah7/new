@@ -1,0 +1,154 @@
+.imageArraySection {
+  margin-bottom: 14em;
+}
+@media (max-width: 1280px) {
+  .imageArraySection {
+    margin-bottom: 13em;
+  }
+}
+@media (max-width: 999px) {
+  .imageArraySection {
+    margin-bottom: 0;
+  }
+}
+.imageArraySection .container .imageArrayContentmvGrid .imgArrayGrid {
+  grid-column-gap: 5em;
+}
+.imageArraySection .container .imageArrayContentmvGrid .imgArrayGrid.bigImageGrid {
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  align-items: center;
+  grid-column-gap: 2.5em;
+}
+@media (max-width: 1280px) {
+  .imageArraySection .container .imageArrayContentmvGrid .imgArrayGrid.bigImageGrid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 3em;
+    grid-column-gap: 2.5em;
+  }
+}
+@media (max-width: 999px) {
+  .imageArraySection .container .imageArrayContentmvGrid .imgArrayGrid.bigImageGrid.desktopView {
+    display: none;
+  }
+}
+.imageArraySection .container .imageArrayContentmvGrid .imgArrayGrid.bigImageGrid.mobileView {
+  display: none;
+}
+@media (max-width: 999px) {
+  .imageArraySection .container .imageArrayContentmvGrid .imgArrayGrid.bigImageGrid.mobileView {
+    display: inline-block;
+  }
+}
+.imageArraySection .container .imageArrayContentmvGrid .imgArrayGrid.bigImageGrid.mobileView .imageBoxSlider {
+  padding: 4em 0 0;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: auto;
+}
+.imageArraySection .container .imageArrayContentmvGrid .imgArrayGrid.bigImageGrid.mobileView .imageBoxSlider::-webkit-scrollbar {
+  width: 0 !important;
+}
+.imageArraySection .container .imageArrayContentmvGrid .imgArrayGrid.bigImageGrid.mobileView .imageBoxSlider .imageBox {
+  display: inline-block;
+}
+.imageArraySection .container .imageArrayContentmvGrid .imgArrayGrid.bigImageGrid.mobileView .imageBoxSlider .imageBox + .imageBox {
+  padding-left: 2em;
+}
+.imageArraySection .container .imageArrayContentmvGrid .imgArrayGrid.bigImageGrid.mobileView .imageBoxSlider .imageBox img {
+  height: 8em;
+}
+.imageArraySection .container .imageArrayContentmvGrid .imgArrayGrid.bigImageGrid .imageBox {
+  position: static;
+}
+.imageArraySection .container .imageArrayContentmvGrid .imgArrayGrid.bigImageGrid .imageBox + .imageBox {
+  position: static;
+}
+.imageArraySection .container .imageArrayContentmvGrid .imgArrayGrid.bigImageGrid .imageBox img {
+  height: 12em;
+  object-fit: inherit;
+}
+@media (max-width: 1440px) {
+  .imageArraySection .container .imageArrayContentmvGrid .imgArrayGrid.bigImageGrid .imageBox img {
+    height: 10em;
+  }
+}
+@media (max-width: 1280px) {
+  .imageArraySection .container .imageArrayContentmvGrid .imgArrayGrid.bigImageGrid .imageBox img {
+    height: 8em;
+  }
+}
+.imageArraySection .container .imageArrayContentmvGrid .imgArrayGrid.bigImageGrid .imageBox:nth-child(1) {
+  grid-row: 1/span 2;
+}
+@media (max-width: 1280px) {
+  .imageArraySection .container .imageArrayContentmvGrid .imgArrayGrid.bigImageGrid .imageBox:nth-child(1) {
+    grid-column: 1/span 6;
+  }
+}
+.imageArraySection .container .imageArrayContentmvGrid .imgArrayGrid.bigImageGrid .imageBox:nth-child(1) img {
+  max-width: 100%;
+  width: 100%;
+  height: 25em;
+  object-fit: contain;
+}
+@media (max-width: 999px) {
+  .imageArraySection .container .imageArrayContentmvGrid .imgArrayGrid.bigImageGrid .imageBox:nth-child(1) img {
+    height: 20em;
+  }
+}
+@media (max-width: 767px) {
+  .imageArraySection .container .imageArrayContentmvGrid .imgArrayGrid.bigImageGrid .imageBox:nth-child(1) img {
+    height: 18em;
+  }
+}
+@media (max-width: 1440px) {
+  .imageArraySection .container .imageArrayContentmvGrid .imgArrayGrid {
+    grid-column-gap: 4em;
+  }
+}
+@media (max-width: 1280px) {
+  .imageArraySection .container .imageArrayContentmvGrid .imgArrayGrid {
+    grid-column-gap: 3em;
+  }
+}
+@media (max-width: 999px) {
+  .imageArraySection .container .imageArrayContentmvGrid .imgArrayGrid {
+    grid-template-columns: 1fr;
+  }
+}
+.imageArraySection .container .imageArrayContentmvGrid .imgArrayGrid .imageBox {
+  border-radius: 10px;
+}
+.imageArraySection .container .imageArrayContentmvGrid .imgArrayGrid .imageBox + .imageBox {
+  position: relative;
+  top: 6em;
+}
+@media (max-width: 999px) {
+  .imageArraySection .container .imageArrayContentmvGrid .imgArrayGrid .imageBox + .imageBox {
+    top: 0;
+  }
+}
+.imageArraySection .container .imageArrayContentmvGrid .imgArrayGrid .imageBox img {
+  max-width: 100%;
+  width: 100%;
+  height: 42em;
+  object-fit: cover;
+  border-radius: 10px;
+}
+@media (max-width: 1440px) {
+  .imageArraySection .container .imageArrayContentmvGrid .imgArrayGrid .imageBox img {
+    height: 40em;
+  }
+}
+@media (max-width: 1280px) {
+  .imageArraySection .container .imageArrayContentmvGrid .imgArrayGrid .imageBox img {
+    height: 40em;
+  }
+}
+@media (max-width: 999px) {
+  .imageArraySection .container .imageArrayContentmvGrid .imgArrayGrid .imageBox img {
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=imagearray.css.map */

@@ -1,0 +1,7 @@
+fragment Thankyou on Thankyou {
+  _key
+  _type
+  image {
+    ...Image
+  }
+}

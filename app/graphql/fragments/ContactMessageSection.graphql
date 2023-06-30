@@ -1,0 +1,16 @@
+fragment ContactMessageSection on ContactMessageSection {
+  _key
+  _type
+  title
+  description {
+    ...RichText
+  }
+  sevicesTitle
+  servicesButtonArray: button {
+    ...Button
+  }
+  messageImage {
+    ...ContactMessageImage
+  }
+  sectionTheme
+}

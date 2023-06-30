@@ -1,0 +1,10 @@
+fragment ImageWithTitleSection on ImageWithTitleSection {
+  _key
+  _type
+  title
+  imageWithTitleArray {
+    ...ImageWithTitleArray
+  }
+  iszigzagslider
+  sectionTheme
+}

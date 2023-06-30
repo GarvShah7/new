@@ -1,0 +1,9 @@
+fragment SolutionDetails on SolutionDetails {
+  _key
+  _type
+  title
+  description
+  image {
+    ...Image
+  }
+}

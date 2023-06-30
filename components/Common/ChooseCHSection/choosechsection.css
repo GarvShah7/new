@@ -1,0 +1,40 @@
+.chooseCHSection .container .chooseCHContent .chooseIconWrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2em 0 0;
+}
+@media (max-width: 767px) {
+  .chooseCHSection .container .chooseCHContent .chooseIconWrap {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    white-space: nowrap;
+    overflow: auto;
+  }
+  .chooseCHSection .container .chooseCHContent .chooseIconWrap::-webkit-scrollbar {
+    width: 0 !important;
+  }
+}
+.chooseCHSection .container .chooseCHContent .chooseIconWrap li {
+  margin: 1em 2em;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .chooseCHSection .container .chooseCHContent .chooseIconWrap li {
+    margin: 1em 1.5em;
+  }
+}
+.chooseCHSection .container .chooseCHContent .chooseIconWrap li img {
+  max-width: 5.625em;
+  height: 5.625em;
+  margin: 0 0 1em;
+}
+.chooseCHSection .container .chooseCHContent .chooseIconWrap li h6 {
+  font-weight: 500;
+  font-size: 1em;
+  text-align: center;
+  letter-spacing: 0.025em;
+  color: #000000;
+}
+
+/*# sourceMappingURL=choosechsection.css.map */

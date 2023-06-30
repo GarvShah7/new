@@ -1,0 +1,9 @@
+fragment HomeOurProsSection on HomeOurProsSection {
+  _key
+  _type
+  sectionTitle
+  title
+  subTitle
+  sectionTheme
+  descriptionRaw
+}

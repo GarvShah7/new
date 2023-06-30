@@ -1,0 +1,14 @@
+.titleDescFullImgSection .container .titleDescFullImgContent .fullImage img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+.titleDescFullImgSection .container .titleDescFullImgContent .button {
+  margin: 0 0 0 2em;
+  background-color: #000EE6;
+  color: #FFFFFF;
+  padding-right: 4em;
+  background-image: url("/assets/images/white-arrow.svg");
+}
+
+/*# sourceMappingURL=titledescfullimage.css.map */

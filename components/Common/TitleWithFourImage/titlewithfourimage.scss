@@ -1,0 +1,77 @@
+@import '../../styles/config/variables';
+
+.titlewithfourimageSection{
+    .container{
+        &.fullWidth{
+            .titlewithfourimageContent{
+                h3{
+                    font-size: $font-size-56;
+                    text-align:center;
+                    @include media(extra-large){
+                        font-size: $font-size-48;
+                    }
+                    @include media(large){
+                        font-size: $font-size-40;
+                    }
+                    @include media(large-medium){
+                        padding: 0.7em 0;
+                    }
+                    @include media(medium){
+                        font-size: $font-size-36;
+                        padding: 0.5em 0;
+                    }
+                    @include media(medium-small){
+                        padding: 0.3em 0;
+                    }
+                }
+                .fourImgWrap{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-column-gap: 0;
+                    @include media(large-medium){
+                        grid-template-columns: 1fr;
+                    }
+                    .leftBox, .rightBox{
+                        height: 100%;
+                        img{
+                            max-width: 100%;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            @include media(large-medium){
+                                height: 500px;
+                                object-fit: cover;
+                            }
+                            @include media(small){
+                                height: 400px;
+                            }
+                            @include media(very-small){
+                                height: 300px;
+                            }
+                        }
+                    }
+                    .middleBox{
+                        >img{
+                            height: 300px;
+                            max-width:100%;
+                            width: 100%;
+                            @include media(extra-large){
+                                height: 250px;
+                            }
+                            @include media(large-medium){
+                                height: 300px;
+                                object-fit: cover;
+                            }
+                            @include media(small){
+                                height: 250px;
+                            }
+                            @include media(very-small){
+                                height: 200px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

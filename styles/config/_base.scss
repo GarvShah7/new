@@ -1,0 +1,262 @@
+*{
+  margin: 0;
+  padding: 0;
+  @include box-sizing;
+}
+
+*:before,
+*:after {
+  @include box-sizing;
+}
+
+
+
+body {
+  font-family:  $font-primary;
+  font-size: 16px;
+  color: $black-color;
+  background-color: $white-color;
+  position: relative;
+
+
+  &.modal-open{
+      overflow-y: hidden;
+  }
+
+  cursor:url("/assets/images/cursor.png"), auto;
+
+  @include media(extra-large) {
+    font-size: 15px;
+  }
+
+  @include media(large) {
+    font-size: 14px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: $font-primary;
+  font-weight: $font-weight-400;
+  color: $black-color;
+  text-transform: $capitalize;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 0.83em;
+}
+
+h6 {
+  font-size: 0.75em;
+}
+
+p {
+  color: $black-color;
+  margin-bottom: 0;
+  padding-bottom: 1em;
+  line-height: $line-height-extra-large;
+  font-weight:  $font-weight-400;
+  font-size: $font-size-18;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: $black-color;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+}
+
+a:hover {
+  color: $blue-color;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+
+p,
+ul,
+ol,
+pre,
+table,
+blockquote {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: $font-primary;
+  font-size: $font-size-16;
+  color: $black-color;
+  font-weight:  $font-weight-400;
+  outline: none;
+}
+
+iframe {
+  max-width: 100%;
+  border: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+  border: none;
+  background-color: transparent;
+  padding: 0 1em;
+  height: 3em;
+  max-width: 100%;
+  border-radius: 0;
+  box-shadow: none;
+  width: 100%;
+  color: $black-color;
+  font-size: $font-size-16;
+  outline: none;
+  font-weight:  $font-weight-400;
+  line-height: normal;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+  // background: transparent;
+}
+select {
+  border: none;
+  background: $white-color;
+  padding: 0 1em;
+  height: 3em;
+  box-shadow: none;
+  font-size: $font-size-16;
+}
+
+input[type="image"],
+input[type="button"],
+button {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  color: $black-color;
+  cursor: pointer;
+  display: inline-block;
+  font-size: $font-size-16;
+  padding: 0.5em 1em;
+  line-height: normal;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  font-weight:  $font-weight-400;
+  text-transform: inherit;
+  appearance: normal;
+  -webkit-appearance: none;
+  outline: none;
+  text-align: center;
+  position: relative;
+  font-family: $font-primary;
+}
+
+textarea {
+  resize: none;
+  min-height: 8.84em;
+  padding: 0.8em 1.563em;
+}
+/*Change text in autofill textbox*/
+input:-webkit-autofill{
+  -webkit-text-fill-color: $white-color !important;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+
+
+//==============PLACEHOLDER==============//
+::placeholder {
+  @include placeholder;
+}
+
+:-ms-input-placeholder {
+  @include placeholder;
+}
+
+::-ms-input-placeholder {
+  @include placeholder;
+}
+
+
+// 
+img{
+  min-width: auto !important;
+  min-height: auto !important;
+}

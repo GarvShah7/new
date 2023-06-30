@@ -1,0 +1,92 @@
+.sideListSection .sideListContent {
+  background-color: #000000;
+  border-radius: 10px;
+  padding: 1.875em 1.25em;
+}
+.sideListSection .sideListContent h5 {
+  font-weight: 600;
+  font-size: 1.25em;
+  color: #FFFFFF;
+  margin: 0 0 1em;
+  text-align: center;
+  line-height: 1;
+}
+.sideListSection .sideListContent ul.linkItems {
+  list-style-type: disc;
+  margin: 0;
+  max-height: calc(100vh - 30.375em);
+  overflow: auto;
+  overflow-anchor: none;
+  padding-left: 1.25rem;
+  padding-right: 0.875rem;
+  position: relative;
+  touch-action: auto;
+}
+.sideListSection .sideListContent ul.linkItems::-webkit-scrollbar-track {
+  border-radius: 0.625rem;
+  background-color: #000;
+  border: 2px solid #000;
+  outline: 1px solid #fff;
+  overflow: hidden;
+}
+.sideListSection .sideListContent ul.linkItems::-webkit-scrollbar {
+  width: 10px;
+  background-color: #000;
+}
+.sideListSection .sideListContent ul.linkItems::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #000EE6;
+}
+.sideListSection .sideListContent ul.linkItems li {
+  font-size: 1em;
+  font-weight: 500;
+  list-style-type: disc;
+  padding: 0.625em 0 0.5em;
+  line-height: 1.4;
+}
+.sideListSection .sideListContent ul.linkItems li::marker {
+  color: #FFFFFF;
+}
+.sideListSection .sideListContent ul.linkItems li > a {
+  font-weight: 500;
+  font-size: 1em;
+  color: #FFFFFF;
+}
+.sideListSection .sideListContent ul.linkItems li > a:hover {
+  color: #000EE6;
+}
+
+.sideSocialSection {
+  padding: 1.563em 0 3.125em;
+}
+.sideSocialSection .sideSocialContent h6 {
+  font-weight: 500;
+  font-size: 0.875em;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.sideSocialSection .sideSocialContent ul.sideSocialList {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 1.25em 0 0;
+}
+.sideSocialSection .sideSocialContent ul.sideSocialList li + li {
+  margin: 0 0 0 2em;
+}
+.sideSocialSection .sideSocialContent ul.sideSocialList li a {
+  display: inline-block;
+}
+.sideSocialSection .sideSocialContent ul.sideSocialList li a img {
+  max-width: 1.5em;
+  width: 100%;
+  height: 1.5em;
+  object-fit: contain;
+}
+.sideSocialSection .sideSocialContent ul.sideSocialList li a img:hover {
+  -webkit-filter: grayscale(100%) brightness(30%) sepia(100%) hue-rotate(-180deg) saturate(700%) contrast(0.8);
+  filter: grayscale(100%) brightness(30%) sepia(100%) hue-rotate(-180deg) saturate(700%) contrast(0.8);
+}
+
+/*# sourceMappingURL=sidecontenttitle.css.map */

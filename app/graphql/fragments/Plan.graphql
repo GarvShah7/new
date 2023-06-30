@@ -1,0 +1,14 @@
+fragment Plan on Plan {
+  _id
+  _type
+  _key
+  label
+  plan_name
+  plan_services
+  plan_services_template {
+    ...PlanServicesTemplate
+  }
+  packages {
+    ...Package
+  }
+}

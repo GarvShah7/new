@@ -1,0 +1,16 @@
+fragment ReviewsSection on ReviewsSection {
+  _id
+  _type
+  _key
+  title
+  button {
+    ...Button
+  }
+  sectionTheme
+  textWithImage {
+    ...RichText
+  }
+  descriptionRichText: description {
+    ...RichText
+  }
+}

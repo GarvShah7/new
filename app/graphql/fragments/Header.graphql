@@ -1,0 +1,14 @@
+fragment Header on Header {
+  _id
+  title
+  toggleNavItems {
+    ...NavbarLinks
+  }
+  logo {
+    ...Image
+  }
+  sectionTheme
+  navItems {
+    ...NavbarLinks
+  }
+}

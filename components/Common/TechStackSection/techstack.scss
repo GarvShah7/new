@@ -1,0 +1,85 @@
+@import '../../styles/config/variables';
+
+
+.techStackSection{
+    .container{
+        .techStackContent{
+            .techStackTabs{
+                ul{
+                    &.techStackTitle{
+                        border-bottom: 1px solid $gray01-color;
+                        padding: 0 0 1.250em;
+                        display: flex;
+                        justify-content: center;
+                        @include media(small){
+                            display: block;
+                            overflow: auto;
+                            white-space: nowrap;
+                            max-width: 100%;
+                            width: 100%;
+                            padding: 0;
+                        }
+                        &::-webkit-scrollbar { width: 0 !important }
+                        li{
+                            cursor: pointer;
+                            + li{
+                                padding-left: 1.667em;
+                            }
+                            @include media(small){
+                                display: inline-block;
+                            }
+                            font-weight:$font-weight-700;
+                            font-size: $font-size-18;
+                            line-height: $line-height-normal;
+                            color: $white-color;
+                            &.active,&:hover{
+                                color:$blue-color;
+                            }
+                        }
+                    }
+                    &.texhStackList{
+                        font-weight: $font-weight-500;
+                        font-size: $font-size-12;
+                        line-height: $line-height-normal;
+                        color: $white-color;
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                        grid-column-gap: 3.750em;
+                        grid-row-gap: 1.875em;
+                        padding: 1.875em 0;
+                        @include media(large){
+                            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                        }
+                        @include media(medium){
+                            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                        }
+                        @include media(small){
+                            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                        }
+                        @include media(medium-small){
+                            grid-template-columns: 1fr 1fr 1fr 1fr;
+                        }
+                        @include media(very-small){
+                            grid-template-columns: 1fr 1fr 1fr;
+                        }
+                        .techIcon{
+                            padding: 0 0 0.5em;
+                            text-align: center;
+                            img{
+                                max-width:6.625em;
+                                width: 100%;
+                            }
+                        }
+                        h6{
+                            font-weight: $font-weight-500;
+                            font-size: $font-size-16;
+                            line-height: $line-height-normal;
+                            color: $white-color;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.companyLogoSection .container .companyLogoContent .companyCenterImage {
+  text-align: center;
+  margin: 0 0 3.125em;
+}
+.companyLogoSection .container .companyLogoContent .companyCenterImage img {
+  max-width: 20.625em;
+  width: 100%;
+}
+.companyLogoSection .container .companyLogoContent .companyLogoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 2em;
+  grid-row-gap: 2em;
+}
+@media (max-width: 999px) {
+  .companyLogoSection .container .companyLogoContent .companyLogoGrid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .companyLogoSection .container .companyLogoContent .companyLogoGrid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 640px) {
+  .companyLogoSection .container .companyLogoContent .companyLogoGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.companyLogoSection .container .companyLogoContent .companyLogoGrid li {
+  text-align: center;
+}
+.companyLogoSection .container .companyLogoContent .companyLogoGrid li .companyIcon {
+  padding-bottom: 0.7em;
+}
+.companyLogoSection .container .companyLogoContent .companyLogoGrid li .companyIcon img {
+  max-width: 6.875em;
+  width: 100%;
+}
+.companyLogoSection .container .companyLogoContent .companyLogoGrid li h6 {
+  font-weight: 600;
+  font-size: 0.875em;
+  letter-spacing: 0.07em;
+  color: #000000;
+  text-align: center;
+}
+
+/*# sourceMappingURL=nextcompany.css.map */

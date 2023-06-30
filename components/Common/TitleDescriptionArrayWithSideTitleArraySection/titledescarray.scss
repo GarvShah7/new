@@ -1,0 +1,241 @@
+@import '../../styles/config/variables';
+
+
+.titledesarraySection{
+    .container{
+        .titledesarrayContent{
+            .innerpageSectionInfo{
+                h3{
+                    text-transform: $text-transform-uppercase;
+                    color: $blue-color;
+                }
+            }
+            // OLD DESIGN
+            &.gridBox{
+                @include media(large-medium){
+                    grid-template-columns: 1fr 1.5fr;
+                    grid-column-gap: 1.8em;
+                }
+                @include media(small){
+                    grid-template-columns: 1fr 1.1fr;
+                    grid-column-gap: 1.5em;
+                }
+                @include media(medium-small){
+                    grid-template-columns: 1fr 1fr;
+                    grid-column-gap: 1em;
+                }
+                @include media(small){
+                    grid-template-columns: 1fr;
+                }
+                .leftSide{
+                    ul{
+                        li{
+                            h3{
+                                display: none;
+                                @include media(small){
+                                    display: block;
+                                    margin: 1.2em 0 1em;
+                                }
+                            }
+                            margin: 0 0 6.250em;
+                            &:last-child{
+                                margin: 0;
+                            }
+                            @include media(extra-large){
+                                margin: 0 0 6em;
+                            }
+                            @include media(large){
+                                margin: 0 0 5em;
+                            }
+                            @include media(medium){
+                                margin: 0 0 4em;
+                            }
+                            @include media(small){
+                                margin: 0 0 2em;
+                            }
+                            h6{
+                                font-weight: $font-weight-500;
+                                padding: 0 0 0.5em;
+                            }
+                            p{
+                                color: $black-opc-70;
+                                @include media(small){
+                                    padding-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                .rightSide{
+                    h3{
+                        font-weight: $font-weight-600;
+                        text-align: center;
+                    }
+                    @include media(small){
+                        display: none;
+                    }
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    ul{
+                        li{
+                            &:nth-child(2){
+                                padding: 15.625em 0;
+                            }
+                        }
+                    }
+                }
+            }
+            // OLD DESIGN
+            // NEW DESIGN
+            .react-tabs{
+                padding-top: 2em;
+                @include media(large){
+                    padding-top: 1.5em;
+                }
+                @include media(medium){
+                    padding-top: 1.3em;
+                }
+                .react-tabs__tab-panel{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    opacity: 0;
+                    transition:opacity 1s ease-in-out;
+                    &.react-tabs__tab-panel--selected{
+                        opacity: 1;
+                    }
+                    @include media(medium){
+                        grid-template-columns: 1fr;
+                    }
+                    h3{
+                        font-weight: $font-weight-600;
+                        font-size: $font-size-108;
+                        letter-spacing: 0.05em;
+                        color: $gray07-color;
+                        text-transform: $text-transform-uppercase;
+                        text-align: center;
+                        grid-column: 1 / span 3;
+                        padding-bottom:0.5em;
+                        @include media(extra-large){
+                            font-size: $font-size-100;
+                        }
+                        @include media(medium){
+                            font-size: $font-size-80;
+                        }
+                        @include media(medium-small){
+                            font-size: $font-size-75;
+                        }
+                        @include media(very-small){
+                            font-size: $font-size-70;
+                        }
+                        @include media(medium){
+                            grid-column: 1;
+                        }
+                    }
+                    h6{
+                        font-weight: $font-weight-500;
+                        font-size: $font-size-24;
+                        color: $black-color;
+                        padding-bottom: 0.5em;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        &::before{
+                            content: "";
+                            background-image: url("/assets/images/correct.png");
+                            background-repeat: no-repeat;
+                            background-size: 1em;
+                            width: 1em;
+                            height: 1em;
+                            display: inline-block;
+                            margin: 0 0.5em 0 0;
+                        }
+                    }
+                    p{
+                        font-weight:$font-weight-400;
+                        font-size: $font-size-18;
+                        letter-spacing: 0.075em;
+                        color: $black-opc-70;
+                    }
+                    .appBox{
+                        text-align: center;
+                        max-width: 80%;
+                        width: 100%;
+                        margin: 0 auto;
+                        @include media(extra-large){
+                            max-width: 90%;
+                        }
+                        @include media(medium){
+                            max-width: 100%;
+                        }
+                        @include media(medium){
+                            + .appBox{
+                                padding-top: 2em;
+                            }
+                        }
+                    }
+                }
+                .react-tabs__tab-list{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 3em 0 0;
+                    overflow: hidden;
+                    li{
+                        &:focus-visible{
+                            border: 0;
+                            outline:0;
+                        }
+                        &.react-tabs__tab{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            position: relative;
+                            span{
+                                text-indent: -10000000px;
+                                font-weight: $font-weight-600;
+                                font-size: $font-size-16;
+                                color: $white-color;
+                                width: 2em;
+                                height: 2em;
+                                border-radius: 50%;
+                                border: 2px solid $blue-color;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin: 0.5em 0;
+                                background-color: $white-color;
+                                transition: background-color 1s ease-in-out;
+                            }
+                            &:not(:first-child){
+                                &:before{
+                                    content: "";
+                                    background-color:$gray06-color;
+                                    width:100vw;
+                                    height: 5px;
+                                    position: absolute;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    right: 0;
+                                    z-index: -1;
+                                    transition: background-color 1s ease-in-out;
+                                    overflow:hidden;
+                                }
+                            }
+                            &.react-tabs__tab--selected{
+                                span{
+                                    background-color: $blue-color;
+                                }
+                                &:before{
+                                    content: "";
+                                    background-color:$blue-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // NEW DESIGN
+        }
+    }
+}

@@ -1,0 +1,53 @@
+@import '../../styles/config/variables';
+
+.readBlogSection{
+    margin: 3.125em 0;
+    .readBlogContent{
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+        background-color: $blue01-color;
+        border-radius: $border-radius-regular;
+        padding:3em 3.750em;
+        align-items: center;
+        grid-column-gap: 1em;
+        @include media(wide){
+            padding:2.7em 3.5em;
+        }
+        @include media(large){
+            padding:2.5em 3.3em;
+            flex-direction: column;
+        }
+        @include media(medium){
+            padding:2.3em 3em;
+        }
+        @include media(small){
+            padding:2em 2.7em;
+        }
+        h4{
+            font-weight:$font-weight-600;
+            color:$white-color;
+            max-width:60%;
+            width:100%;
+            @include media(wide){
+                max-width:70%;
+            }
+            @include media(extra-large){
+                max-width:80%;
+            }
+            @include media(large){
+                max-width:100%;
+                padding:0 0 1em;
+                text-align: center;
+            }
+        }
+        .button{
+            line-height: $line-height-medium;
+            &.withIcon{
+                @include media(wide){
+                    font-size: $font-size-14;
+                }
+            }
+        }
+    }
+}

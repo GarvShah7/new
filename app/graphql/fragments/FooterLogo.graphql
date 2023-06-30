@@ -1,0 +1,13 @@
+fragment FooterLogo on FooterLogo {
+  _key
+  _type
+  title
+  image {
+    ...Image
+  }
+  Hoverimage {
+    ...Image
+  }
+  ApplogoLink
+  target
+}

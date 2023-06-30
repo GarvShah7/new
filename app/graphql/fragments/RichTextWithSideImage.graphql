@@ -1,0 +1,15 @@
+fragment RichTextWithSideImage  on RichTextWithSideImage{
+  _key
+  _type
+  title
+  useRichText{
+  ...RichText
+  }
+  image{
+   ...Image
+  }
+  description{
+    ...RichText
+  }
+  sectionTheme
+}

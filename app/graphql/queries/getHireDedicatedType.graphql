@@ -1,0 +1,5 @@
+query getHireDedicatedType {
+  allHireDedicatedPageTypes {
+    ...HireDedicatedPageTypes
+  }
+}

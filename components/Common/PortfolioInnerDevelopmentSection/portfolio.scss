@@ -1,0 +1,101 @@
+@import '../../styles/config/variables';
+
+.portfolioSection{
+    .container{
+        .portfolioContent{
+            .portfolioRow{
+                + .portfolioRow{
+                    padding: 6.250em 0 0;
+                }
+                h2{
+                    font-weight: $font-weight-500;
+                    font-size: $font-size-30;
+                    letter-spacing: 0.025em;
+                    color: $black-color;
+                    padding-bottom: 1em;
+                    @include media(extra-large){
+                        font-size: $font-size-28;
+                    }
+                    @include media(large){
+                        font-size: $font-size-26;
+                    }
+                    @include media(medium){
+                        font-size: $font-size-24;
+                    }
+                    @include media(small){
+                        font-size: $font-size-22;
+                    }
+                }
+                .portfolioGrid{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-column-gap: 1.5em;
+                    grid-row-gap: 4.375em;
+                    @include media(large){
+                        grid-template-columns: 1fr 1fr;
+                        grid-row-gap: 4em;
+                    }
+                    @include media(medium-small){
+                        grid-template-columns: 1fr;
+                        grid-row-gap: 3.5em;
+                    }
+                    @include media(very-small){
+                        grid-row-gap: 3em;
+                    }
+                    .portfolioBox{
+                        .portfolioImage{
+                            img{
+                                max-width: 100%;
+                                width: 100%;
+                                height: 23.750em;
+                                object-fit: cover;
+                                border-radius: $border-radius-regular;
+                                @include media(extra-large){
+                                    height: 22em;
+                                }
+                                @include media(large){
+                                    height: 20em;
+                                }
+                                @include media(medium){
+                                    height: 18em;
+                                }
+                                @include media(medium-small){
+                                    height: 16em;
+                                }
+                            }
+                        }
+                        .portfolioCategory{
+                            padding: 1.250em 0 1.5em;
+                            .button{
+                                background: #D9D9D9;
+                                border-radius: $border-radius-regular;
+                                font-weight: $font-weight-400;
+                                font-size: $font-size-14;
+                                letter-spacing: 0.025em;
+                                color: $black-color;
+                                padding: 0.857em 1.071em;
+                            }
+                        }
+                        .portfolioTitle{
+                            h4{
+                                font-weight: $font-weight-500;
+                                font-size: $font-size-20;
+                                letter-spacing: 0.025em;
+                                color: $black-color;
+                                @include media(large){
+                                    font-size: $font-size-19;
+                                }
+                                @include media(medium){
+                                    font-size: $font-size-18;
+                                }
+                                @include media(small){
+                                    font-size: $font-size-17;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

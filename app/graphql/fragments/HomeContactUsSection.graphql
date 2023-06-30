@@ -1,0 +1,12 @@
+fragment HomeContactUsSection on HomeContactUsSection {
+  _key
+  _type
+  title
+  sectionTheme
+  contactDescription: description {
+    ...RichText
+  }
+  image {
+    ...Image
+  }
+}

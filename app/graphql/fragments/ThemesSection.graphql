@@ -1,0 +1,11 @@
+fragment ThemesSection  on ThemesSection{
+  _key
+  _type
+  titleSubtitle{
+   ...TitleSubtitle
+  }
+  themesImage:image{
+    ...Image
+  }
+  sectionTheme
+}

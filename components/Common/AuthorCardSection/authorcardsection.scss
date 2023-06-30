@@ -1,0 +1,90 @@
+@import '../../styles/config/variables';
+
+
+.authorCardSection{
+    margin: 2em 0 0;
+    .authorCardContent{
+        .authorCardHeader{
+            display:flex;
+            justify-content:space-between;
+            align-items: flex-end;
+            margin:0 0 1.250em;
+            @include media(small){
+                margin:0 0 1em;
+            }
+            @include media(very-small){
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .leftSide{
+                .authorInfo{
+                    display:flex;
+                    align-items: center;
+                    .authorImage{
+                        margin-right: 1em;
+                        img{
+                            max-width:3.750em;
+                            width: 100%;
+                            height: 3.750em;
+                        }
+                    }
+                    .authorName{
+                        h6{
+                            font-weight: $font-weight-500;
+                            font-size: $font-size-20;
+                            line-height: $line-height-normal;
+                            color: $black-color;
+                            padding-bottom:0.5em;
+                            @include media(medium){
+                                font-size: $font-size-19;
+                            }
+                            @include media(small){
+                                font-size: $font-size-18;
+                            }
+                        }
+                        span{
+                            font-weight: $font-weight-500;
+                            font-size: $font-size-16;
+                            line-height: $line-height-normal;
+                            color: $black-opc-50;
+                            padding-bottom:0;
+                        }
+                    }
+                }
+            }
+            .rightSide{
+                @include media(very-small){
+                    margin: 2em 0 1em;
+                }
+                ul{
+                    &.authorSocialIcon{
+                        display: flex;
+                        li{
+                            + li{
+                                margin-left: 1.250em;
+                            }
+                            a{
+                                img{
+                                    max-width: 1.4em;
+                                    width: 100%;
+                                    height: 1.4em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        p{
+            font-weight: $font-weight-400;
+            font-size: $font-size-16;
+            line-height: $line-height-extra-large;
+            letter-spacing: 0.025em;
+            color: $black-color;
+            padding-bottom: 0;
+            a{
+                color: $blue-color;
+            }
+        }
+    }
+}

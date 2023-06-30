@@ -1,0 +1,12 @@
+fragment TestimonialsSection on TestimonialsSection {
+  _id
+  _type
+  _key
+  titleSubtitle {
+    ...TitleSubtitle
+  }
+  testimonialsCard {
+    ...TestimonialsCard
+  }
+  sectionTheme
+}

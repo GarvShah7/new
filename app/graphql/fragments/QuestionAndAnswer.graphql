@@ -1,0 +1,8 @@
+fragment QuestionAndAnswer on QuestionAndAnswer{
+  _key
+  _type
+  title
+  description{
+   ...RichText
+  }
+}

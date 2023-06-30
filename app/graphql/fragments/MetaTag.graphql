@@ -1,0 +1,7 @@
+fragment MetaTag on MetaTag {
+  _key
+  _type
+  meta_attributes {
+    ...MetaAttribute
+  }
+}

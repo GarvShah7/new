@@ -1,0 +1,79 @@
+.hiringModalSection .container .hiringModalContent .hiringModalTabs {
+  display: flex;
+  justify-content: center;
+  margin: 3.125em 0 4em;
+  white-space: nowrap;
+  overflow: auto;
+}
+.hiringModalSection .container .hiringModalContent .hiringModalTabs::-webkit-scrollbar {
+  display: none;
+}
+@media (max-width: 480px) {
+  .hiringModalSection .container .hiringModalContent .hiringModalTabs {
+    justify-content: flex-start;
+    padding: 0 1em;
+  }
+}
+.hiringModalSection .container .hiringModalContent .hiringModalTabs .hiringTab {
+  font-weight: 600;
+  font-size: 1.375em;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding-bottom: 0.5em;
+}
+@media (max-width: 999px) {
+  .hiringModalSection .container .hiringModalContent .hiringModalTabs .hiringTab {
+    font-size: 1.25em;
+  }
+}
+@media (max-width: 767px) {
+  .hiringModalSection .container .hiringModalContent .hiringModalTabs .hiringTab {
+    font-size: 1.188em;
+  }
+}
+.hiringModalSection .container .hiringModalContent .hiringModalTabs .hiringTab.active {
+  border-bottom: 4px solid #000EE6;
+}
+.hiringModalSection .container .hiringModalContent .hiringModalTabs .hiringTab + .hiringTab {
+  margin-left: 2em;
+}
+.hiringModalSection .container .hiringModalContent .hiringModalDetails .tabContentBox {
+  align-items: center;
+  grid-column-gap: 3em;
+}
+@media (max-width: 767px) {
+  .hiringModalSection .container .hiringModalContent .hiringModalDetails .tabContentBox {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .hiringModalSection .container .hiringModalContent .hiringModalDetails .tabContentBox .leftSide {
+    text-align: center;
+  }
+}
+.hiringModalSection .container .hiringModalContent .hiringModalDetails .tabContentBox .leftSide img {
+  max-width: 25em;
+  width: 100%;
+}
+.hiringModalSection .container .hiringModalContent .hiringModalDetails .tabContentBox .rightSide {
+  max-width: 70%;
+  width: 100%;
+}
+@media (max-width: 999px) {
+  .hiringModalSection .container .hiringModalContent .hiringModalDetails .tabContentBox .rightSide {
+    max-width: 90%;
+  }
+}
+@media (max-width: 767px) {
+  .hiringModalSection .container .hiringModalContent .hiringModalDetails .tabContentBox .rightSide {
+    max-width: 100%;
+  }
+}
+.hiringModalSection .container .hiringModalContent .hiringModalDetails .tabContentBox .rightSide p {
+  color: #9E9E9E;
+}
+.hiringModalSection .container .hiringModalContent .hiringModalDetails .tabContentBox .rightSide h5 {
+  padding-bottom: 1em;
+}
+
+/*# sourceMappingURL=hiringmodel.css.map */

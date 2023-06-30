@@ -1,0 +1,69 @@
+@import "../../styles/config/variables";
+
+.hoverBoxSection{
+    .container{
+        .hoverBoxSectionContent{
+            .hoverBoxWrap{
+                &.gridBox{
+                    @include media(medium){
+                        grid-template-columns: 1fr 1fr;
+                    }
+                    @include media(very-small){
+                        grid-template-columns: 1fr;
+                    }
+                    grid-column-gap: 1.250em;
+                    grid-row-gap:1.25em;
+                    .hoverBox{
+                        border-radius:$border-radius-regular;
+                        text-align: center;
+                        position: relative;
+                        
+                        img{
+                            max-width: 100%;
+                            width: 100%;
+                            height: 100%;
+                            opacity: 1;
+                            transition:opacity 0.5s ease-in-out;
+                            object-fit: cover;
+                            border-radius:$border-radius-regular;
+                        }
+                        .hoverContent{
+                            position: absolute;
+                            top:0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            opacity:0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background: rgba(0, 0, 0, 0.5);
+                            border-radius:$border-radius-regular;
+                            span{
+                                color: $white-color;
+                                font-size: $font-size-22;
+                                font-weight: $font-weight-600;
+                                max-width: 60%;
+                                width: 100%;
+                                line-height: $line-height-medium;
+                                @include media(large){
+                                    font-size: $font-size-20;
+                                }
+                            }
+                        }
+                        &:hover{
+                            img{
+                                -webkit-filter: blur(4px);
+                                filter: blur(4px);
+                            }
+                            .hoverContent{
+                                opacity: 1;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }   
+}

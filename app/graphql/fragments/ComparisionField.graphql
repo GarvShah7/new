@@ -1,0 +1,19 @@
+fragment ComparisionField on ComparisionField {
+  _key
+  _type
+  name
+  type
+  isDivider
+  string
+  button {
+    ...Button
+  }
+  string_with_boolean {
+    ...StringWithBoolean
+  }
+  boolean_value
+  slider_value
+  string_with_icon {
+    ...StringWithIcon
+  }
+}

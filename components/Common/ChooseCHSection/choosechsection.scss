@@ -1,0 +1,41 @@
+@import '../../styles/config/variables';
+
+.chooseCHSection{
+    .container{
+        .chooseCHContent{
+            .chooseIconWrap{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin:2em 0 0;
+                @include media(small){
+                    flex-wrap: nowrap;
+                    justify-content: flex-start;
+                    white-space: nowrap;
+                    overflow: auto;
+                    &::-webkit-scrollbar { width: 0 !important }
+                }
+                li{
+                    margin: 1em 2em;
+                    text-align: center;
+                    @include media(small){
+                        margin: 1em 1.5em;
+                    }
+                    img{
+                        max-width: 5.625em;
+                        
+                        height: 5.625em;
+                        margin: 0 0 1em;
+                    }
+                    h6{
+                        font-weight:$font-weight-500;
+                        font-size: $font-size-16;
+                        text-align: center;
+                        letter-spacing: 0.025em;
+                        color: $black-color;
+                    }
+                }
+            }
+        }
+    }
+}

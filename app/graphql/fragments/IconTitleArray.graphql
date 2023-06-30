@@ -1,0 +1,8 @@
+fragment IconTitleArray on IconTitleArray {
+  _key
+  _type
+  image {
+    ...Image
+  }
+  title
+}

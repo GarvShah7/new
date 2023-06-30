@@ -1,0 +1,12 @@
+fragment ServiceDevelopmentSection on ServiceDevelopmentSection {
+  _key
+  _type
+  title
+  developmentCard {
+    ...DevelopmentCard
+  }
+  description {
+    ...RichText
+  }
+  sectionTheme
+}

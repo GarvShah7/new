@@ -1,0 +1,23 @@
+query getHomePage(
+  $filter: HomeFilter
+  $allPageFilter: AllPageFilter
+  $blogFilter: BlogInnerFilter
+  $limitFilter: Int
+  $sortFilter: [BlogInnerSorting!]
+) {
+  allHome(where: $filter) {
+    ...Home
+  }
+  allBlogInner(where: $blogFilter, sort: $sortFilter, limit: $limitFilter) {
+    ...HomeBlogInner
+  }
+  allServiceType {
+    ...ServiceType
+  }
+  allHireDedicatedPageTypes {
+    ...HireDedicatedPageTypes
+  }
+  allAllPage(where: $allPageFilter) {
+    ...HomeNavServices
+  }
+}

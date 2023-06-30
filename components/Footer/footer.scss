@@ -1,0 +1,282 @@
+@import '../../styles/config/variables';
+
+.footerSection {
+    &.sectionInnerSpace{
+        margin-bottom:3.125em;
+    }
+    .footerTop{
+        .container{
+            .footerTopContent{
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                padding: 3.75em 4.375em 0 3.75em;
+                @include media(extra-large){
+                    padding: 3.5em 4em 0 3.5em;
+                }
+                @include media(medium){
+                    padding: 3.3em 3em 0 3.3em;
+                }
+                @include media(small){
+                    padding: 3em 2.5em 0 3em;
+                    grid-row-gap: 0;
+                }
+                @include media(very-small){
+                    padding: 2.5em 2em 0;
+                }
+                
+                &.gridBox {
+                    grid-column-gap: 5em;
+                    @include media(extra-large){
+                        grid-column-gap: 4em;
+                    }
+                    @include media(large){
+                        grid-column-gap: 3em;
+                        grid-template-columns: 1fr;
+                    }
+                    justify-content: space-between;
+                    .leftSide {
+                        padding-bottom: 4.375em;
+                        @include media(large){
+                           padding-bottom: 0;
+                        }
+                        h2 {
+                            padding: 0 0 0.5em;
+                            font-size: $font-size-48;
+                            max-width:80%;
+                            width:100%;
+                    
+                            @include media(extra-large){
+                                max-width:90%;
+                            }
+                            @include media(large){
+                                max-width:100%;
+                            }
+                             @include media(medium){
+                                font-size: $font-size-45;
+                             }
+                             @include media(small){
+                                font-size: $font-size-40;
+                             }
+             
+                        }
+                        h2,
+                        h5 {
+                            color: $white-color;
+                        }
+                        h5 {
+                            font-weight: $font-weight-600;
+                            padding: 0 0 1.7em;
+                        }
+              
+                    }
+                    .rightSide {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        margin: 0 0 0 auto;
+                        @include media(large){
+                            margin: 0;
+                        }
+                        .footerNav {
+                            @include media(large){
+                                margin: 3em 0 4em;
+                            }
+                            @include media(medium){
+                                margin: 2em 0 4em;
+                            }
+                            @include media(small){
+                                margin: 3.5em 0 4em;
+                            }
+                            &.gridBox{
+                                // ================== //
+                                grid-template-columns: 1fr;
+                                // ================== //
+                                grid-column-gap: 6em;
+                                @include media(extra-large){
+                                    grid-column-gap: 5em;
+                                }
+                                @include media(large){
+                                    grid-column-gap: 4em;
+                                }
+                                @include media(medium){
+                                    grid-column-gap: 3em;
+                                }
+                   
+
+                                
+                                @include media(very-small){
+                                    grid-template-columns: 1fr;
+                                 }
+                                ul {
+                                    // =============== //
+                                    display: grid; 
+                                    grid-auto-flow: column; 
+                                    grid-template-rows: repeat(4,1fr);
+                                    // =============== //
+                                    li {
+                                       a{
+                                            font-size: $font-size-16;
+                                            font-weight: $font-weight-700;
+                                            color: $white-color;
+                                            &:hover{
+                                                color: $blue-color;
+                                            }
+                                       }
+                                        &:not(:last-child) {
+                                            padding-bottom: 1.3em;
+                                        }
+                                    }
+                                    &.sideNav {
+                                        display: none;
+                                        &:nth-child(3){
+                                            @include media(very-small){
+                                                margin: 1em 0 0;
+                                            }
+                                        }
+                                        &:nth-child(2){
+                                            @include media(very-small){
+                                                margin: 1em 0 0;
+                                            }
+                                        }
+                                      
+                                        h6{
+                                            color:$white-color;
+                                            font-size: $font-size-16;
+                                            font-weight: $font-weight-700;
+                                            padding-bottom: 1.3em;
+                                        }
+                                        li {
+                                            a{
+                                                font-weight: $font-weight-500;
+                                           }
+                                        }
+                                    }
+                                }
+                            }          
+                        }
+                        .footerPersons {
+                            position: relative;
+                            max-width: 20em;
+                            margin-left: auto;
+                            @include media(large){
+                                max-width: 18em;
+                            }
+                            @include media(medium){
+                                max-width: 16em;
+                            }
+                            @include media(small){
+                                margin: 0 auto;
+                            }
+                            img {
+                                
+                                height: auto;
+                                max-width: 20em;
+                                width: 100%;
+                               
+                                &:last-child{
+                                    position:absolute;
+                                    right:0;
+                                    top:0;
+                                    bottom:0;
+                                    z-index: -1;
+                                }
+                            }
+                            &:hover{
+                                img{
+                                    &:last-child{
+                                        z-index: 1;                                        }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footerBottom{
+        margin: -1em 0 0;
+        .container{
+            .footerBottomContent{
+                h6{
+                    font-weight: $font-weight-500;
+                    font-size: $font-size-16;
+                    line-height: $line-height-medium;
+                    color: $black-color;
+                    @include media(large){
+                        font-size: $font-size-15;
+                    }
+                    @include media(medium){
+                        font-size: $font-size-14;
+                    }
+                    @include media(small){
+                        font-size: $font-size-13;
+                        text-align: center;
+                    }
+                }
+                &.gridBox{
+                    padding: 1.750em 4.375em;
+                    background-color: $bg-revell;
+                    align-items: center;
+                    border-radius: $border-radius-regular;
+                    border-top-left-radius: 0;
+                    border-top-right-radius: 0;
+                    @include media(large){
+                        padding: 1.7em 4em;
+                    }
+                    @include media(medium){
+                        padding: 1.5em 3em;
+                    }
+                    @include media(small){
+                        display: flex;
+                        flex-direction: column-reverse;
+                        grid-row-gap:1em;
+                        padding: 1.5em 2.5em;
+                    }
+                    @include media(very-small){
+                        padding: 1.5em 2em;
+                    }
+                   ul{
+                    &.socialWrap{
+                        display:flex;
+                        align-items: center;
+                        justify-content:flex-end;
+                        li{
+                            + li {
+                                padding-left: 0.625em;
+                            }
+                            a{
+                                display: inline-block;
+                                position:relative;
+                                img{
+                                    max-width: 2.188em;
+                                    width: 100%;
+                                    height: 2.188em;
+                                    object-fit: contain;
+                                    transition: all 0.2s ease-in-out;
+                                    &:last-child{
+                                        position:absolute;
+                                        left:0;
+                                        right:0;
+                                        top:0;
+                                        bottom:0;
+                                        z-index: -1;
+                                    }
+                                }
+                            }
+                            &:hover{
+                                a{
+                                    img{
+                                        &:last-child{
+                                            z-index: 1;                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                   }
+                }
+            }
+        }
+        
+    }
+}

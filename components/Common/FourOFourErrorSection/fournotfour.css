@@ -1,0 +1,102 @@
+.fnfPageSection .container .fnfPageContent {
+  text-align: center;
+  padding: 2em 0 4em;
+}
+@media (max-width: 999px) {
+  .fnfPageSection .container .fnfPageContent {
+    padding: 1em 0 3em;
+  }
+}
+@media (max-width: 767px) {
+  .fnfPageSection .container .fnfPageContent {
+    padding: 0 0 2em;
+  }
+}
+@media (max-width: 640px) {
+  .fnfPageSection .container .fnfPageContent {
+    padding: 0 0 1em;
+  }
+}
+@media (max-width: 480px) {
+  .fnfPageSection .container .fnfPageContent {
+    padding: 0 0 0;
+  }
+}
+.fnfPageSection .container .fnfPageContent .errorImage {
+  text-align: center;
+  margin: 0 0 2em;
+}
+.fnfPageSection .container .fnfPageContent .errorImage img {
+  height: 15.25em;
+  max-width: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+@media (max-width: 999px) {
+  .fnfPageSection .container .fnfPageContent .errorImage img {
+    height: 15em;
+  }
+}
+@media (max-width: 767px) {
+  .fnfPageSection .container .fnfPageContent .errorImage img {
+    height: 14em;
+  }
+}
+.fnfPageSection .container .fnfPageContent h1 {
+  font-weight: 600;
+  font-size: 2em;
+  letter-spacing: 4px;
+  color: #000000;
+  padding: 0 0 0.3em;
+}
+@media (max-width: 767px) {
+  .fnfPageSection .container .fnfPageContent h1 {
+    font-size: 1.875em;
+  }
+}
+@media (max-width: 480px) {
+  .fnfPageSection .container .fnfPageContent h1 {
+    font-size: 1.75em;
+  }
+}
+.fnfPageSection .container .fnfPageContent p {
+  font-weight: 400;
+  font-size: 1em;
+  color: #000000;
+  max-width: 30%;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 0;
+}
+@media (max-width: 1440px) {
+  .fnfPageSection .container .fnfPageContent p {
+    max-width: 40%;
+  }
+}
+@media (max-width: 1280px) {
+  .fnfPageSection .container .fnfPageContent p {
+    max-width: 50%;
+  }
+}
+@media (max-width: 999px) {
+  .fnfPageSection .container .fnfPageContent p {
+    max-width: 60%;
+  }
+}
+@media (max-width: 767px) {
+  .fnfPageSection .container .fnfPageContent p {
+    max-width: 70%;
+  }
+}
+@media (max-width: 640px) {
+  .fnfPageSection .container .fnfPageContent p {
+    max-width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  .fnfPageSection .container .fnfPageContent p {
+    max-width: 90%;
+  }
+}
+
+/*# sourceMappingURL=fournotfour.css.map */

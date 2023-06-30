@@ -1,0 +1,79 @@
+@import '../../styles/config/variables';
+
+.hiringModalSection{
+    .container{
+        .hiringModalContent{
+            .hiringModalTabs{
+                display: flex;
+                justify-content:center;
+                margin: 3.125em 0 4em;
+                white-space: nowrap;
+                overflow: auto;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+                @include media(very-small){
+                    justify-content: flex-start;
+                    padding:0 1em;
+                }
+                .hiringTab{
+                    font-weight: $font-weight-600;
+                    font-size: $font-size-22;
+                    color: $white-color;
+                    cursor:pointer; 
+                    padding-bottom: 0.5em;
+                    @include media(medium){
+                        font-size: $font-size-20;
+                    }
+                    @include media(small){
+                        font-size: $font-size-19;
+                    }
+                    &.active{
+                        border-bottom: 4px solid $blue-color;
+                    }
+                     + .hiringTab{
+                        margin-left: 2em;
+                     }
+                }
+            }
+            .hiringModalDetails{
+                .tabContentBox{
+                    align-items: center;
+                    grid-column-gap: 3em;
+                    @include media(small){
+                        grid-template-columns: 1fr;
+                    }
+                    .leftSide{
+                 
+                        @include media(small){
+                            text-align:center;
+                        }
+                         img{
+                            max-width: 25em;
+                            width: 100%;
+                        }
+                    }
+                    .rightSide{
+                        max-width: 70%;
+                        width: 100%;
+                        @include media(medium-large){
+                            max-width: 80%;
+                        }
+                        @include media(medium){
+                            max-width: 90%;
+                        }
+                        @include media(small){
+                            max-width: 100%;
+                        }
+                        p{
+                            color:$gray05-color;
+                        }
+                        h5{
+                         padding-bottom: 1em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+@import '../../styles/config/variables';
+
+.richTextImageBtnSection{
+    .container{
+        .richTextImageBtnContent{
+            &.gridBox{
+                @include media(medium){
+                    grid-template-columns: 1fr;
+                    grid-row-gap:4em;
+                }
+                .rightSide{
+                    text-align: center;
+                    @include media(medium){
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
+                h4{
+                    padding-bottom: 0.5em;
+                }
+                p{
+                    strong{
+                        line-height: 1.3;
+                    }
+                }
+                ul{
+                    list-style-type: disc;
+                    list-style-position: inside;
+                    li{
+                        + li{
+                            padding-top: 1em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

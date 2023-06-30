@@ -1,0 +1,10 @@
+fragment AuthorDetails on AuthorDetails {
+  _id
+  _type
+  _key
+  authorTitle: title
+  authorPosition: subtitle
+  authorImage: image {
+    ...Image
+  }
+}

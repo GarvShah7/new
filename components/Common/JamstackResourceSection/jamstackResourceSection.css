@@ -1,0 +1,123 @@
+.jamStackResourceSection {
+  margin: 3.125em 0;
+}
+.jamStackResourceSection .jamStackResourceContent {
+  background-color: #000000;
+  border-radius: 10px;
+  padding: 3.125em 2.5em;
+}
+@media (max-width: 1280px) {
+  .jamStackResourceSection .jamStackResourceContent {
+    padding: 3em 2.3em;
+  }
+}
+@media (max-width: 999px) {
+  .jamStackResourceSection .jamStackResourceContent {
+    padding: 2.5em 2em;
+  }
+}
+@media (max-width: 767px) {
+  .jamStackResourceSection .jamStackResourceContent {
+    padding: 2.3em 1.7em;
+  }
+}
+.jamStackResourceSection .jamStackResourceContent h6 {
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 1;
+  letter-spacing: 0.025em;
+  color: #FFFFFF;
+  text-align: center;
+}
+.jamStackResourceSection .jamStackResourceContent .jrGrid {
+  padding: 3.125em 0 4em;
+}
+@media (max-width: 1440px) {
+  .jamStackResourceSection .jamStackResourceContent .jrGrid {
+    padding: 3em 0 3.5em;
+  }
+}
+@media (max-width: 1280px) {
+  .jamStackResourceSection .jamStackResourceContent .jrGrid {
+    padding: 3em 0 3em;
+  }
+}
+@media (max-width: 999px) {
+  .jamStackResourceSection .jamStackResourceContent .jrGrid {
+    padding: 2.3em 0 2.7em;
+    grid-template-columns: 1fr;
+    grid-row-gap: 3em;
+  }
+}
+@media (max-width: 767px) {
+  .jamStackResourceSection .jamStackResourceContent .jrGrid {
+    padding: 2em 0 2.5em;
+  }
+}
+.jamStackResourceSection .jamStackResourceContent .jrGrid .jrBox .jrIcon {
+  text-align: center;
+  padding-bottom: 2.5em;
+}
+.jamStackResourceSection .jamStackResourceContent .jrGrid .jrBox .jrIcon img {
+  max-width: 5.75em;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+@media (max-width: 1280px) {
+  .jamStackResourceSection .jamStackResourceContent .jrGrid .jrBox .jrIcon img {
+    max-width: 5.5em;
+  }
+}
+@media (max-width: 999px) {
+  .jamStackResourceSection .jamStackResourceContent .jrGrid .jrBox .jrIcon img {
+    max-width: 5.3em;
+  }
+}
+@media (max-width: 767px) {
+  .jamStackResourceSection .jamStackResourceContent .jrGrid .jrBox .jrIcon img {
+    max-width: 5em;
+  }
+}
+.jamStackResourceSection .jamStackResourceContent .jrGrid .jrBox h4 {
+  font-weight: 700;
+  font-size: 1.375em;
+  line-height: 1;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 0.7em;
+}
+@media (max-width: 999px) {
+  .jamStackResourceSection .jamStackResourceContent .jrGrid .jrBox h4 {
+    font-size: 1.25em;
+  }
+}
+@media (max-width: 767px) {
+  .jamStackResourceSection .jamStackResourceContent .jrGrid .jrBox h4 {
+    font-size: 1.188em;
+  }
+}
+@media (max-width: 640px) {
+  .jamStackResourceSection .jamStackResourceContent .jrGrid .jrBox h4 {
+    font-size: 1.125em;
+  }
+}
+.jamStackResourceSection .jamStackResourceContent .jrGrid .jrBox p {
+  font-weight: 400;
+  font-size: 0.875em;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+  padding-bottom: 0;
+}
+.jamStackResourceSection .jamStackResourceContent .consultButton {
+  text-align: center;
+}
+.jamStackResourceSection .jamStackResourceContent .consultButton a {
+  display: inline-block;
+  font-size: 0.75em;
+}
+
+/*# sourceMappingURL=jamstackResourceSection.css.map */

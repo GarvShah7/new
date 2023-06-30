@@ -1,0 +1,13 @@
+fragment HiringModelSection  on HiringModelSection{
+  _id
+  _type
+  _key
+  titleSubtitle{
+ ...TitleSubtitle
+  }
+  hiringModelDetails{
+   ...HiringModelDetails
+  }
+  sectionTheme
+
+}

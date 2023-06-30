@@ -1,0 +1,94 @@
+.richTextSection .container .richTextContent.bg-black {
+  border-radius: 10px;
+  padding: 6.25em 9.063em 6.25em 5.938em;
+}
+@media (max-width: 1440px) {
+  .richTextSection .container .richTextContent.bg-black {
+    padding: 6em 9em 6em 5.9em;
+  }
+}
+@media (max-width: 1280px) {
+  .richTextSection .container .richTextContent.bg-black {
+    padding: 5.5em 8em 5em 5.5em;
+  }
+}
+@media (max-width: 999px) {
+  .richTextSection .container .richTextContent.bg-black {
+    padding: 5em 7em 4.5em 5em;
+  }
+}
+@media (max-width: 767px) {
+  .richTextSection .container .richTextContent.bg-black {
+    padding: 4em 6em 4em 4em;
+  }
+}
+@media (max-width: 640px) {
+  .richTextSection .container .richTextContent.bg-black {
+    padding: 3.5em 5em 3.5em 3em;
+  }
+}
+@media (max-width: 480px) {
+  .richTextSection .container .richTextContent.bg-black {
+    padding: 3em 4em 3em 2.5em;
+  }
+}
+.richTextSection .container .richTextContent.bg-black h4 {
+  padding: 0 0 0.7em;
+}
+.richTextSection .container .richTextContent.bg-black p {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+}
+.richTextSection .container .richTextContent.bg-black p:last-child {
+  padding: 0;
+}
+.richTextSection .container .richTextContent.bg-white h6 {
+  font-weight: 500;
+  line-height: 1.7;
+}
+@media (max-width: 999px) {
+  .richTextSection .container .richTextContent.bg-white h6 {
+    font-size: 1.25em;
+  }
+}
+@media (max-width: 767px) {
+  .richTextSection .container .richTextContent.bg-white h6 {
+    font-size: 1.188em;
+  }
+}
+@media (max-width: 767px) {
+  .richTextSection .container .richTextContent.bg-white h6 {
+    font-size: 1.188em;
+  }
+}
+.richTextSection .container .richTextContent h4 {
+  padding: 0 0 0.7em;
+}
+.richTextSection .container .richTextContent ul li {
+  list-style: none;
+  padding: 0.5em 0 0.5em 1.875em;
+  position: relative;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.7;
+  letter-spacing: 0.025em;
+  color: #000000;
+}
+.richTextSection .container .richTextContent ul li strong {
+  display: block;
+}
+.richTextSection .container .richTextContent ul li::before {
+  content: "";
+  background-image: url("/assets/images/check.svg");
+  background-position: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  height: 1.25em;
+  width: 1.125em;
+  left: 0;
+  position: absolute;
+  top: 14px;
+}
+
+/*# sourceMappingURL=richtext.css.map */

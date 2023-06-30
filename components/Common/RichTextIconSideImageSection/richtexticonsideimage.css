@@ -1,0 +1,108 @@
+.iconSidebySideSection.right .container .iconSidebySideContent .iconSidebySideGrid .rightSide .richIconWrap {
+  justify-content: center;
+}
+.iconSidebySideSection .container .iconSidebySideContent .iconSidebySideGrid {
+  grid-column-gap: 8em;
+}
+@media (max-width: 1440px) {
+  .iconSidebySideSection .container .iconSidebySideContent .iconSidebySideGrid {
+    grid-column-gap: 7em;
+  }
+}
+@media (max-width: 1280px) {
+  .iconSidebySideSection .container .iconSidebySideContent .iconSidebySideGrid {
+    grid-column-gap: 6em;
+  }
+}
+@media (max-width: 999px) {
+  .iconSidebySideSection .container .iconSidebySideContent .iconSidebySideGrid {
+    grid-column-gap: 5em;
+    grid-row-gap: 4em;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 999px) {
+  .iconSidebySideSection .container .iconSidebySideContent .iconSidebySideGrid .leftSide {
+    text-align: center;
+  }
+}
+.iconSidebySideSection .container .iconSidebySideContent .iconSidebySideGrid .leftSide ul li {
+  text-align: left;
+}
+.iconSidebySideSection .container .iconSidebySideContent .iconSidebySideGrid .rightSide {
+  text-align: center;
+}
+.iconSidebySideSection .container .iconSidebySideContent .richIconWrap {
+  display: flex;
+  margin: 2.7em 0 0;
+}
+.iconSidebySideSection .container .iconSidebySideContent .richIconWrap li + li {
+  margin-left: 1.5em;
+}
+@media (max-width: 999px) {
+  .iconSidebySideSection .container .iconSidebySideContent .richIconWrap {
+    justify-content: center;
+  }
+}
+.iconSidebySideSection .container .iconSidebySideContent .richIconWrap .richIcon {
+  text-align: left;
+  margin: 0 0 0.8em;
+}
+@media (max-width: 999px) {
+  .iconSidebySideSection .container .iconSidebySideContent .richIconWrap .richIcon {
+    text-align: center;
+  }
+}
+.iconSidebySideSection .container .iconSidebySideContent .richIconWrap .richIcon img {
+  max-width: 5em;
+  width: 100%;
+  height: 5em;
+}
+@media (max-width: 1280px) {
+  .iconSidebySideSection .container .iconSidebySideContent .richIconWrap .richIcon img {
+    max-width: 4em;
+    height: 4em;
+  }
+}
+.iconSidebySideSection .container .iconSidebySideContent .richIconWrap h6 {
+  font-size: 1em;
+  font-weight: 500;
+  text-align: left;
+}
+@media (max-width: 640px) {
+  .iconSidebySideSection .container .iconSidebySideContent .richIconWrap h6 {
+    text-align: center;
+    font-size: 0.875em;
+  }
+}
+@media (max-width: 640px) {
+  .iconSidebySideSection .container .iconSidebySideContent .richIconWrap li + li {
+    padding-left: 0;
+  }
+}
+.iconSidebySideSection .container .iconSidebySideContent .leftSide .richTextSection {
+  margin: 0;
+}
+.iconSidebySideSection .container .iconSidebySideContent .leftSide .richTextSection .container {
+  max-width: 100%;
+  width: 100%;
+}
+.iconSidebySideSection .container .iconSidebySideContent .leftSide h4 {
+  padding-bottom: 0.5em;
+}
+@media (max-width: 999px) {
+  .iconSidebySideSection .container .iconSidebySideContent .leftSide h4 {
+    text-align: center;
+  }
+}
+@media (max-width: 999px) {
+  .iconSidebySideSection .container .iconSidebySideContent .leftSide p {
+    text-align: center;
+  }
+}
+.iconSidebySideSection .container .iconSidebySideContent .rightSide img {
+  max-width: 35em;
+  width: 100%;
+}
+
+/*# sourceMappingURL=richtexticonsideimage.css.map */

@@ -1,0 +1,18 @@
+query getAllPage($filter: AllPageFilter) {
+  allAllPage(where: $filter) {
+    ...AllPage
+  }
+  allServiceType {
+    ...ServiceType
+  }
+  allHireDedicatedPageTypes {
+    ...HireDedicatedPageTypes
+  }
+}
+query getAllPagePath($filter: AllPageFilter) {
+  GetAllPagePath: allAllPage(where: $filter) {
+    slug {
+      current
+    }
+  }
+}

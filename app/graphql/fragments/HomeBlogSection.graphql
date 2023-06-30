@@ -1,0 +1,14 @@
+fragment HomeBlogSection on HomeBlogSection {
+  _key
+  _type
+  title
+  mainTitle
+  subtitle
+  titleSubtitle {
+    ...TitleSubtitle
+  }
+  button {
+    ...Button
+  }
+  sectionTheme
+}

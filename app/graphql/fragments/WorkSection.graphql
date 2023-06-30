@@ -1,0 +1,11 @@
+fragment WorkSection on WorkSection {
+  _key
+  _type
+  titleSubtitle {
+    ...TitleSubtitle
+  }
+  sectionTheme
+  workImage: image {
+    ...ImageBackground
+  }
+}

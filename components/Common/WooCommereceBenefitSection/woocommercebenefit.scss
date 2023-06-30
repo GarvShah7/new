@@ -1,0 +1,63 @@
+@import '../../styles/config/variables';
+
+.wooComBenfSection{
+    .container{
+        .wooComBenContent{
+            .wooComBenGrid{
+                grid-column-gap:9.375em;
+                align-items:center;
+                max-width: 70%;
+                width: 100%;
+                margin: 0 auto;
+                ul{
+                    li{
+                        h6{
+                            font-weight: $font-weight-600;
+                            padding-bottom: 0.5em;
+                            font-size: $font-size-20;
+                        }
+                        + li {
+                            margin:1em 0 0;
+                        }
+                        p{
+                            text-align:left;
+                            br{
+                                display:none;
+                            }
+                        }
+                    }
+                }
+                @include media(extra-large){
+                    max-width: 75%;
+                    grid-column-gap:9em;
+                }
+                @include media(large){
+                    max-width: 80%;
+                    grid-column-gap:8em;
+                }
+                @include media(medium){
+                    max-width: 85%;
+                    grid-column-gap:7em;
+                }
+                @include media(small){
+                    max-width: 90%;
+                    grid-column-gap:6em;
+                    grid-row-gap:2em;
+                    grid-template-columns: 1fr;
+                    ul{
+                        li{
+                            + li {
+                                margin:1em 0 0;
+                            }
+                            p{
+                                br{
+                                    display:none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

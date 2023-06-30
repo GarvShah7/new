@@ -1,0 +1,148 @@
+@import '../../../styles/config/variables';
+
+ul{
+    &.contactList{
+        > li{
+            + li{
+                margin-top: 3.125em;
+            }
+            > ul {
+                > li{
+                    display:grid;
+                    grid-template-columns: 1fr 4fr;
+                    padding: 0 0 1em;
+                    @include media(medium-small){
+                        grid-template-columns: 1fr 3fr; 
+                    }
+                    @include media(very-small){
+                        grid-template-columns: 1fr 2fr; 
+                    }
+                    strong,code{
+                        font-weight: $font-weight-400;
+                        font-size: $font-size-16;
+                        line-height: $line-height-normal;
+                        color: $black-color;
+                    }
+                   
+                    code{
+                        color: $black-opc-60;
+                        font-family:inherit;
+                    }
+                }
+            }
+            span{
+                display:block;
+                &.email{
+                    font-weight: $font-weight-400;
+                    font-size: $font-size-22;
+                    letter-spacing: 0.025em;
+                    color: $black-color;
+                    padding-bottom: 0.3em;
+                    border-bottom: 1px solid $black-opc-20;
+                    display:inline-block;
+                    margin-bottom: 1em;
+                    @include media(medium){
+                        font-size: $font-size-20;
+                    }
+                    @include media(small){
+                        font-size: $font-size-18;
+                    }
+                }
+                &.phone,&.label{
+                    font-weight:$font-weight-500;
+                    font-size: $font-size-18;
+                    letter-spacing: 0.025em;
+                    color: $black-color;
+                }
+                &.phone{
+                    @include media(medium){
+                        font-size: $font-size-17;
+                    }
+                    @include media(small){
+                        font-size: $font-size-16;
+                    }
+                }
+                &.label{
+                    padding-bottom: 1.3em;
+                }
+                &.address{
+                    max-width: 50%;
+                    width: 100%;
+                   @include media(extra-large){
+                    max-width: 60%;
+                   }
+                   @include media(large){
+                    max-width:50%;
+                   }
+                   @include media(large-medium){
+                    max-width:30%;
+                   }
+                   @include media(medium){
+                    max-width:40%;
+                   }
+                   @include media(small){
+                    max-width:50%;
+                   }
+                   @include media(medium-small){
+                    max-width:60%;
+                   }
+                   @include media(very-small){
+                    max-width:80%;
+                   }
+                  p{
+                    font-weight: $font-weight-400;
+                    font-size:$font-size-16;
+                    line-height: $line-height-large;
+                    color: $black-color;
+                  }
+                }
+            }
+            a{
+                &.button{
+                    background-color:transparent;
+                    padding: 0;
+                    font-weight: $font-weight-400;
+                    font-size: $font-size-14;
+                    line-height: $line-height-normal;
+                    color: $black-opc-50;
+                    border-bottom: 2px solid $blue-color;
+                    border-radius:0;
+                    padding-bottom:0.5em;
+                }
+            }
+        }
+    }
+}
+
+.contactInfoSection {
+    &.sectionInnerSpace{
+        @include media(large-medium){
+            margin-top: 3em;
+        }
+    }
+    .container{
+        .contactInfoContent{
+            &.gridBox{
+                @include media(large-medium){
+                    grid-template-columns: 1fr;
+                }
+                .rightSide{
+                    @include media(large-medium){
+                        margin: 10em 0 0;
+                    }
+                    .mvGrid{
+                       @include media(large){
+                            grid-template-columns: 20em 20em;
+                       }
+                       @include media(small){
+                            grid-template-columns: 20em;
+                       }   
+                       @include media(very-small){
+                            grid-template-columns: auto;
+                       } 
+                    }
+                }
+            }
+        }
+    }
+}

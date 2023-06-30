@@ -1,0 +1,38 @@
+fragment BlogInner on BlogInner {
+  _id
+  _type
+  _key
+  title
+  header {
+    ...Header
+  }
+  publishDate
+  featuredImage: image {
+    ...Image
+  }
+  button {
+    ...Button
+  }
+  content: description {
+    ...RichText
+  }
+  reviewsSection {
+    ...ReviewsSection
+  }
+  category {
+    ...Category
+  }
+  authorDetails {
+    ...AuthorDetails
+  }
+  sideContentCard
+  footer {
+    ...Footer
+  }
+  slug {
+    ...Slug
+  }
+  seo {
+    ...Seo
+  }
+}

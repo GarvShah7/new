@@ -1,0 +1,11 @@
+fragment Pricing on Pricing {
+  _key
+  _type
+  plans {
+    ...Plan
+  }
+  planNavigation:plan_navigation
+  planDiscussButton: button {
+    ...Button
+  }
+}

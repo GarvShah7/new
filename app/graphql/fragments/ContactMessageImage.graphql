@@ -1,0 +1,10 @@
+fragment ContactMessageImage on ContactMessageImage {
+  _key
+  _type
+  contactMessageMainImage: image {
+    ...Image
+  }
+  contactMessageImageTitleSubtitleArray {
+    ...ImagetitleSubtitleArray
+  }
+}

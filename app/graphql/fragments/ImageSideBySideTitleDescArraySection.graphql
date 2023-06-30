@@ -1,0 +1,14 @@
+fragment ImageSideBySideTitleDescArraySection on ImageSideBySideTitleDescArraySection {
+  _key
+  _type
+  titleSubtitle {
+    ...TitleSubtitle
+  }
+  image {
+    ...Image
+  }
+  titleDescriptionArray {
+    ...TitleDescription
+  }
+  sectionTheme
+}

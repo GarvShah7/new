@@ -1,0 +1,17 @@
+fragment FAQSection on FAQSection {
+  _id
+  _type
+  _key
+  titleSubtitle {
+    ...TitleSubtitle
+  }
+  sectionTitle
+  sideContentWithQueAns {
+    ...SideContentWithQueAns
+  }
+  titleButton {
+    ...TitleButton
+  }
+  titleButtonWithBG
+  sectionTheme
+}

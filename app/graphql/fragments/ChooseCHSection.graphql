@@ -1,0 +1,12 @@
+fragment ChooseCHSection on ChooseCHSection {
+  _id
+  _type
+  _key
+  titleSubtitle {
+    ...TitleSubtitle
+  }
+  appIconImage {
+    ...IconTitleArray
+  }
+  sectionTheme
+}

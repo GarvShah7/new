@@ -1,0 +1,38 @@
+query getBlogInnerPage(
+  $filter: BlogInnerFilter
+  $limitFilter: Int
+  $blogFilter: BlogInnerFilter
+  $sortFilter: [BlogInnerSorting!]
+  $allPageFilter: AllPageFilter
+  $blogSideContent: BlogInnerSideContentFilter
+) {
+  allBlogInner(where: $filter) {
+    ...BlogInner
+  }
+  limitedBlogs: allBlogInner(
+    where: $blogFilter
+    sort: $sortFilter
+    limit: $limitFilter
+  ) {
+    ...BlogInner
+  }
+  allBlogInnerSideContent(where: $blogSideContent) {
+    ...BlogInnerSideContent
+  }
+  allServiceType {
+    ...ServiceType
+  }
+  allHireDedicatedPageTypes {
+    ...HireDedicatedPageTypes
+  }
+  allAllPage(where: $allPageFilter) {
+    ...HomeNavServices
+  }
+}
+query getAllBlogInnerPagePath($filter: BlogInnerFilter) {
+  GetAllBlogInnerPagePath: allBlogInner(where: $filter) {
+    slug {
+      current
+    }
+  }
+}

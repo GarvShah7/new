@@ -1,0 +1,56 @@
+.borderTitleSection .container .borderTitleContent .borderTitleGrid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .borderTitleSection .container .borderTitleContent .borderTitleGrid {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    white-space: nowrap;
+    overflow: auto;
+  }
+  .borderTitleSection .container .borderTitleContent .borderTitleGrid::-webkit-scrollbar {
+    width: 0 !important;
+  }
+}
+@keyframes dash {
+  to {
+    background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
+  }
+}
+.borderTitleSection .container .borderTitleContent .borderTitleGrid .borderTitleBox {
+  padding: 1.25em 3.125em;
+  border-radius: 10px;
+  margin: 0 0 2.5em;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 50%, transparent 50%), linear-gradient(90deg, rgba(0, 0, 0, 0.4) 50%, transparent 50%), linear-gradient(0deg, rgba(0, 0, 0, 0.4) 50%, transparent 50%), linear-gradient(0deg, rgba(0, 0, 0, 0.4) 50%, transparent 50%);
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 16px 3px, 16px 3px, 3px 16px, 3px 16px;
+  background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
+  animation: dash 10s linear infinite;
+  margin: 1.25em;
+}
+@media (max-width: 999px) {
+  .borderTitleSection .container .borderTitleContent .borderTitleGrid .borderTitleBox {
+    padding: 1.25em 2.125em;
+  }
+}
+.borderTitleSection .container .borderTitleContent .borderTitleGrid .borderTitleBox h6 {
+  font-weight: 500;
+  font-size: 1.375em;
+  letter-spacing: 0.025em;
+  color: #000000;
+}
+@media (max-width: 999px) {
+  .borderTitleSection .container .borderTitleContent .borderTitleGrid .borderTitleBox h6 {
+    font-size: 1.25em;
+  }
+}
+@media (max-width: 767px) {
+  .borderTitleSection .container .borderTitleContent .borderTitleGrid .borderTitleBox h6 {
+    font-size: 1.188em;
+  }
+}
+
+/*# sourceMappingURL=titlesubtitletitlearray.css.map */

@@ -1,0 +1,9 @@
+fragment ServicesDetails on ServicesDetails {
+  _key
+  _type
+  heading
+  title
+  description {
+    ...RichText
+  }
+}

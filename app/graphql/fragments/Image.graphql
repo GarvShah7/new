@@ -1,0 +1,13 @@
+fragment Image on CustomImage {
+  _key
+  _type
+  asset {
+    ...SanityImageAsset
+  }
+  caption
+  altText
+  link {
+    ...Link
+  }
+}
+  

@@ -1,0 +1,8 @@
+fragment TitleHoverImageSection on TitleHoverImageSection {
+  _key
+  _type
+  titleSubtitle {
+    ...TitleSubtitle
+  }
+  sectionTheme
+}

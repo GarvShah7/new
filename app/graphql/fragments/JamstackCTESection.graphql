@@ -1,0 +1,17 @@
+fragment JamstackCTESection on JamstackCTESection {
+  _id
+  _type
+  _key
+  title
+  jamStackserviceList {
+    ...JamstackCTEServiceList
+  }
+  button {
+    ...Button
+  }
+  sectionTheme
+  description
+  image {
+    ...Image
+  }
+}

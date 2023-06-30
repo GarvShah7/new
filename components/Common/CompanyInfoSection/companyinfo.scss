@@ -1,0 +1,144 @@
+@import '../../styles/config/variables';
+
+.companyInfosection{
+    .container{
+        .companyInfoContent{
+            .countWrap{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-column-gap: 2em;
+                align-items: center;
+                max-width:60%;
+                width:100%;
+                margin:0 auto;
+                @include media(wide){
+                    max-width:70%;
+                }
+                @include media(extra-large){
+                    max-width:80%;
+                }
+                @include media(large){
+                    max-width:90%;
+                    grid-column-gap: 1.7em;
+                }
+                @include media(medium){
+                    max-width:100%;
+                    grid-column-gap: 1.5em;
+                    grid-template-columns: 1fr 1fr;
+                    grid-row-gap:1.5em;
+                }
+                h4{
+                    font-weight:$font-weight-600;
+                    font-size: $font-size-50;
+                    color: $white-color;
+                    text-align:center;
+                    &.plusIcon{
+                        &:after{
+                            content: "+";
+                            display: inline-block;
+                        }
+                    }
+                    @include media(large){
+                        font-size: $font-size-48;
+                    }
+                    @include media(medium){
+                        font-size: $font-size-45;
+                    }
+                    @include media(small){
+                        font-size:  $font-size-42;
+                    }
+                    @include media(medium-small){
+                        font-size:  $font-size-40;
+                    }
+                }
+                h6{
+                    font-weight: $font-weight-500;
+                    font-size:$font-size-16;
+                    color:$white-color;
+                    text-align: center;
+                    @include media(medium){
+                        font-size:$font-size-15;
+                    }
+                    @include media(small){
+                        font-size:$font-size-14;
+                    }
+                }
+            }
+            .countImgGrid{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-column-gap:1em;
+                margin:3.125em 0 0;
+                @include media(medium){
+                    grid-template-columns: 1fr 1fr;
+                    grid-row-gap:1em;
+                }
+                @include media(medium-small){
+                    grid-template-columns: 1fr;
+                }
+                .countImgBox{
+                    img{
+                        border-radius: $border-radius-regular;
+                        max-width:100%;
+                        width:100%;
+                        height:15.250em;
+                        object-fit:cover;
+                        @include media(large){
+                            height:12em;
+                        }
+                         @include media(medium-small){
+                            height:16em;
+                        }
+                    }
+                }
+            }
+            .appIconWrap{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                grid-column-gap: 1em;
+                list-style-type: none;
+                max-width:70%;
+                width:100%;
+                margin: 3.125em auto 0;
+                @include media(extra-large){
+                    max-width:80%;
+                }
+                @include media(large){
+                    max-width:90%;
+                    white-space: nowrap;
+                    overflow: auto;
+                    &::-webkit-scrollbar { width: 0 !important }
+                }
+                @include media(medium){
+                    max-width:100%;
+                }
+                li{
+                    text-align:center;
+                    img{
+                        max-width:7.313em;
+                        width:100%;
+                        height:7.313em;
+                        object-fit:cover;
+                        margin:0 0 1em;
+                        @include media(wide){
+                            max-width:7em;
+                            height:7em;
+                        }
+                        @include media(extra-large){
+                            max-width:5em;
+                            height:5em;
+                        }
+                    }
+                    h6{
+                        font-weight: $font-weight-500;
+                        font-size: $font-size-16;
+                        color: $white-color;
+                        @include media(large){
+                            padding: 0 1em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+fragment HomeNavServices on AllPage {
+  _id
+  _type
+  _key
+  _createdAt
+  service_page
+  hire_dedicated_page
+  title
+  service_types {
+    ...ServiceType
+  }
+  hire_dedicated_page_types {
+    ...HireDedicatedPageTypes
+  }
+  logo {
+    ...Image
+  }
+
+  slug {
+    ...Slug
+  }
+}

@@ -1,0 +1,8 @@
+fragment TitleContent on TitleContent {
+  _key
+  _type
+  title
+  content {
+    ...RichText
+  }
+}

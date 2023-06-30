@@ -1,0 +1,10 @@
+fragment FourOFourErrorSection on FourOFourErrorSection {
+  _key
+  _type
+  image {
+    ...Image
+  }
+  errorTitle
+  errorDescription
+  sectionTheme
+}

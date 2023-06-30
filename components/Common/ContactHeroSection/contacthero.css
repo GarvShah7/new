@@ -1,0 +1,50 @@
+@media (max-width: 1280px) {
+  .contactBannerSection {
+    padding: 0 0 5em;
+  }
+}
+@media (max-width: 1100px) {
+  .contactBannerSection {
+    padding: 0;
+  }
+}
+.contactBannerSection .container .contactBannerContent {
+  padding-top: 2em;
+}
+.contactBannerSection .container .contactBannerContent h2 {
+  font-size: 9.375em;
+  text-transform: initial;
+  letter-spacing: 0.02em;
+  height: 1.3em;
+}
+@media (max-width: 999px) {
+  .contactBannerSection .container .contactBannerContent h2 {
+    font-size: 8.125em;
+  }
+}
+@media (max-width: 767px) {
+  .contactBannerSection .container .contactBannerContent h2 {
+    font-size: 6.25em;
+  }
+}
+@media (max-width: 640px) {
+  .contactBannerSection .container .contactBannerContent h2 {
+    font-size: 5em;
+  }
+}
+.contactBannerSection .container .contactBannerContent p {
+  padding-bottom: 0;
+  color: rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 767px) {
+  .contactBannerSection .container .contactBannerContent p br {
+    font-size: 1.063em;
+  }
+}
+@media (max-width: 640px) {
+  .contactBannerSection .container .contactBannerContent p br {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=contacthero.css.map */

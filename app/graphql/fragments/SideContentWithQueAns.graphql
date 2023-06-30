@@ -1,0 +1,11 @@
+fragment SideContentWithQueAns on SideContentWithQueAns {
+  _key
+  _type
+  title
+  image {
+    ...Image
+  }
+  questionAndAnswer {
+    ...QuestionAndAnswer
+  }
+}

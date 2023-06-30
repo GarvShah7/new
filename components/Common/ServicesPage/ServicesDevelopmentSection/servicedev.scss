@@ -1,0 +1,164 @@
+@import '../../../styles/config/variables';
+
+
+.serviceDevSection{
+    .container{
+        .middleText{
+            max-width: 80%;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            h4{
+                font-weight: $font-weight-400;
+            }
+        }
+        .serviceDevContent{
+            .serDevCard{
+                @include media(medium){
+                    + .serDevCard{
+                        margin: 3em 0 0;
+                    }
+                }
+                &.gridBox{
+                    @include media(medium){
+                        grid-template-columns: 1fr;
+                    }
+                    &:first-child{
+                        .rightSide{
+                            img{
+                                border-radius: 10px 10px 0 0;
+                                @include media(medium){
+                                    border-radius: 10px;
+                                }
+                            }
+                        }
+                    }
+                    &:last-child{
+                        .rightSide{
+                            img{
+                                border-radius: 0 0 10px 10px;
+                                @include media(medium){
+                                    border-radius: 10px;
+                                }
+                            }
+                        }
+                    }
+                    grid-column-gap: 10.938em;
+                    @include media(extra-large){
+                        grid-column-gap: 10.5em;
+                    }
+                    @include media(large){
+                        grid-column-gap: 10em;
+                    }
+                    @include media(medium){
+                        grid-column-gap: 8em;
+                    }
+                    
+                    .leftSide{
+                        h4{
+                            font-weight: $font-weight-500;
+                            font-size: $font-size-32;
+                            line-height: $line-height-medium;
+                            color: $black-color;
+                            padding: 0 0 0.625em;
+                            @include media(extra-large){
+                                font-size: $font-size-30;
+                            }
+                            @include media(large){
+                                font-size: $font-size-28;
+                            }
+                            @include media(medium){
+                                font-size: $font-size-24;
+                            }
+                            @include media(medium-small){
+                                font-size: $font-size-22;
+                            }
+                        }
+                        p{
+                            font-weight: $font-weight-400;
+                            font-size: $font-size-16;
+                            line-height: $line-height-large;
+                            color: $black-opc-70;
+                            text-align:justify;
+                            strong{
+                                font-weight: $font-weight-600;
+                            }
+                        }
+                        ul{
+                            display:grid;
+                            grid-template-columns: 1fr 1fr;
+                            grid-column-gap: 1em;
+                            margin: 3.125em 0 0;
+                            @include media(extra-large){
+                                margin: 3em 0 0;
+                            }
+                            @include media(large){
+                                margin: 2.5em 0 0;
+                            }
+                            @include media(medium){
+                                margin: 1em 0 0;
+                            }
+                            @include media(medium-small){
+                                grid-template-columns: 1fr;
+                            }
+                            li{
+                                font-weight: $font-weight-600;
+                                font-size: $font-size-16;
+                                line-height: $line-height-normal;
+                                text-align: justify;
+                                letter-spacing: 0.045em;
+                                color: $black-opc-70;
+                                margin: 0 0 1.5em;
+                                display: flex;
+                                align-items: center;
+
+                                @include media(small){
+                                    font-size: $font-size-15;
+                                }
+                                &:before{
+                                    content: "";
+                                    width: 6px;
+                                    height: 6px;
+                                    background-color: $black-color;
+                                    display: inline-block;
+                                    border-radius: 50%;
+                                    margin: 0 10px 0 0;
+                                }
+                            }
+                        }
+                    }
+                    .rightSide{
+                        img{
+                            max-width:100%;
+                            width:100%;
+                            height: 40em;
+                            object-fit: cover;
+                            @include media(extra-large){
+                                height: 36em;
+                            }
+                            @include media(large){
+                                height: 32em;
+                            }
+                            @include media(medium){
+                                height: 28em;
+                                object-fit: cover;
+                                border-radius: 10px;
+                            }
+                            @include media(small){
+                                height: 20em;
+                            }
+                            @include media(medium-small){
+                                height: 14em;
+                            }
+                            @include media(very-small){
+                                height: 12em;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

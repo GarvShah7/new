@@ -1,0 +1,9 @@
+fragment AppIconLinkItem on AppIconLinkItem {
+  _key
+  _type
+  appImage: image {
+    ...Image
+  }
+  title
+  appLink
+}

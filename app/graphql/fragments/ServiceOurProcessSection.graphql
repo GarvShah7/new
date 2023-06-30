@@ -1,0 +1,17 @@
+fragment ServiceOurProcessSection on ServiceOurProcessSection{
+  _key
+  _type
+  title
+  mainTitle
+  description{
+    ...RichText
+    
+  }
+  image{
+   ...Image
+  }
+  pointerImage{
+  ...Image
+  }
+  sectionTheme
+}

@@ -1,0 +1,19 @@
+.videoSection + section.sectionInnerSpace {
+  margin: 0;
+}
+.videoSection .container .videoContent {
+  position: relative;
+  z-index: -1;
+}
+.videoSection .container .videoContent img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.videoSection .container .videoContent video {
+  max-width: 100%;
+  width: 100%;
+}
+
+/*# sourceMappingURL=videosection.css.map */

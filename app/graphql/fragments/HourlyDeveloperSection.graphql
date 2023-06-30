@@ -1,0 +1,19 @@
+fragment HourlyDeveloperSection on HourlyDeveloperSection {
+  _key
+  _type
+  titleSubtitle {
+  ...TitleSubtitle
+  }
+  image {
+     ...Image
+  }
+  price_section {
+   ...TitleDescription
+  }
+  price
+  desc
+  button {
+  ...Button
+  }
+  sectionTheme
+}

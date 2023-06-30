@@ -1,0 +1,126 @@
+@import "../../../styles/config/variables";
+
+
+.commonSolutionSection{
+    .container{
+        .tabsWrap{
+            
+            max-width: 60em;
+            width: 100%;
+            margin: 0 auto 3.125em;
+            text-align: center;
+            &::-webkit-scrollbar { width: 0 !important }
+            @include media(large){
+                margin: 0 auto 3em;
+            }
+            @include media(medium){
+                margin: 0 auto 2em;
+            }
+            @include media(small){
+                margin: 0 auto 1.5em;
+            }
+            @include media(small){
+                overflow: auto;
+                white-space: nowrap;
+            }
+            > .tabBox{
+                display: inline-block;
+                margin: 0 0 15px 12px;
+                .tab{
+                    font-family: $font-primary;
+                    font-size: $font-size-16;
+                    font-weight: $font-weight-500;
+                    border-radius: $border-radius-regular;
+                    padding: 0.5em 0.750em;
+                    border:2px solid $black-color;
+                    @include media(medium){
+                        font-size: $font-size-15;
+                    }
+                    @include media(small){
+                        font-size: $font-size-14;
+                    }
+                }
+                .tab{
+                    &.black{
+                        background-color: $black-color;
+                        color: $white-color;
+                            &:hover,&.active{
+                                background-color: $blue-color;
+                                border-color:$blue-color;
+                            }
+                    }
+                }
+                
+            }
+        }
+        .tabsContent{
+            display: grid;
+            
+            grid-template-columns: 1.2fr 3fr;
+            align-items: center;
+            grid-column-gap: 5em;
+            @include media(wide){
+                grid-template-columns: 1fr 3fr;
+            }
+            @include media(extra-large){
+                grid-column-gap: 4.5em;
+            }
+            @include media(large){
+                grid-column-gap: 4em;
+                grid-template-columns: 1fr;
+            }
+            .leftSide{
+                h3{
+                    font-weight: $font-weight-600;
+                    padding-bottom: 0.2em;
+                }
+                p{
+                    line-height: $line-height-large;
+                }
+            }
+            .rightSide{
+                &.tabImageGrid{
+                    display: grid;
+                    grid-template-columns: 2fr 1fr;
+                    grid-column-gap: 1.5em;
+                    grid-row-gap: 1.5em;
+                   @include media(medium){
+                    grid-column-gap: 1.3em;
+                    grid-row-gap: 1.3em;
+                   }
+                   @include media(medium){
+                    grid-column-gap: 1.3em;
+                    grid-row-gap: 1.3em;
+                   }
+                    .tabImage{
+                        border-radius:$border-radius-regular;
+                        box-shadow: -1px -1px 3.30584px rgba(206, 206, 206, 0.25), 1px 1px 5px rgba(206, 206, 206, 0.25);
+                        &:first-child{
+                            grid-row: span 2;
+                            img{
+                                height: 28.750em;
+                                @include media(wide){
+                                    height: 26em;
+                                }
+                                @include media(extra-large){
+                                    height: 24em;
+                                }
+                                @include media(large){
+                                    height: auto;
+                                }
+                            }
+                        }
+                        img{
+                            border-radius:$border-radius-regular;
+                            max-width: 100%;
+                            width: 100%;
+                            height: 100%;
+                            
+                            object-fit: fill;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

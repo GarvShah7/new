@@ -1,0 +1,79 @@
+fragment AllPage on AllPage {
+  _id
+  _type
+  _key
+  _createdAt
+  service_page
+  hire_dedicated_page
+  title
+  service_types {
+    ...ServiceType
+  }
+  hire_dedicated_page_types {
+    ...HireDedicatedPageTypes
+  }
+  logo {
+    ...Image
+  }
+  header {
+    ...Header
+  }
+  sections {
+    __typename
+    ...HeroSection
+    ...ImageWithTitleSection
+    ...HomeServicesSection
+    ...TitleSubtitleWithImageArraySection
+    ...ReviewsSection
+    ...RichText
+    ...ImageTitleDescriptionSection
+    ...RichTextIconSideImageSection
+    ...TitleSubtitleImageArraySideRichTextSection
+    ...TechStackSection
+    ...OurProcessSection
+    ...ChooseCHSection
+    ...PricingSection
+    ...SolutionSection
+    ...HiringModelSection
+    ...TitleHoverImageSection
+    ...TestimonialsSection
+    ...TitleWithSliderImageSection
+    ...ImageSideBySideTitleDescArraySection
+    ...TitleSubtitleTitleArraySection
+    ...HourlyDeveloperSection
+    ...CompanyInfoSection
+    ...FAQSection
+    ...TitleDescriptionArrayWithSideTitleArraySection
+    ...CompanyVisionsection
+    ...ServiceDevelopmentSection
+    ...WorkSection
+    ...ServiceOurProcessSection
+    ...TeamPhotosSection
+    ...TitleWithFourImageSection
+    ...ContactInformationSection
+    ...ContactMapSection
+    ...ContactMessageSection
+    ...PortfolioInnerDevelopmentSection
+    ...ThemesSection
+    ...NextJSUSeCompaniesSection
+    ...WoocommerceBenefitSection
+    ...RichTextImageButtonSection
+    ...RichTextWithSideImage
+    ...TitleDescriptionSideBySideBGImageSection
+    ...EstimateProjectFormSection
+    ...FourOFourErrorSection
+    ...Titledescfullimagesection
+    ...CompanyInfoSection
+    ...ContactHeroSection
+    ...ImageArraySection
+  }
+  footer {
+    ...Footer
+  }
+  slug {
+    ...Slug
+  }
+  seo {
+    ...Seo
+  }
+}

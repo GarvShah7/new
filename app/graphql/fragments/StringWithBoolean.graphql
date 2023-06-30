@@ -1,0 +1,6 @@
+fragment StringWithBoolean  on StringWithBoolean{
+  _key
+  _type
+  title
+  boolean
+}

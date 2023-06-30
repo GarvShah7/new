@@ -1,0 +1,17 @@
+fragment UiUxDevelopmentSection on UiUxDevelopmentSection {
+  _key
+  _type
+  titleSubtitle {
+    ...TitleSubtitle
+  }
+  description {
+    ...RichText
+  }
+  uiUxImage: image {
+    ...Image
+  }
+  appIconImage {
+    ...IconTitleArray
+  }
+  sectionTheme
+}

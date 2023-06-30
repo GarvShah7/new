@@ -1,0 +1,13 @@
+fragment TitleDescriptionSideBySideBGImageSection  on TitleDescriptionSideBySideBGImageSection{
+  _key
+  _type
+  title
+  description{
+    ...RichText
+  }
+  image{
+  ...Image
+    }
+  bgImageOption
+  sectionTheme
+}

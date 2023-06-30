@@ -1,0 +1,79 @@
+.shortTestimonialSection .container .shortTestimonialContent .shortTestimonialGrid {
+  grid-column-gap: 7.5em;
+}
+@media (max-width: 1440px) {
+  .shortTestimonialSection .container .shortTestimonialContent .shortTestimonialGrid {
+    grid-column-gap: 7em;
+  }
+}
+@media (max-width: 1280px) {
+  .shortTestimonialSection .container .shortTestimonialContent .shortTestimonialGrid {
+    grid-column-gap: 6em;
+  }
+}
+@media (max-width: 999px) {
+  .shortTestimonialSection .container .shortTestimonialContent .shortTestimonialGrid {
+    grid-template-columns: 1fr;
+  }
+}
+.shortTestimonialSection .container .shortTestimonialContent .shortTestimonialGrid .leftSide {
+  background-image: url("/assets/images/quotation-mark.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+}
+.shortTestimonialSection .container .shortTestimonialContent .shortTestimonialGrid .leftSide h4 {
+  font-weight: 500;
+  padding: 0 0 0.5em;
+}
+@media (max-width: 640px) {
+  .shortTestimonialSection .container .shortTestimonialContent .shortTestimonialGrid .leftSide h4 {
+    font-size: 1.375em;
+  }
+}
+.shortTestimonialSection .container .shortTestimonialContent .shortTestimonialGrid .leftSide p {
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 2;
+}
+.shortTestimonialSection .container .shortTestimonialContent .shortTestimonialGrid .leftSide .profileBox {
+  display: flex;
+}
+.shortTestimonialSection .container .shortTestimonialContent .shortTestimonialGrid .leftSide .profileBox .profileLeft img {
+  width: 3.125em;
+  height: 3.125em;
+  object-fit: contain;
+}
+.shortTestimonialSection .container .shortTestimonialContent .shortTestimonialGrid .leftSide .profileBox .profileRight {
+  padding: 0 0 0 1em;
+}
+.shortTestimonialSection .container .shortTestimonialContent .shortTestimonialGrid .leftSide .profileBox .profileRight h6 {
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 1.7;
+  color: #000000;
+}
+.shortTestimonialSection .container .shortTestimonialContent .shortTestimonialGrid .leftSide .profileBox .profileRight p {
+  font-weight: 500;
+  font-size: 0.75em;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 0;
+}
+.shortTestimonialSection .container .shortTestimonialContent .shortTestimonialGrid .rightSide {
+  border-radius: 10px;
+}
+.shortTestimonialSection .container .shortTestimonialContent .shortTestimonialGrid .rightSide img {
+  border-radius: 10px;
+  max-width: 100%;
+  width: 100%;
+  height: 20em;
+  object-fit: cover;
+}
+@media (max-width: 999px) {
+  .shortTestimonialSection .container .shortTestimonialContent .shortTestimonialGrid .rightSide img {
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=serviceshorttesti.css.map */

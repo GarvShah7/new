@@ -1,0 +1,124 @@
+@import '../../styles/config/variables';
+
+.imageArraySection{
+    margin-bottom: 14em;
+    @include media(large){
+        margin-bottom: 13em;
+    }
+    @include media(medium){
+        margin-bottom: 0;
+    }
+    .container{
+        .imageArrayContentmvGrid{
+            .imgArrayGrid{
+                grid-column-gap:5em;
+                &.bigImageGrid{
+                    grid-template-columns: 3fr 1fr 1fr 1fr;
+                    align-items:center;
+                    grid-column-gap: 2.5em;
+                    @include media(large){
+                        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+                        grid-row-gap: 3em;
+                        grid-column-gap: 2.5em;
+                    }
+                    &.desktopView{
+                        @include media(medium){
+                            display: none;
+                        }
+                    }
+                    &.mobileView{
+                        display:none;
+                        @include media(medium){
+                            display: inline-block;
+                        }
+                        .imageBoxSlider{
+                            padding: 4em 0 0;
+                            display: inline-block;
+                            white-space: nowrap;
+                            overflow: auto;
+                            &::-webkit-scrollbar { width: 0 !important }
+                             .imageBox{
+                                + .imageBox{
+                                    padding-left: 2em;
+                                }
+                                display:inline-block;
+                                img{
+                                    height: 8em;
+                                }
+                             }
+                        }
+                    }
+                    .imageBox{
+                        position: static;
+                        + .imageBox{
+                            position:static;
+                        }
+                        img{
+                            height: 12em;
+                            object-fit: inherit;
+                            @include media(extra-large){
+                                height: 10em;
+                            }
+                             @include media(large){
+                                height: 8em;
+                            }
+                        }
+                        &:nth-child(1){
+                            grid-row: 1 / span 2;
+                            @include media(large){
+                                grid-column: 1 / span 6;
+                            }
+                            img{
+                                max-width: 100%;
+                                width: 100%;
+                                height: 25em;
+                                object-fit: contain;
+                                @include media(medium){
+                                    height: 20em;
+                                }
+                                @include media(small){
+                                    height: 18em;
+                                }
+                            }
+                        }
+                    }
+                }
+                @include media(extra-large){
+                    grid-column-gap:4em;
+                }
+                @include media(large){
+                    grid-column-gap:3em;
+                }
+                @include media(medium){
+                    grid-template-columns: 1fr;
+                }
+                .imageBox{
+                    + .imageBox{
+                        position: relative;
+                        top:6em;
+                        @include media(medium){
+                            top:0;
+                        }
+                    }
+                    border-radius: $border-radius-regular;
+                    img{
+                        max-width: 100%;
+                        width: 100%;
+                        height: 42em;
+                        object-fit: cover;
+                        border-radius: $border-radius-regular;
+                        @include media(extra-large){
+                            height: 40em;
+                        }
+                        @include media(large){
+                            height: 40em;
+                        }
+                        @include media(medium){
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

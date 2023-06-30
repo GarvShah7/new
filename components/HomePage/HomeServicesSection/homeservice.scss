@@ -1,0 +1,211 @@
+@import '../../../styles/config/variables';
+
+.serviceSection {
+    &.withoutNumber{
+        .container{
+            .serviceContent{
+                .serviceList{
+                    li{
+                        .serviceDetails{
+                            .serviceTitle{
+                                min-height: auto;
+                                h3{
+                                    width: min-intrinsic;
+                                    width: -webkit-min-content;
+                                    width: -moz-min-content;
+                                    width: min-content;
+                                    display: table-caption;
+                                    display: -ms-grid;
+                                    -ms-grid-columns: min-content;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .container {
+        .serviceContent {
+            .serviceList {
+                &.gridBox {
+                    &.col3{
+                        padding: 0 0 0 6.5em;
+                        @include media(wide){
+                            padding: 0 0 0 5.5em;
+                        }
+                        @include media(extra-large){
+                            padding: 0 0 0 4.5em;
+                        }
+                        @include media(large){
+                            padding: 0 0 0 4em;
+                        }
+                        @include media(large-medium){
+                            padding: 0 0 0 3.5em;
+                        }
+                        @include media(medium){
+                            padding: 0 0 0 3em;
+                        }
+                        @include media(medium){
+                            padding: 0;
+                        }
+                    }
+                    @include media(small) {
+                        grid-template-columns: 1fr;
+                        grid-row-gap: 3.5em;
+                        padding: 0;
+                    }
+                }
+                li {
+                    .serviceDetails {
+                        height: 100%;
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        .serviceTitle{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                        }
+                        h4 {
+                            font-weight: $font-weight-400;
+                            font-size: $font-size-16;
+                            line-height: $line-height-normal;
+                            letter-spacing: 0.03em;
+                            color: $black-color;
+                            padding: 0 0 0.5em;
+                        }
+                        h3 {
+                            font-weight: $font-weight-600;
+                            font-size: $font-size-30;
+                            line-height: $line-height-medium;
+                            letter-spacing: 0.03em;
+                            color: $black-color;
+                            padding: 0 0 0.633em;
+                            @include media(small) {
+                                font-size: $font-size-28;
+                                min-height: auto;
+                            }
+
+                        }
+                        > p {
+                            font-weight: $font-weight-400;
+                            font-size: $font-size-16;
+                            line-height: $line-height-large;
+                            letter-spacing: 0.03em;
+                            color: $black-opc-60;
+                            max-width: 80%;
+                            width: 100%;
+                            @include media(small){
+                                max-width: 100%;
+                            }
+                        }
+                        > ul {
+                            padding: 2.188em 0 0;
+                            @include media(medium){
+                                padding: 2em 0 0;
+                                margin: 0 0 2em;
+                            }
+                            @include media(small){
+                                padding: 1.5em 0 0;
+                                margin: 0 0 2.5em;
+                            }
+                            > li {
+                                &:last-child{
+                                    a{
+                                        padding-bottom: 0;
+                                    }
+                                }
+                                a {
+                                    pointer-events: none;
+                                    font-weight: $font-weight-500;
+                                    font-size: $font-size-18;
+                                    line-height: $line-height-normal;
+                                    letter-spacing: 0.03em;
+                                    color: $black-color;
+                                    padding: 0 0 1.778em;
+                                    display: flex;
+                                    align-items: center;
+                                    &:hover{
+                                        color:$blue-color;
+                                    }
+                                    @include media(medium){
+                                        font-size: $font-size-17;
+                                    }
+                                    @include media(small){
+                                        font-size: $font-size-16;
+                                    }
+                                    &:before {
+                                        content: '';
+                                        background-color: $white-color;
+                                        width: 6px;
+                                        height: 6px;
+                                        border-radius: 6px;
+                                        display: inline-block;
+                                        margin: 0 0.938em 0 0;
+                                    }
+                                }
+                            }
+                        }
+                        .arrowLink{
+                            margin-top: auto;
+                            padding: 4em 0 0;
+                            @include media(medium){
+                                padding: 3em 0 0;
+                            }
+                            @include media(small){
+                                padding: 1em 0 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.serviceSection {
+    &.bg-black{
+        .container {
+            .serviceContent {
+                .serviceList {
+                    @include media(large){
+                        grid-template-columns: 1fr 1fr;
+                        grid-row-gap:4em;
+                    }
+                     @include media(small){
+                        grid-template-columns: 1fr;
+                    }
+                    li {
+                        .serviceDetails {
+                            h4 {
+                                color: $white-color;
+                            }
+                            h3 {
+                                color: $white-color;
+                            }
+                            > p {
+                                color: $white-opc-60;
+                            }
+                            > ul {
+                                > li {
+                                    a {
+                                        color: $white-color;
+                                        &:hover{
+                                            color: $blue-color;
+                                        }
+                                        &:before {
+                                            content: '';
+                                            background-color: $white-color;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

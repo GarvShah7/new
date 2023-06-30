@@ -1,0 +1,79 @@
+@import '../../styles/config/variables';
+
+
+.titledescsbsSection{
+    &.without-bg-image{
+        .container{
+            .titledescsbsContent{
+                background-image: none;
+                padding: 0;
+                .gridBox{
+                    grid-template-columns: 1fr 3fr;
+                    @include media(large-medium){
+                        grid-template-columns: 1fr;
+                    }
+                }
+            }
+        }
+    }
+    .container{
+        .titledescsbsContent{
+            background-image: url("/assets/images/codage-bg.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            padding: 16em 0;
+            @include media(extra-large){
+                padding: 12em 0; 
+            }
+            @include media(large){
+                padding: 8em 0; 
+            }
+            @include media(medium){
+                padding: 0;
+                background-image: none;
+            }
+            .gridBox{
+                grid-row-gap: 1.5em;
+                @include media(medium){
+                    grid-template-columns: 1fr;
+                    grid-row-gap: 1em;
+                }
+                align-items: center;
+                h3{
+                    font-weight: $font-weight-600;
+                    font-size: $font-size-48;
+                    line-height:1.1;
+                    letter-spacing: 0.04em;
+                    color: $black-color;
+                    max-width: 90%;
+                    width: 100%;
+                    @include media(extra-large){
+                        max-width: 100%;
+                    }
+                    @include media(large){
+                        font-size: $font-size-40;
+                    }
+                    @include media(small){
+                        font-size:  $font-size-36;
+                    }
+                }
+        
+                p{
+                    font-weight: $font-weight-500;
+                    font-size: $font-size-16;
+                    line-height: $line-height-extra-large;
+                    letter-spacing: 0.025em;
+                    color: $black-opc-70;
+                    padding-bottom:0;
+                    @include media(large){
+                        font-size: $font-size-17;
+                    }
+                    @include media(medium){
+                        font-size: $font-size-16;
+                    }
+                }
+            }
+        }
+    }
+}

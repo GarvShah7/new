@@ -1,0 +1,6 @@
+fragment HireDedicatedPageTypes on HireDedicatedPageTypes {
+  _id
+  _type
+  _key
+  label
+}

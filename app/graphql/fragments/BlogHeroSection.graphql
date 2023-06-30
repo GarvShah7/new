@@ -1,0 +1,9 @@
+fragment BlogHeroSection on BlogHeroSection {
+  _key
+  _type
+  title
+  description {
+    ...RichText
+  }
+  sectionTheme
+}

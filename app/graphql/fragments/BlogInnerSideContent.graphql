@@ -1,0 +1,15 @@
+fragment BlogInnerSideContent on BlogInnerSideContent {
+  _id
+  _type
+  _key
+  TitleAppLogo {
+    ...SideAppLogoSection
+  }
+  title
+  newsLetter {
+    ...NewsLetterSection
+  }
+  slug {
+    _key
+  }
+}

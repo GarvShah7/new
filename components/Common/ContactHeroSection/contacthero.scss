@@ -1,0 +1,46 @@
+@import "../../styles/config/variables";
+
+
+.contactBannerSection{
+    @include media(large){
+        padding: 0 0 5em;
+    }
+    @include media(large-medium){
+        padding: 0;
+    }
+    .container{
+        .contactBannerContent{
+            padding-top: 2em;
+            h2{
+                
+                font-size:  $font-size-150;
+                text-transform: initial;
+                letter-spacing: 0.02em;
+                height: 1.3em;
+            
+                @include media(medium){
+                    font-size: $font-size-130;
+                }
+                @include media(small){
+                    font-size: $font-size-100;
+                }
+                @include media(medium-small){
+                    font-size: $font-size-80;
+                }
+            }
+            p{
+                padding-bottom: 0;
+                color:$black-opc-70;
+                br{
+                    @include media(small){
+                        font-size: $font-size-17;
+                    }
+                    @include media(medium-small){
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+

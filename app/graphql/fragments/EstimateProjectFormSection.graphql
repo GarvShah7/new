@@ -1,0 +1,19 @@
+fragment EstimateProjectFormSection on EstimateProjectFormSection {
+  _key
+  _type
+  titleSubtitle {
+    ...TitleSubtitle
+  }
+  namePlaceholder
+  emailPlaceholder
+  selectTypeOfProject
+  selectTypeButton
+  textPlaceholder:howCanWeHelpPlaceholder
+  button:hireJamstackDevelopmentButton {
+    ...Button
+  }
+  image {
+    ...Image
+  }
+  sectionTheme
+}

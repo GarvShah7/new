@@ -1,0 +1,369 @@
+.innerpageBannerSection{
+    &.blogBannerSection{
+        &.innerpageBannerSection{
+            margin-bottom: 0;
+        }
+        padding-bottom: 5.938em;
+        @include media(extra-large){
+            padding-bottom: 5.9em;
+        }
+        @include media(large){
+            padding-bottom: 5.8em;
+        }
+        @include media(large-medium){
+            padding-bottom: 5.5em;
+        }
+        @include media(medium){
+            padding-bottom: 5.3em;
+        }
+        .container{
+            .innerpageBannerContent{
+                &.gridBox{
+                    @include media(large-medium){
+                        grid-template-columns: 1fr;
+                        grid-row-gap: 3em;
+                    }
+                    .leftSide{
+                        p{
+                            max-width: 90%;
+                            width: 100%;
+                        }
+                        .catList{
+                            display: flex;
+                            align-items: flex-start;
+                            padding: 2.750em 0 0;
+                            @include media(medium-small){
+                                flex-direction: column;
+                                padding: 3.5em 0 0;
+                            }
+                            @include media(medium-small){
+                                padding: 3em 0 0;
+                            }
+                            .leftSide{
+                                display: flex;
+                                align-items: center;
+                                padding:0.7em 0 0;
+                                h5{
+                                    line-height: $line-height-normal;
+                                }
+                                .horizontalLine{
+                                    display: inline-block;
+                                    background-color: $white-color;
+                                    height: 1px;
+                                    width: 3.438em;
+                                    margin: 0 0 0 1.250em;
+                                    // @include media(medium-small){
+                                    //     display: none;
+                                    // }
+                                }
+                            }
+                            .rightSide{
+                                ul{
+                                    // display: grid;
+                                    // grid-template-columns: auto auto auto;
+                                    // grid-row-gap: 0.7em;
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    max-width: 35em;
+                                    width: 100%;
+                                    @include media(large-medium){
+                                        grid-template-columns: auto auto auto auto;
+                                    }
+                                    @include media(medium){
+                                        grid-template-columns: auto auto auto;
+                                    }
+                                    // @include media(small){
+                                    //     display: flex;
+                                    //     flex-wrap: wrap;
+                                    // }
+                                    // @include media(small){
+                                    //     grid-template-columns: auto auto;
+                                    // }
+                                    @include media(medium-small){
+                                        padding: 2em 0 0;
+                                    }
+                                    li{
+                                        &.active{
+                                            font-weight: $font-weight-700;
+                                            color: $white-color;
+                                        }
+                                        font-weight:$font-weight-500;
+                                        font-size: $font-size-18;
+                                        line-height: $line-height-medium;
+                                        color: $gray02-color;
+                                        padding: 0.7em 0 0 1.389em;
+                                        @include media(small){
+                                            font-size: $font-size-17;
+                                            padding: 0.7em 1.389em 0 0;
+                                        }
+                                        @include media(very-small){
+                                            font-size: $font-size-16;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .rightSide{
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: flex-end;
+                        @include media(large-medium){
+                            justify-content: flex-start;
+                        }
+                        input{
+                            color: $white-color;
+                            padding: 0 3em 0 1em;
+                            &::placeholder{
+                                font-weight: $font-weight-600;
+                                font-size: $font-size-14;
+                                line-height: $line-height-normal;
+                                color: $white-opc-50;
+                            }
+                            &.searchBox{
+                                border: 2px solid $blue-color;
+                                max-width: 12.813em;
+                                width: 100%;
+                                border-radius: 50px;
+                                background-image: url("/assets/images/search.svg");
+                                background-repeat: no-repeat;
+                                background-position: right 1em center;
+                                background-size: 1.3em;
+                                @include media(large-medium){
+                                    max-width: 20em;
+                                }
+                                @include media(medium-small){
+                                    max-width: 18em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.postGrid{
+    margin: 0 0 3.125em;
+    
+    &.gridBox{
+        grid-row-gap: 6.250em;
+        @include media(medium){
+           grid-column-gap: 1em;
+           grid-row-gap: 3em;
+        }
+        @include media(medium){
+            grid-template-columns: 1fr;
+        }
+        .postBox{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+           
+            .featureImage{
+                background-color: $gray03-color;
+                border-radius: $border-radius-12;
+                margin-bottom: 1.563em;
+                // @include media(medium){
+                //     display: inline-block;
+                // }
+                img{
+                    max-width: 100%;
+                    width: 100%;
+                    height: 15.688em;
+                    object-fit:cover;
+                    border-radius: $border-radius-12;
+                    @include media(extra-large){
+                        height: 14em;
+                    }
+                    @include media(large){
+                        height: 12em;
+                    }
+                    @include media(medium){
+                        height: 24em;
+                    }
+                    @include media(small){
+                        height: 18em;
+                    }
+                    @include media(medium-small){
+                        height: 16em;
+                    }
+                    @include media(very-small){
+                        height: 14em;
+                    }
+                }
+            }
+            .metaBox{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-bottom: 1.7em;
+                width: 100%;
+                .leftSide{
+                    @include media(large){
+                        width: 100%;
+                    }
+                    .authorContent{
+                        @include media(large){
+                            width: 100%;
+                            flex-direction: column;
+                            align-items: flex-start;
+                        }
+                        display: flex;
+                        align-items: center;
+                        @include media(very-small){
+                            flex-direction: column;
+                            align-items: flex-start;
+                        }
+                        .authorImage{
+                            @include media(large){
+                                width: 100%;
+                            }
+                            @include media(large){
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                            }
+                            margin: 0 1em 0 0;
+                            @include media(large){
+                                margin: 0;
+                            }
+                            img{
+                                width: 3.5em;
+                                height:3.5em;
+                                border-radius: 50%;
+                                object-fit:cover;
+                                border:2px soild $black-color;
+                                @include media(extra-large){
+                                    width: 3.3em;
+                                    height:3.3em;
+                                }
+                                @include media(large){
+                                    width: 3em;
+                                    height:3em;
+                                }
+                                @include media(small){
+                                    width: 3.3em;
+                                    height:3.3em;
+                                }
+                                @include media(very-small){
+                                    width: 3em;
+                                    height:3em;
+                                }
+                            }
+                        }
+                        .authorDetails{
+                            @include media(large){
+                                margin: 1em 0 0;
+                            }
+                            h4{
+                                font-weight: $font-weight-500;
+                                font-size: $font-size-18;
+                                line-height: $line-height-normal;
+                                color: $black-color;
+                                padding-bottom: 0.5em;
+                                @include media(extra-large){
+                                    font-size: $font-size-17;
+                                }
+                                @include media(large){
+                                    font-size: $font-size-16;
+                                }
+                                @include media(small){
+                                    font-size: $font-size-17;
+                                }
+                                // @include media(very-small){
+                                //     font-size: $font-size-16;
+                                // }
+                            }
+                            h6{
+                                font-weight: $font-weight-500;
+                                font-size: $font-size-14;
+                                line-height: $line-height-normal;
+                                color: $black-opc-50;
+                                @include media(extra-large){
+                                    font-size: $font-size-13;
+                                }
+                                @include media(small){
+                                    font-size: $font-size-14;
+                                }
+                                @include media(very-small){
+                                    font-size: $font-size-13;
+                                }
+                            }
+                        }
+                    }
+                }
+                .date{
+                    &.mobileView{
+                        display: none;
+                        @include media(large){
+                            display: block;
+                        }
+                    }
+                    h6{
+                        font-weight:$font-weight-400;
+                        font-size: $font-size-12;
+                        line-height: $line-height-normal;
+                        letter-spacing: 0.01em;
+                        color: $black-opc-50;
+                    }
+                }
+                .rightSide{
+                   .date{
+                    @include media(large){
+                        display: none;
+                    }
+                   }
+                }
+            }
+            h3{
+                font-weight:$font-weight-500;
+                font-size: $font-size-20;
+                line-height: $line-height-medium;
+                color: $black-color;
+                padding-bottom: 1.5em;
+                @include media(medium){
+                    padding-bottom: 1.4em;
+                }
+                @include media(small){
+                    padding-bottom: 1.3em;
+                }
+                @include media(very-small){
+                    font-size: $font-size-18;
+                }
+            }
+            .arrowLink{
+                margin-top: auto;
+            }
+        }
+    }
+    
+}
+
+.loadMore{
+    margin: 6em 0 0;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    @include media(medium){
+        margin: 4em 0 0;
+    }
+}
+.catNotFound{
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+
+    .notFoundImage{
+        margin:0 0 3em;
+        img{
+            max-width: 12rem;
+            width: 100%;
+            height: auto;
+        }
+        h4{
+            margin: 0;
+        }
+    }
+}

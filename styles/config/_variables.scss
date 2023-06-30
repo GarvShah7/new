@@ -1,0 +1,177 @@
+ $black-color: #000000;
+ $white-color: #FFFFFF;
+ $blue-color: #000EE6;
+ $blue01-color:#051367;
+ $blue02-color:#84B1FF;
+ $blue03-color:#F2F9FF;
+ $gray-color:#525252;
+ $gray01-color:#5F5F5F;
+ $gray02-color:#7A7A7A;
+ $gray03-color:#14191E;
+ $gray04-color:#808080;
+ $gray05-color:#9E9E9E;
+ $gray06-color:rgba(209, 217, 230, 0.2);
+ $gray07-color:#231F20;
+ $gray08-color: #808080;
+ $gray09-color:#969696;
+ $charcoal-color:#323030;
+ $light-blue-color:#E8F3FE;
+ $error-color:#B00020;
+ $pink-color:#E01E5A;
+ 
+
+ $black-opc-20: rgba(($black-color), 0.2);
+ $black-opc-80: rgba(($black-color), 0.8);
+ $black-opc-70: rgba(($black-color), 0.7);
+ $black-opc-60: rgba(($black-color), 0.6);
+ $black-opc-50: rgba(($black-color), 0.5);
+ $white-opc-50: rgba(($white-color), 0.5);
+ $white-opc-60: rgba(($white-color), 0.6);
+ $white-opc-70: rgba(($white-color), 0.7);
+
+ $grad-red: #D1036F;
+ $grad-yellow: #FB7A4D;
+
+ $bg-black: #000000;
+ $bg-white: #FFFFFF;
+ $bg-azure: #EEF8FA;
+ $bg-dot: #DAE4E4;
+ $bg-dot-active: #000000;
+ $bg-revell: #EEEEEE;
+
+ $font-size-200: 12.5em;
+ $font-size-170: 10.625em;
+ $font-size-150: 9.375em;
+ $font-size-130: 8.125em;
+ $font-size-108:6.750em;
+ $font-size-100: 6.250em;
+ $font-size-80: 5em;
+ $font-size-75: 4.688em;
+ $font-size-70: 4.375em;
+ $font-size-65: 4em;
+ $font-size-60: 3.750em;
+ $font-size-58: 3.625em;
+ $font-size-56: 3.5em;
+ $font-size-52: 3.250em;
+ $font-size-50: 3.125em;
+ $font-size-48: 3em;
+ $font-size-45: 2.813em;
+ $font-size-42: 2.625em;
+ $font-size-40: 2.5em;
+ $font-size-36: 2.250em;
+ $font-size-34: 2.125em;
+ $font-size-32: 2em;
+ $font-size-30: 1.875em;
+ $font-size-28: 1.750em;
+ $font-size-26: 1.625em;
+ $font-size-24: 1.5em;
+ $font-size-22: 1.375em;
+ $font-size-20: 1.250em;
+ $font-size-19: 1.188em;
+ $font-size-18: 1.125em;
+ $font-size-17: 1.063em;
+ $font-size-16: 1em;
+ $font-size-15: 0.938em;
+ $font-size-14: 0.875em;
+ $font-size-13: 0.813em;
+ $font-size-12: 0.750em;
+
+ $font-primary: 'Montserrat', sans-serif;
+
+ $font-weight-300: 300;
+ $font-weight-400: 400;
+ $font-weight-500: 500;
+ $font-weight-600: 600;
+ $font-weight-700: 700;
+
+//  $line-height-normal: 0.5;
+ $line-height-normal: 1;
+ $line-height-medium: 1.4;
+ $line-height-large: 1.7;
+ $line-height-extra-large: 2;
+
+ $border-radius-3: 3px;
+ $border-radius-5: 5px;
+ $border-radius-regular: 10px;
+ $border-radius-12: 12px;
+ $border-radius-20: 20px;
+ $border-radius-50: 50px;
+
+ $box-shadow-regular: 0px 0px 11px -1px rgba(0, 0, 0, 0.25);
+
+ $z-index-navigation: 99;
+ $z-index-dropdown: 100;
+
+ $text-transform-normal: normal;
+ $text-transform-uppercase: uppercase;
+ $text-transform-lowercase: lowercase;
+ $text-transform-capitalize: capitalize;
+
+ $text-style-inherit: inherit;
+ $text-style-normal: normal;
+ $text-style-italic: italic;
+
+$capitalize:capitalize;
+$lowerCase:lowercase;
+$upperCase:uppercase;
+
+$breakpoint-wide: 1600px;
+$breakpoint-extra-large: 1440px;
+$breakpoint-large: 1280px;
+$breakpoint-large-medium: 1100px;
+$breakpoint-medium: 999px;
+$breakpoint-small: 767px;
+$breakpoint-medium-small: 640px;
+$breakpoint-custom-small: 415px;
+$breakpoint-very-small: 480px;
+$breakpoint-extra-small: 400px;
+
+@mixin media($breakpoint) {
+    @if $breakpoint == wide {
+        @media (max-width: $breakpoint-wide) {
+            @content;
+        }
+    } @else if $breakpoint == extra-large {
+        @media (max-width: $breakpoint-extra-large) {
+            @content;
+        }
+    } @else if $breakpoint == large-medium {
+        @media (max-width: $breakpoint-large-medium) {
+            @content;
+        }
+    } @else if $breakpoint == large {
+        @media (max-width: $breakpoint-large) {
+            @content;
+        }
+    } @else if $breakpoint == medium {
+        @media (max-width: $breakpoint-medium) {
+            @content;
+        }
+    } @else if $breakpoint == small {
+        @media (max-width: $breakpoint-small) {
+            @content;
+        }
+    } @else if $breakpoint == medium-small {
+        @media (max-width: $breakpoint-medium-small) {
+            @content;
+        }
+    } @else if $breakpoint == very-small {
+        @media (max-width: $breakpoint-very-small) {
+            @content;
+        }
+    } @else if $breakpoint == very-small {
+        @media (max-width: $breakpoint-very-small) {
+            @content;
+        }
+    }@else if $breakpoint == custom-small {
+        @media (max-width: $breakpoint-custom-small) {
+            @content;
+        }
+    }@else if $breakpoint == extra-small {
+        @media (max-width: $breakpoint-extra-small) {
+            @content;
+        }
+    }
+}
+
+

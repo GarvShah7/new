@@ -1,0 +1,60 @@
+.contactUsSection .container .contactUsContent .gridBox.col2-1 {
+  grid-column-gap: 10em;
+}
+@media (max-width: 999px) {
+  .contactUsSection .container .contactUsContent .gridBox.col2-1 {
+    flex-direction: row-reverse;
+  }
+}
+@media (max-width: 1440px) {
+  .contactUsSection .container .contactUsContent .gridBox.col2-1 {
+    grid-column-gap: 8em;
+  }
+}
+@media (max-width: 1280px) {
+  .contactUsSection .container .contactUsContent .gridBox.col2-1 {
+    grid-column-gap: 6em;
+  }
+}
+@media (max-width: 999px) {
+  .contactUsSection .container .contactUsContent .gridBox.col2-1 {
+    grid-template-columns: 1fr;
+  }
+}
+.contactUsSection .container .contactUsContent .gridBox .leftSide h4 {
+  font-weight: 600;
+  padding: 0 0 0.667em;
+}
+.contactUsSection .container .contactUsContent .gridBox .leftSide > p {
+  line-height: 2;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1em;
+}
+.contactUsSection .container .contactUsContent .gridBox .rightSide {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 999px) {
+  .contactUsSection .container .contactUsContent .gridBox .rightSide {
+    margin: 2em 0 0;
+    justify-content: center;
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+/*# sourceMappingURL=homecontactus.css.map */

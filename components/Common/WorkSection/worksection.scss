@@ -1,0 +1,64 @@
+@import '../../styles/config/variables';
+
+.workSection{
+    .container{
+        .workContent{
+            .workGrid{
+                &.gridBox{
+                    @include media(medium){
+                        grid-template-columns: 1fr;
+                        grid-row-gap: 2em;
+                    }
+                    .gifBox{
+                        padding: 2.375em;
+                        border-radius: $border-radius-regular;
+                        &:nth-child(1){
+                            background-color: $blue03-color;
+                        }
+                         &:nth-child(2){
+                            background-color: $blue02-color;
+                        }
+                        @include media(extra-large){
+                            padding: 2.3em;
+                        }
+                        @include media(large){
+                            padding: 2em;
+                        }
+                        @include media(medium){
+                            padding: 1.7em;
+                        }
+                        position:relative;
+                        text-align: center;
+                        overflow: hidden; 
+                        transform:scale(1);
+                        &:hover{
+                            img{
+                                transition: all 0.7s ease-in-out;
+                                transform:scale(1.07);
+                            }
+                        }
+                        img{
+                            height: 28.5em;
+                            max-width: 100%;
+                            width: 100%;
+                            object-fit: fill;
+                            @include media(wide) {
+                                height:25em;
+                            }
+                            @include media(extra-large) {
+                                height:23em;
+                            }
+                            @include media(large-medium) {
+                                height:20em;
+                            }
+                            @include media(medium) {
+                                height:auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,48 @@
+@import "../../styles/config/variables";
+
+.companyLogoSection{
+    .container{
+        .companyLogoContent{
+            .companyCenterImage{
+                text-align:center;
+                margin: 0 0 3.125em;
+                img{
+                    max-width: 20.625em;
+                    width:100%;
+                }
+            }
+            .companyLogoGrid{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-column-gap:2em;
+                grid-row-gap: 2em;
+                @include media(medium){
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+                }
+                @include media(small){
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                }
+                @include media(medium-small){
+                    grid-template-columns: 1fr 1fr;
+                }
+                li{
+                    text-align:center;
+                    .companyIcon{
+                        padding-bottom:0.7em;
+                        img{
+                            max-width:6.875em;
+                            width:100%;
+                        }
+                    }
+                    h6{
+                        font-weight: $font-weight-600;
+                        font-size: $font-size-14;
+                        letter-spacing: 0.07em;
+                        color: $black-color;
+                        text-align:center;
+                    }
+                }
+            }
+        }
+    }
+}

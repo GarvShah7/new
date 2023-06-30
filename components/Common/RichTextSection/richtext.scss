@@ -1,0 +1,86 @@
+@import '../../styles/config/variables';
+
+.richTextSection{
+    .container{
+        .richTextContent{
+            &.bg-black{
+                border-radius:$border-radius-regular;
+                padding: 6.250em 9.063em 6.250em 5.938em;
+                @include media(extra-large){
+                    padding: 6em 9em 6em 5.9em;
+                }
+                @include media(large){
+                    padding: 5.5em 8em 5em 5.5em;
+                }
+                @include media(medium){
+                    padding: 5em 7em 4.5em 5em;
+                }
+                @include media(small){
+                    padding: 4em 6em 4em 4em;
+                }
+                @include media(medium-small){
+                    padding: 3.5em 5em 3.5em 3em;
+                }
+                @include media(very-small){
+                    padding: 3em 4em 3em 2.5em;
+                }
+                h4{
+                    padding: 0 0 0.7em;
+                }
+                p{
+                    font-weight: $font-weight-400;
+                    color:$white-opc-70;
+                    &:last-child{
+                        padding: 0;
+                    }
+                }
+            }
+            &.bg-white{
+                    h6{
+                    font-weight: $font-weight-500; 
+                    line-height: $line-height-large;
+                    @include media(medium){
+                        font-size: $font-size-20;
+                    }
+                    @include media(small){
+                        font-size: $font-size-19;
+                    }
+                    @include media(small){
+                        font-size: $font-size-19;
+                    }
+                    }
+            }
+            h4{
+                padding: 0 0 0.7em;
+            }
+            ul{
+                li{
+                    list-style: none;
+                    padding: 0.5em 0 0.5em 1.875em;
+                    position: relative;
+                    font-weight: $font-weight-400;
+                    font-size: $font-size-16;
+                    line-height: 1.7;
+                    letter-spacing: 0.025em;
+                    color: $black-color;
+                    strong{
+                        display: block;
+                    }
+                    &::before {
+                        content: "";
+                        background-image: url("/assets/images/check.svg");
+                        background-position: 0;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        display: block;
+                        height: 1.25em;
+                        width: 1.125em;
+                        left: 0;
+                        position: absolute;
+                        top: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

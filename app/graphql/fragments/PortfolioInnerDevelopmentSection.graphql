@@ -1,0 +1,9 @@
+fragment PortfolioInnerDevelopmentSection on PortfolioInnerDevelopmentSection {
+  _key
+  _type
+  title
+  titleImageButton: developmentArray {
+    ...TitleImageButton
+  }
+  sectionTheme
+}

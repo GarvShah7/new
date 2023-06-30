@@ -1,0 +1,10 @@
+fragment Seo on Seo {
+  _key
+  _type
+  meta_title
+  meta_tags {
+    ...MetaTag
+  }
+  noFollow
+  noIndex
+}

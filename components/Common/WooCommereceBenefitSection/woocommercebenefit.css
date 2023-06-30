@@ -1,0 +1,55 @@
+.wooComBenfSection .container .wooComBenContent .wooComBenGrid {
+  grid-column-gap: 9.375em;
+  align-items: center;
+  max-width: 70%;
+  width: 100%;
+  margin: 0 auto;
+}
+.wooComBenfSection .container .wooComBenContent .wooComBenGrid ul li h6 {
+  font-weight: 600;
+  padding-bottom: 0.5em;
+  font-size: 1.25em;
+}
+.wooComBenfSection .container .wooComBenContent .wooComBenGrid ul li + li {
+  margin: 1em 0 0;
+}
+.wooComBenfSection .container .wooComBenContent .wooComBenGrid ul li p {
+  text-align: left;
+}
+.wooComBenfSection .container .wooComBenContent .wooComBenGrid ul li p br {
+  display: none;
+}
+@media (max-width: 1440px) {
+  .wooComBenfSection .container .wooComBenContent .wooComBenGrid {
+    max-width: 75%;
+    grid-column-gap: 9em;
+  }
+}
+@media (max-width: 1280px) {
+  .wooComBenfSection .container .wooComBenContent .wooComBenGrid {
+    max-width: 80%;
+    grid-column-gap: 8em;
+  }
+}
+@media (max-width: 999px) {
+  .wooComBenfSection .container .wooComBenContent .wooComBenGrid {
+    max-width: 85%;
+    grid-column-gap: 7em;
+  }
+}
+@media (max-width: 767px) {
+  .wooComBenfSection .container .wooComBenContent .wooComBenGrid {
+    max-width: 90%;
+    grid-column-gap: 6em;
+    grid-row-gap: 2em;
+    grid-template-columns: 1fr;
+  }
+  .wooComBenfSection .container .wooComBenContent .wooComBenGrid ul li + li {
+    margin: 1em 0 0;
+  }
+  .wooComBenfSection .container .wooComBenContent .wooComBenGrid ul li p br {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=woocommercebenefit.css.map */

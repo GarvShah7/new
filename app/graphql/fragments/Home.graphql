@@ -1,0 +1,36 @@
+fragment Home on Home {
+  _id
+  _type
+  _key
+  title
+  sub_title
+  header {
+    ...Header
+  }
+  footer {
+    ...Footer
+  }
+  slug {
+    ...Slug
+  }
+  seo {
+    ...Seo
+  }
+  sections {
+    __typename
+    ...HomeHeroSection
+    ...HomeVideoSection
+    ...HomeServicesSection
+    ...HomeContactUsSection
+    ...HomeAboutUsSection
+    ...HomeOurProsSection
+    ...HomeBlogSection
+    ...TitleHoverImageSection
+    ...ImageWithTitleSection
+    ...WorkSection
+    ...SolutionSection
+    ...JamstackCTESection
+    ...TestimonialsSection
+    ...ReviewsSection
+  }
+}

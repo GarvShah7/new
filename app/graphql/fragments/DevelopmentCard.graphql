@@ -1,0 +1,10 @@
+fragment DevelopmentCard on DevelopmentCard {
+  _key
+  _type
+  developmentCardRichText {
+    ...RichText
+  }
+  image {
+    ...Image
+  }
+}

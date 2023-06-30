@@ -1,0 +1,651 @@
+@import '../../styles/config/variables';
+
+.pricetable-section {
+    padding: 2em 0;
+    .choosePlanWrap{
+        .choose-plan-link{
+            padding: 0;
+            > a{
+                display: inline-block;
+                font-weight: $font-weight-500;
+                font-size: $font-size-16;
+                color: $white-color;
+                background-color: transparent;
+                border: 1px solid $white-color;
+                border-radius: 7.3px;
+                padding: 1em 1.5em;
+                width: 100%;
+                &:hover{
+                    background-color: $white-color;
+                    color: $black-color;
+                }
+            }
+            &.active{
+                border-radius: 10px !important;
+               > a{
+                    background-color: $black-color !important;
+                    color: $white-color;
+                    &:hover{
+                        background-color: $white-color !important;
+                        color: $black-color;
+                    }
+               }
+            }
+        }
+    }
+
+    @include media(medium) {
+        padding: 1em 0;
+    }
+
+    @include media(medium-small) {
+        padding: 2.5em 0;
+    }
+
+    .container {
+        .pricetabel-container {
+            .pricetable-header {
+                .section-header {
+                    @include media(medium) {
+                        padding-right: 2em;
+                    }
+
+                    @include media(small) {
+                        padding-right: 0em;
+                    }
+
+                    h4 {
+                        font-weight: $font-weight-500;
+                    }
+
+                    .section-max-title {
+                        p {
+                            @include media(large) {
+                                font-size: $font-size-16;
+                            }
+                        }
+                    }
+
+                    p {
+                        font-size: $font-size-34;
+                        font-weight: 500;
+                        line-height: 1.25em;
+                        color: $black-color;
+
+                        strong {
+                            font-size: $font-size-16;
+                            color: $black-color;
+                            font-weight: $font-weight-500;
+                        }
+                    }
+
+                    .section-mini-title {
+                        @include media(small) {
+                            font-size: $font-size-24;
+                        }
+                    }
+
+                    .section-max-title {
+                        p {
+                            font-size: $font-size-16;
+                            color: $black-color;
+                            padding: 0;
+                            display: inline-block;
+
+                            @include media(small) {
+                                font-size: $font-size-14;
+                            }
+                        }
+                    }
+                }
+
+                .extra-sub-title {
+                    margin-top: 1em;
+
+                    p {
+                        font-size: $font-size-16;
+                        font-weight: $font-weight-400;
+                        line-height: 1.5em;
+                        color: $black-color;
+
+                        @include media(small) {
+                            font-size: $font-size-18;
+                        }
+                    }
+                }
+
+                .price-package {
+                    border-radius: 0.5em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    @include media(small) {
+                        margin-top: 3em;
+                    }
+
+                    ul {
+                        @include media(medium-small) {
+                            display: block;
+                        }
+
+                        li {
+                            margin: 0;
+                            position: relative;
+
+                            @include media(medium-small) {
+                                margin: 4em 0em;
+                            }
+
+                            p {
+                                padding: 0.5em 0.75em;
+                                background-color: $black-color;
+                                color: $white-color;
+                                font-size: $font-size-18;
+                                letter-spacing: 0.833333px;
+                                cursor: pointer;
+                                min-width: 11em;
+                                text-align: center;
+                                margin: 0 0.625em;
+
+                                &.active {
+                                    background-color: $black-color;
+                                    position: relative;
+                                }
+                            }
+
+                            span {
+                                display: flex;
+                                justify-content: center;
+                                position: absolute;
+                                width: 7em;
+                                top: -2em;
+                                right: 0;
+                                left: 0;
+                                margin: 0 auto;
+                                padding: 0.5em 0;
+                                background-color: #304256;
+                                color: $white-color;
+                                font-size: $font-size-12;
+                                line-height: 1em;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+
+                .price-table {
+                    .price-table-cover {
+                        display: grid;
+                        grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+
+                        .column {
+                            display: flex;
+                            flex-direction: column;
+                            margin: 0 0.5em;
+
+                            .column-header {
+                                span {
+                                    display: block;
+                                    background-color: $black-color;
+                                    border-radius: 0.25em;
+                                    font-size: $font-size-16;
+                                    color: $white-color;
+                                    padding: 0.5em 1em;
+                                    margin: 0.5em;
+                                    text-align: center;
+                                    box-shadow: 1px 2px 9px -3px rgba(0, 0, 0, 0.75);
+
+                                    &.empty {
+                                        opacity: 0;
+                                        box-shadow: none;
+                                    }
+
+                                    &.border-box {
+                                        background-color: transparent;
+                                        color: $black-color;
+                                        border: 0.0625em solid $black-color;
+                                        font-weight: 600;
+                                        box-shadow: none;
+                                    }
+                                }
+                            }
+
+                            .column-body {
+                                background-color: $white-color;
+                                box-shadow: 1px 2px 9px -3px rgba(0, 0, 0, 0.75);
+                                border-radius: 0.625em;
+                                margin: 0 0.5em;
+
+                                span {
+                                    display: block;
+                                    padding: 1em;
+                                    text-align: center;
+                                    color: $white-color;
+                                    font-size: $font-size-14;
+                                }
+                            }
+
+                            &.first {
+                                background: transparent;
+
+                                .column-header {
+                                    span {
+                                        opacity: 0;
+                                        text-align: left;
+                                    }
+                                }
+
+                                .column-body {
+                                    background: transparent;
+                                    box-shadow: none;
+
+                                    span {
+                                        text-align: left;
+                                        color: $black-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .pricetable-footer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @include media(medium-small) {
+                    flex-direction: column;
+                    margin: 3em 0 0;
+                }
+
+                .button {
+                    margin: 0 0 0 2em;
+                    @include media(medium-small) {
+                        margin: 1.5em 0 0;
+                    }
+                }
+
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                    font-weight: 500;
+                    line-height: 26px;
+                    color: $white-color;
+
+                    @include media(medium-small) {
+                        text-align: center;
+                        font-size: $font-size-18;
+                    }
+                }
+            }
+
+            .pricetable-content {
+                table {
+                    width: 100%;
+                    margin: 5em 0 5.125em 0;
+                    border-spacing: 2.5em 0;
+
+                    .dark-gradient {
+                        border: 0.0625em solid $black-color;
+                        background-color: $white-color;
+                    }
+
+                    .dark-gradient-row {
+                        margin: 1em 0 !important;
+                        display: inline-table !important;
+
+                        td {
+                            border-bottom: 0.0625em solid red;
+                        }
+                    }
+
+                    @include media(small) {
+                        margin: 3em 0 1em 0;
+                    }
+
+                    &.pricetable-content-table {
+                        width: 100%;
+
+                        tr {
+                            td {
+                                padding: 1em 0.5em;
+                                margin: 0.5em;
+                                font-size: $font-size-18;
+                                font-weight: $font-weight-400;
+                                text-align: center;
+                                color: $gray08-color;
+                                line-height: 1;
+
+                                > div{
+                                    line-height: 1.3;
+                                }
+
+                                &.choose-plan-link{
+                                    padding: 0;
+                                }
+
+                                &.active {
+                                    color: $black-color;
+                                    &.common {
+                                        border-bottom: none;
+                                        background: none;
+                                        border-radius: 0;
+                                    }
+
+                                    img {
+                                        filter: brightness(0);
+                                    }
+                                }
+
+                                &.price-tab {
+                                    margin: 0 1em;
+                                    .packagePrice {
+                                        font-weight: $font-weight-600;
+                                        font-size: $font-size-22;
+                                        color: $white-color;
+                                    }
+
+                                    &.active {
+                                        .packagePrice {
+                                            color: $blue-color;
+                                        }
+                                    }
+
+                                    img {
+                                        &.remix-image {
+                                            max-width: 1em !important;
+                                        }
+                                    }
+
+                                    .price-tag {
+                                        color: $black-color;
+                                        font-weight: $font-weight-700;
+                                        padding: 1em 0;
+                                        display: flex;
+                                        justify-content: center;
+                                        height: 4em;
+
+                                        span {
+                                            font-size: $font-size-42;
+                                        }
+
+                                        div {
+                                            display: flex;
+
+                                            span {
+                                                align-items: center;
+                                            }
+
+                                            &:first-child {
+                                                align-self: flex-start;
+                                                margin-top: -0.5em;
+                                                font-size: $font-size-22;
+                                            }
+
+                                            &:last-child {
+                                                align-self: flex-end;
+                                                font-size: $font-size-20;
+                                            }
+                                        }
+                                    }
+
+                                    .price-savings {
+                                        p {
+                                            font-size: $font-size-16;
+                                            font-weight: 300;
+                                            color: #304256;
+                                            padding: 0;
+                                        }
+                                    }
+
+                                    &.active {
+                                        .price-savings {
+                                            p {
+                                                color: $black-color;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .price-tab {
+                                    img {
+                                        &.remix-image {
+                                            max-width: 1em !important;
+                                        }
+                                    }
+                                }
+
+                                &.popular {
+                                    color: $white-color;
+                                    background-color: $blue-color !important;
+                                    color: $white-color;
+                                    font-size: $font-size-16;
+                                    font-weight: $font-weight-500;
+                                    text-transform: $text-transform-uppercase;
+                                    padding: 1em;
+                                    border-radius: $border-radius-3;
+                                }
+
+                                &.common {
+                                    padding: 1.3em;
+                                    background-color: $white-color;
+                                    color: $black-color;
+                                    font-size: $font-size-16;
+                                    font-weight: 500;
+                                    width: 10em;
+                                    border-radius: $border-radius-3;
+                                }
+
+                                &.premium {
+                                    background-color: $black-color;
+                                }
+
+                                &:first-child {
+                                    text-align: left;
+                                    color: $white-color;
+                                    font-size: $font-size-20;
+                                    width: 15em;
+                                    border: none;
+                                    line-height: 1.3;
+                                }
+                            }
+
+                            &:first-child {
+                                td {
+                                    font-size: $font-size-16;
+                                    border-radius: 10px 10px 0 0;
+                                    padding: 1.3em 1em;
+                                    border:1px solid transparent;
+                                    line-height: 1.2;
+                                }
+                            }
+
+                            &:last-child{
+                                td{
+                                    &.choose-plan-link{
+                                        &.active{
+                                            border-radius: 10px !important;
+                                        }
+                                    }
+                                    &.active{
+                                        border-radius: 0 0 10px 10px !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    @include media(medium) {
+                        display: none;
+                    }
+                }
+
+                .price-table-minified {
+                    display: none;
+
+                    @include media(medium) {
+                        display: block;
+                        margin: 2em 0;
+                    }
+
+                    @include media(medium-small) {
+                        font-size: 0.9em;
+                    }
+
+                    .accordion__item {
+                        margin: 0 0 1em 0;
+                        background-color: $white-color;
+                        border-radius: 1em;
+
+                        .accordion__heading {
+                            .accordion__button {
+                                border-bottom: 0.0625em solid rgba(0, 0, 0, 0.8);
+                                display: flex;
+                                justify-content: space-between;
+                                padding: 1em 1em 1em 1.5em;
+                                .responsive-left-header {
+                                    span {
+                                        font-size: $font-size-24;
+                                        font-weight: $font-weight-600;
+                                        color: $black-color;
+                                        @include media(small) {
+                                            font-size: $font-size-22;
+                                        }
+                                        @include media(medium-small) {
+                                            font-size: $font-size-20;
+                                        }
+                                    }
+                                }
+
+                                .responsive-right-header {
+                                    position: relative;
+
+                                    .price-tag {
+                                        padding: 0 4em 0 0;
+
+                                        div {
+                                            @include media(medium) {
+                                                color: $white-color;
+                                            }
+                                        }
+                                    }
+
+                                    span {
+                                        font-size: $font-size-24;
+                                        font-weight: $font-weight-500;
+                                        color: $black-color;
+
+                                        @include media(very-small) {
+                                            font-size: $font-size-22;
+                                        }
+                                    }
+
+                                    .accordion-opener {
+                                        &::after {
+                                            content: '';
+                                            background-image: url('/assets/images/accordion-btn.svg');
+                                            background-size: 1.25em;
+                                            background-repeat: no-repeat;
+                                            width: 1.25em;
+                                            height: 1.25em;
+                                            position: absolute;
+                                            right: 1em;
+                                            top: 0.7em;
+                                            transition: 0.3s all ease-in-out;
+                                        }
+                                    }
+
+                                    &.active {
+                                        .accordion-opener {
+                                            &::after {
+                                                content: '';
+                                                transition: 0.05s;
+                                                transform: rotate(180deg);
+                                                top: 0.1em;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .accordion__panel {
+                            background: $white-color;
+                            border-radius: 0 0 1em 1em;
+                            padding: 2em;
+
+                            ul {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+
+                                li {
+                                    text-align: left;
+                                    margin: 0.5em 0;
+                                    font-size: $font-size-20;
+                                    color: $black-color;
+
+                                    @include media(very-small) {
+                                        margin: 0.5em 0;
+                                    }
+                                }
+                            }
+
+                            .choosePlan {
+                                margin: 1.5em 0 0;
+                                > a{
+                                    color: $black-color;
+                                    font-weight: $font-weight-600;
+                                }
+                            }
+
+                            .choose-plan-link {
+                                margin: 2em 0 1em 0;
+
+                                a {
+                                    background-color: $white-color;
+                                    color: $black-color;
+                                    font-size: $font-size-18;
+                                    font-weight: 500;
+                                    border-radius: 0.25em;
+                                    padding: 0.5em 1.5em;
+                                    display: inline-block;
+                                }
+                            }
+                        }
+
+                        &:nth-child(3) {
+                            border-radius: 0 1em 1em 1em;
+
+                            .accordion__heading {
+                                .accordion__button {
+                                    position: relative;
+                                    margin-top: 6em;
+
+                                    span {
+                                        &.popular {
+                                            position: absolute;
+                                            top: -2.7em;
+                                            left: 0;
+                                            background-color: $blue-color;
+                                            padding: 0.7em 1.5em;
+                                            color: #fff;
+                                            font-size: 1.3em;
+                                            font-weight: 400;
+                                            border-radius: 7px 7px 0 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

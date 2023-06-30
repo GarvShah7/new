@@ -1,0 +1,543 @@
+.pricetable-section {
+  padding: 2em 0;
+}
+.pricetable-section .choosePlanWrap .choose-plan-link {
+  padding: 0;
+}
+.pricetable-section .choosePlanWrap .choose-plan-link > a {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1em;
+  color: #FFFFFF;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 7.3px;
+  padding: 1em 1.5em;
+  width: 100%;
+}
+.pricetable-section .choosePlanWrap .choose-plan-link > a:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+.pricetable-section .choosePlanWrap .choose-plan-link.active {
+  border-radius: 10px !important;
+}
+.pricetable-section .choosePlanWrap .choose-plan-link.active > a {
+  background-color: #000000 !important;
+  color: #FFFFFF;
+}
+.pricetable-section .choosePlanWrap .choose-plan-link.active > a:hover {
+  background-color: #FFFFFF !important;
+  color: #000000;
+}
+@media (max-width: 999px) {
+  .pricetable-section {
+    padding: 1em 0;
+  }
+}
+@media (max-width: 640px) {
+  .pricetable-section {
+    padding: 2.5em 0;
+  }
+}
+@media (max-width: 999px) {
+  .pricetable-section .container .pricetabel-container .pricetable-header .section-header {
+    padding-right: 2em;
+  }
+}
+@media (max-width: 767px) {
+  .pricetable-section .container .pricetabel-container .pricetable-header .section-header {
+    padding-right: 0em;
+  }
+}
+.pricetable-section .container .pricetabel-container .pricetable-header .section-header h4 {
+  font-weight: 500;
+}
+@media (max-width: 1280px) {
+  .pricetable-section .container .pricetabel-container .pricetable-header .section-header .section-max-title p {
+    font-size: 1em;
+  }
+}
+.pricetable-section .container .pricetabel-container .pricetable-header .section-header p {
+  font-size: 2.125em;
+  font-weight: 500;
+  line-height: 1.25em;
+  color: #000000;
+}
+.pricetable-section .container .pricetabel-container .pricetable-header .section-header p strong {
+  font-size: 1em;
+  color: #000000;
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .pricetable-section .container .pricetabel-container .pricetable-header .section-header .section-mini-title {
+    font-size: 1.5em;
+  }
+}
+.pricetable-section .container .pricetabel-container .pricetable-header .section-header .section-max-title p {
+  font-size: 1em;
+  color: #000000;
+  padding: 0;
+  display: inline-block;
+}
+@media (max-width: 767px) {
+  .pricetable-section .container .pricetabel-container .pricetable-header .section-header .section-max-title p {
+    font-size: 0.875em;
+  }
+}
+.pricetable-section .container .pricetabel-container .pricetable-header .extra-sub-title {
+  margin-top: 1em;
+}
+.pricetable-section .container .pricetabel-container .pricetable-header .extra-sub-title p {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #000000;
+}
+@media (max-width: 767px) {
+  .pricetable-section .container .pricetabel-container .pricetable-header .extra-sub-title p {
+    font-size: 1.125em;
+  }
+}
+.pricetable-section .container .pricetabel-container .pricetable-header .price-package {
+  border-radius: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .pricetable-section .container .pricetabel-container .pricetable-header .price-package {
+    margin-top: 3em;
+  }
+}
+@media (max-width: 640px) {
+  .pricetable-section .container .pricetabel-container .pricetable-header .price-package ul {
+    display: block;
+  }
+}
+.pricetable-section .container .pricetabel-container .pricetable-header .price-package ul li {
+  margin: 0;
+  position: relative;
+}
+@media (max-width: 640px) {
+  .pricetable-section .container .pricetabel-container .pricetable-header .price-package ul li {
+    margin: 4em 0em;
+  }
+}
+.pricetable-section .container .pricetabel-container .pricetable-header .price-package ul li p {
+  padding: 0.5em 0.75em;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-size: 1.125em;
+  letter-spacing: 0.833333px;
+  cursor: pointer;
+  min-width: 11em;
+  text-align: center;
+  margin: 0 0.625em;
+}
+.pricetable-section .container .pricetabel-container .pricetable-header .price-package ul li p.active {
+  background-color: #000000;
+  position: relative;
+}
+.pricetable-section .container .pricetabel-container .pricetable-header .price-package ul li span {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 7em;
+  top: -2em;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  padding: 0.5em 0;
+  background-color: #304256;
+  color: #FFFFFF;
+  font-size: 0.75em;
+  line-height: 1em;
+  font-weight: 600;
+}
+.pricetable-section .container .pricetabel-container .pricetable-header .price-table .price-table-cover {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+}
+.pricetable-section .container .pricetabel-container .pricetable-header .price-table .price-table-cover .column {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0.5em;
+}
+.pricetable-section .container .pricetabel-container .pricetable-header .price-table .price-table-cover .column .column-header span {
+  display: block;
+  background-color: #000000;
+  border-radius: 0.25em;
+  font-size: 1em;
+  color: #FFFFFF;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  text-align: center;
+  box-shadow: 1px 2px 9px -3px rgba(0, 0, 0, 0.75);
+}
+.pricetable-section .container .pricetabel-container .pricetable-header .price-table .price-table-cover .column .column-header span.empty {
+  opacity: 0;
+  box-shadow: none;
+}
+.pricetable-section .container .pricetabel-container .pricetable-header .price-table .price-table-cover .column .column-header span.border-box {
+  background-color: transparent;
+  color: #000000;
+  border: 0.0625em solid #000000;
+  font-weight: 600;
+  box-shadow: none;
+}
+.pricetable-section .container .pricetabel-container .pricetable-header .price-table .price-table-cover .column .column-body {
+  background-color: #FFFFFF;
+  box-shadow: 1px 2px 9px -3px rgba(0, 0, 0, 0.75);
+  border-radius: 0.625em;
+  margin: 0 0.5em;
+}
+.pricetable-section .container .pricetabel-container .pricetable-header .price-table .price-table-cover .column .column-body span {
+  display: block;
+  padding: 1em;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 0.875em;
+}
+.pricetable-section .container .pricetabel-container .pricetable-header .price-table .price-table-cover .column.first {
+  background: transparent;
+}
+.pricetable-section .container .pricetabel-container .pricetable-header .price-table .price-table-cover .column.first .column-header span {
+  opacity: 0;
+  text-align: left;
+}
+.pricetable-section .container .pricetabel-container .pricetable-header .price-table .price-table-cover .column.first .column-body {
+  background: transparent;
+  box-shadow: none;
+}
+.pricetable-section .container .pricetabel-container .pricetable-header .price-table .price-table-cover .column.first .column-body span {
+  text-align: left;
+  color: #000000;
+}
+.pricetable-section .container .pricetabel-container .pricetable-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 640px) {
+  .pricetable-section .container .pricetabel-container .pricetable-footer {
+    flex-direction: column;
+    margin: 3em 0 0;
+  }
+}
+.pricetable-section .container .pricetabel-container .pricetable-footer .button {
+  margin: 0 0 0 2em;
+}
+@media (max-width: 640px) {
+  .pricetable-section .container .pricetabel-container .pricetable-footer .button {
+    margin: 1.5em 0 0;
+  }
+}
+.pricetable-section .container .pricetabel-container .pricetable-footer h2,
+.pricetable-section .container .pricetabel-container .pricetable-footer h3,
+.pricetable-section .container .pricetabel-container .pricetable-footer h4,
+.pricetable-section .container .pricetabel-container .pricetable-footer h5,
+.pricetable-section .container .pricetabel-container .pricetable-footer h6 {
+  font-weight: 500;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+@media (max-width: 640px) {
+  .pricetable-section .container .pricetabel-container .pricetable-footer h2,
+  .pricetable-section .container .pricetabel-container .pricetable-footer h3,
+  .pricetable-section .container .pricetabel-container .pricetable-footer h4,
+  .pricetable-section .container .pricetabel-container .pricetable-footer h5,
+  .pricetable-section .container .pricetabel-container .pricetable-footer h6 {
+    text-align: center;
+    font-size: 1.125em;
+  }
+}
+.pricetable-section .container .pricetabel-container .pricetable-content table {
+  width: 100%;
+  margin: 5em 0 5.125em 0;
+  border-spacing: 2.5em 0;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content table .dark-gradient {
+  border: 0.0625em solid #000000;
+  background-color: #FFFFFF;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content table .dark-gradient-row {
+  margin: 1em 0 !important;
+  display: inline-table !important;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content table .dark-gradient-row td {
+  border-bottom: 0.0625em solid red;
+}
+@media (max-width: 767px) {
+  .pricetable-section .container .pricetabel-container .pricetable-content table {
+    margin: 3em 0 1em 0;
+  }
+}
+.pricetable-section .container .pricetabel-container .pricetable-content table.pricetable-content-table {
+  width: 100%;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content table.pricetable-content-table tr td {
+  padding: 1em 0.5em;
+  margin: 0.5em;
+  font-size: 1.125em;
+  font-weight: 400;
+  text-align: center;
+  color: #808080;
+  line-height: 1;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content table.pricetable-content-table tr td > div {
+  line-height: 1.3;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content table.pricetable-content-table tr td.choose-plan-link {
+  padding: 0;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content table.pricetable-content-table tr td.active {
+  color: #000000;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content table.pricetable-content-table tr td.active.common {
+  border-bottom: none;
+  background: none;
+  border-radius: 0;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content table.pricetable-content-table tr td.active img {
+  filter: brightness(0);
+}
+.pricetable-section .container .pricetabel-container .pricetable-content table.pricetable-content-table tr td.price-tab {
+  margin: 0 1em;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content table.pricetable-content-table tr td.price-tab .packagePrice {
+  font-weight: 600;
+  font-size: 1.375em;
+  color: #FFFFFF;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content table.pricetable-content-table tr td.price-tab.active .packagePrice {
+  color: #000EE6;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content table.pricetable-content-table tr td.price-tab img.remix-image {
+  max-width: 1em !important;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content table.pricetable-content-table tr td.price-tab .price-tag {
+  color: #000000;
+  font-weight: 700;
+  padding: 1em 0;
+  display: flex;
+  justify-content: center;
+  height: 4em;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content table.pricetable-content-table tr td.price-tab .price-tag span {
+  font-size: 2.625em;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content table.pricetable-content-table tr td.price-tab .price-tag div {
+  display: flex;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content table.pricetable-content-table tr td.price-tab .price-tag div span {
+  align-items: center;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content table.pricetable-content-table tr td.price-tab .price-tag div:first-child {
+  align-self: flex-start;
+  margin-top: -0.5em;
+  font-size: 1.375em;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content table.pricetable-content-table tr td.price-tab .price-tag div:last-child {
+  align-self: flex-end;
+  font-size: 1.25em;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content table.pricetable-content-table tr td.price-tab .price-savings p {
+  font-size: 1em;
+  font-weight: 300;
+  color: #304256;
+  padding: 0;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content table.pricetable-content-table tr td.price-tab.active .price-savings p {
+  color: #000000;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content table.pricetable-content-table tr td .price-tab img.remix-image {
+  max-width: 1em !important;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content table.pricetable-content-table tr td.popular {
+  color: #FFFFFF;
+  background-color: #000EE6 !important;
+  color: #FFFFFF;
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 1em;
+  border-radius: 3px;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content table.pricetable-content-table tr td.common {
+  padding: 1.3em;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-size: 1em;
+  font-weight: 500;
+  width: 10em;
+  border-radius: 3px;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content table.pricetable-content-table tr td.premium {
+  background-color: #000000;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content table.pricetable-content-table tr td:first-child {
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 1.25em;
+  width: 15em;
+  border: none;
+  line-height: 1.3;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content table.pricetable-content-table tr:first-child td {
+  font-size: 1em;
+  border-radius: 10px 10px 0 0;
+  padding: 1.3em 1em;
+  border: 1px solid transparent;
+  line-height: 1.2;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content table.pricetable-content-table tr:last-child td.choose-plan-link.active {
+  border-radius: 10px !important;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content table.pricetable-content-table tr:last-child td.active {
+  border-radius: 0 0 10px 10px !important;
+}
+@media (max-width: 999px) {
+  .pricetable-section .container .pricetabel-container .pricetable-content table {
+    display: none;
+  }
+}
+.pricetable-section .container .pricetabel-container .pricetable-content .price-table-minified {
+  display: none;
+}
+@media (max-width: 999px) {
+  .pricetable-section .container .pricetabel-container .pricetable-content .price-table-minified {
+    display: block;
+    margin: 2em 0;
+  }
+}
+@media (max-width: 640px) {
+  .pricetable-section .container .pricetabel-container .pricetable-content .price-table-minified {
+    font-size: 0.9em;
+  }
+}
+.pricetable-section .container .pricetabel-container .pricetable-content .price-table-minified .accordion__item {
+  margin: 0 0 1em 0;
+  background-color: #FFFFFF;
+  border-radius: 1em;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content .price-table-minified .accordion__item .accordion__heading .accordion__button {
+  border-bottom: 0.0625em solid rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 1em 1em 1.5em;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content .price-table-minified .accordion__item .accordion__heading .accordion__button .responsive-left-header span {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #000000;
+}
+@media (max-width: 767px) {
+  .pricetable-section .container .pricetabel-container .pricetable-content .price-table-minified .accordion__item .accordion__heading .accordion__button .responsive-left-header span {
+    font-size: 1.375em;
+  }
+}
+@media (max-width: 640px) {
+  .pricetable-section .container .pricetabel-container .pricetable-content .price-table-minified .accordion__item .accordion__heading .accordion__button .responsive-left-header span {
+    font-size: 1.25em;
+  }
+}
+.pricetable-section .container .pricetabel-container .pricetable-content .price-table-minified .accordion__item .accordion__heading .accordion__button .responsive-right-header {
+  position: relative;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content .price-table-minified .accordion__item .accordion__heading .accordion__button .responsive-right-header .price-tag {
+  padding: 0 4em 0 0;
+}
+@media (max-width: 999px) {
+  .pricetable-section .container .pricetabel-container .pricetable-content .price-table-minified .accordion__item .accordion__heading .accordion__button .responsive-right-header .price-tag div {
+    color: #FFFFFF;
+  }
+}
+.pricetable-section .container .pricetabel-container .pricetable-content .price-table-minified .accordion__item .accordion__heading .accordion__button .responsive-right-header span {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #000000;
+}
+@media (max-width: 480px) {
+  .pricetable-section .container .pricetabel-container .pricetable-content .price-table-minified .accordion__item .accordion__heading .accordion__button .responsive-right-header span {
+    font-size: 1.375em;
+  }
+}
+.pricetable-section .container .pricetabel-container .pricetable-content .price-table-minified .accordion__item .accordion__heading .accordion__button .responsive-right-header .accordion-opener::after {
+  content: "";
+  background-image: url("/assets/images/accordion-btn.svg");
+  background-size: 1.25em;
+  background-repeat: no-repeat;
+  width: 1.25em;
+  height: 1.25em;
+  position: absolute;
+  right: 1em;
+  top: 0.7em;
+  transition: 0.3s all ease-in-out;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content .price-table-minified .accordion__item .accordion__heading .accordion__button .responsive-right-header.active .accordion-opener::after {
+  content: "";
+  transition: 0.05s;
+  transform: rotate(180deg);
+  top: 0.1em;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content .price-table-minified .accordion__item .accordion__panel {
+  background: #FFFFFF;
+  border-radius: 0 0 1em 1em;
+  padding: 2em;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content .price-table-minified .accordion__item .accordion__panel ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content .price-table-minified .accordion__item .accordion__panel ul li {
+  text-align: left;
+  margin: 0.5em 0;
+  font-size: 1.25em;
+  color: #000000;
+}
+@media (max-width: 480px) {
+  .pricetable-section .container .pricetabel-container .pricetable-content .price-table-minified .accordion__item .accordion__panel ul li {
+    margin: 0.5em 0;
+  }
+}
+.pricetable-section .container .pricetabel-container .pricetable-content .price-table-minified .accordion__item .accordion__panel .choosePlan {
+  margin: 1.5em 0 0;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content .price-table-minified .accordion__item .accordion__panel .choosePlan > a {
+  color: #000000;
+  font-weight: 600;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content .price-table-minified .accordion__item .accordion__panel .choose-plan-link {
+  margin: 2em 0 1em 0;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content .price-table-minified .accordion__item .accordion__panel .choose-plan-link a {
+  background-color: #FFFFFF;
+  color: #000000;
+  font-size: 1.125em;
+  font-weight: 500;
+  border-radius: 0.25em;
+  padding: 0.5em 1.5em;
+  display: inline-block;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content .price-table-minified .accordion__item:nth-child(3) {
+  border-radius: 0 1em 1em 1em;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content .price-table-minified .accordion__item:nth-child(3) .accordion__heading .accordion__button {
+  position: relative;
+  margin-top: 6em;
+}
+.pricetable-section .container .pricetabel-container .pricetable-content .price-table-minified .accordion__item:nth-child(3) .accordion__heading .accordion__button span.popular {
+  position: absolute;
+  top: -2.7em;
+  left: 0;
+  background-color: #000EE6;
+  padding: 0.7em 1.5em;
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: 400;
+  border-radius: 7px 7px 0 0;
+}
+
+/*# sourceMappingURL=pricingsection.css.map */

@@ -1,0 +1,73 @@
+.jamstackCTESection {
+  background: linear-gradient(98.81deg, #D1036F 0%, #FB7A4D 102.22%);
+}
+@media (max-width: 999px) {
+  .jamstackCTESection .container .jamstackCTEContent.gridBox {
+    grid-template-columns: 1fr;
+  }
+}
+.jamstackCTESection .container .jamstackCTEContent.gridBox .leftSide h4, .jamstackCTESection .container .jamstackCTEContent.gridBox .leftSide p {
+  color: #FFFFFF;
+}
+.jamstackCTESection .container .jamstackCTEContent.gridBox .leftSide h4 {
+  font-weight: 600;
+  padding: 0 0 0.833em;
+}
+.jamstackCTESection .container .jamstackCTEContent.gridBox .leftSide p {
+  line-height: 1.7;
+  padding-bottom: 0;
+}
+.jamstackCTESection .container .jamstackCTEContent.gridBox .leftSide ul {
+  padding: 2em 0 0;
+}
+@media (max-width: 999px) {
+  .jamstackCTESection .container .jamstackCTEContent.gridBox .leftSide ul {
+    padding: 1.5em 0 0;
+  }
+}
+.jamstackCTESection .container .jamstackCTEContent.gridBox .leftSide ul li {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  font-weight: 400;
+}
+@media (max-width: 480px) {
+  .jamstackCTESection .container .jamstackCTEContent.gridBox .leftSide ul li {
+    display: block;
+    font-size: 0.938em;
+  }
+}
+.jamstackCTESection .container .jamstackCTEContent.gridBox .leftSide ul li:not(:last-child) {
+  padding: 0 0 0.5em;
+}
+.jamstackCTESection .container .jamstackCTEContent.gridBox .leftSide ul li > span.correctIcon img {
+  max-width: 2em;
+  width: 100%;
+  padding: 0 1em 0 0;
+  height: 2em;
+  object-fit: contain;
+}
+.jamstackCTESection .container .jamstackCTEContent.gridBox .leftSide .sectionButton {
+  padding: 3.125em 0 0;
+}
+@media (max-width: 999px) {
+  .jamstackCTESection .container .jamstackCTEContent.gridBox .leftSide .sectionButton {
+    padding: 2em 0 0;
+  }
+}
+.jamstackCTESection .container .jamstackCTEContent.gridBox .rightSide {
+  margin: 3.125em 0 0;
+}
+.jamstackCTESection .container .jamstackCTEContent.gridBox .rightSide img {
+  height: 32em;
+  max-width: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+@media (max-width: 999px) {
+  .jamstackCTESection .container .jamstackCTEContent.gridBox .rightSide img {
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=jamstackcte.css.map */

@@ -1,0 +1,278 @@
+div{
+    &.toggleBox{
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background-color:$black-color;
+        z-index:999;
+        .closeItem{
+           img{
+                max-width: 12em;
+                width: 100%;
+                height: 1.7em;
+                cursor: pointer;
+                @include media(medium){
+                    max-width: 10em;
+                    height: 1.5em;
+                }
+           }
+        }
+        .toggleContent{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+            padding: 0 0 10.438em;
+            @include media(extra-large){
+                padding: 0 0 10em;
+            }
+            @include media(large){
+                padding: 0 0 9em;
+            }
+            @include media(medium){
+                padding: 0 0 8em;
+            }
+            @include media(small){
+                padding: 0 0 5em;
+            }
+            .toggleGrid{
+                overflow-y: auto;
+                &.gridBox{
+                    @include media(small){
+                        grid-template-columns: 1fr;
+                        grid-row-gap: 3em;
+                    }
+                    .navigation{
+                        padding: 8em 0 6em;
+                        overflow-y:auto;
+                        @include media(extra-large){
+                            padding: 7.5em 0 5.5em; 
+                        }
+                        @include media(large){
+                            padding: 7em 0 5em; 
+                        }
+                        @include media(medium){
+                            padding: 6.5em 0 4.5em; 
+                        }
+                        @include media(small){
+                            padding: 6em 0 4em; 
+                        }
+                        @include media(medium-small){
+                            padding: 4em 0 3em; 
+                        }
+                        @include media(very-small){
+                            padding: 3em 0 2em; 
+                        }
+                        ul{
+                            &.navItemList{
+                                flex-direction: column;
+                                align-items:flex-start;
+                                .navItem{
+                                    margin-left: 0;
+                                    margin-bottom: 1em;
+                                    > a{
+                                        font-weight: $font-weight-500;
+                                        font-size: $font-size-32;
+                                        color: $white-color;
+                                        -webkit-background-clip: text;
+                                        -webkit-text-fill-color: transparent;
+                                        background-image: linear-gradient(to right, $blue-color,  $blue-color 50%, $white-color 50%);
+                                        background-size: 200% 100%;
+                                        background-position: 100%;
+                                        @include media(large){
+                                            font-size: $font-size-30;
+                                        }
+                                        @include media(medium){
+                                            font-size: $font-size-28;
+                                        }
+                                        @include media(small){
+                                            font-size: $font-size-24;
+                                        }
+                                        @include media(very-small){
+                                            font-size: $font-size-22;
+                                        }
+                                        &:hover{
+                                            // color: $blue-color;
+                                            transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
+                                            background-position: 0%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .footerContent{
+                        &.fullNav{
+                            ul{
+                                display: flex;
+                                &:not(.socialLinks){
+                                    display: none;
+                                }
+                                li{
+                                    + li{
+                                        margin-left: 3.182em;
+                                    }
+                                    a{
+                                        font-weight: $font-weight-500;
+                                        font-size: $font-size-22;
+                                        line-height: $line-height-normal;
+                                        color: $white-opc-50;
+                                        @include media(medium){
+                                            font-size: $font-size-20;
+                                        }
+                                        @include media(small){
+                                            font-size: $font-size-19;
+                                        }
+                                        @include media(very-small){
+                                            font-size: $font-size-18;
+                                        }
+                                        &:hover{
+                                            color: $blue-color;
+                                        }
+                                    }
+                                }
+                                &.socialLinks{
+                                    @include media(very-small){
+                                        flex-direction: column;
+                                    }
+                                    padding: 1.563em 0 0;
+                                    li{
+                                        @include media(very-small){
+                                            margin-bottom: 1em;
+                                        }
+                                        + li{
+                                            margin-left: 1em;
+                                            @include media(very-small){
+                                                margin-left: 0;
+                                            }
+                                        }
+                                        a{
+                                            font-size: $font-size-16;
+                                            text-transform: $text-transform-capitalize;
+                                            -webkit-background-clip: text;
+                                            -webkit-text-fill-color: transparent;
+                                            background-image: linear-gradient(to right, $blue-color,  $blue-color 50%, $white-opc-50 50%);
+                                            background-size: 200% 100%;
+                                            background-position: 100%;
+                                            @include media(small){
+                                                font-size: $font-size-15;
+                                            }
+                                            @include media(very-small){
+                                                font-size: $font-size-14;
+                                            }
+                                            &:hover{
+                                                // color: $blue-color;
+                                                transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
+                                                background-position: 0%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .rightSide{
+                        display:flex;
+                        flex-direction:column;
+                        justify-content:flex-end;
+                        h5{
+                            color:$white-color;
+                            // padding: 0 0 1.7em;
+                            padding: 0 0 1em;
+                            // @include media(large){
+                            //     padding: 0 0 1.6em;
+                            // }
+                            // @include media(medium){
+                            //     padding: 0 0 1.5em;
+                            // }
+                            // @include media(small){
+                            //     padding: 0 0 1.4em;
+                            // }
+                            // @include media(medium-small){
+                            //     padding: 0 0 1.3em;
+                            // }
+                        }
+                        ul{
+                            &.contactWrap{
+                                li{
+                                    &:not(:last-child){
+                                        padding: 0 0 0.5em; 
+                                    }
+                                    &.address{
+                                        max-width: 80%;
+                                        line-height: 1;
+                                    }
+                                    a{
+                                        // color: $white-opc-50;
+                                        -webkit-background-clip: text;
+                                        -webkit-text-fill-color: transparent;
+                                        background-image: linear-gradient(to right, $blue-color,  $blue-color 50%, $white-opc-50 50%);
+                                        background-size: 200% 100%;
+                                        background-position: 100%;
+                                        &:hover{
+                                            // color: $blue-color;
+                                            transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
+                                            background-position: 0%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+           
+        }
+    }
+    .navigation{
+        ul{
+            &.navItemList{
+                display: flex;
+                align-items: center;
+                // &:hover{
+                //     .navItem{
+                //         > a {
+                //             opacity: 0.5;
+                //         }
+                //     }
+                // }
+                .navItem{
+                    > a{
+                        font-family: $font-primary;
+                        font-weight: $font-weight-500;
+                        font-size: $font-size-18;
+                        line-height: $line-height-medium;
+                        // color: $black-color;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-image: linear-gradient(to right, $blue-color,  $blue-color 50%, $black-color 50%);
+                        background-size: 200% 100%;
+                        background-position: 100%;
+                        @include media(large){
+                            font-size: $font-size-17;
+                        }
+                        @include media(medium){
+                            font-size: $font-size-16;
+                        }
+                        &:hover{
+                            // opacity: 1;
+                             transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
+                             background-position: 0%;
+                        }
+                    }
+                    &.withToggle{
+                        cursor: pointer;
+                        img{
+                            max-width: 1.875em;
+                            width: 100%;
+                            height: 1.375em;
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

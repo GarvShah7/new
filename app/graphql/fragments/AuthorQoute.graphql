@@ -1,0 +1,6 @@
+fragment AuthorQoute on AuthorQoute {
+  _key
+  _type
+  description
+  authorName
+}

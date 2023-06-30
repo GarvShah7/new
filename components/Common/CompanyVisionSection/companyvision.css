@@ -1,0 +1,16 @@
+.companyvisionSection .container .companyvisionContent h6 {
+  font-weight: 600;
+  padding-bottom: 0.5em;
+}
+@media (max-width: 999px) {
+  .companyvisionSection + .serviceSection.sectionInnerSpace {
+    margin: 8em 0 6em;
+  }
+}
+@media (max-width: 480px) {
+  .companyvisionSection + .serviceSection.sectionInnerSpace {
+    margin: 6em 0 4em;
+  }
+}
+
+/*# sourceMappingURL=companyvision.css.map */

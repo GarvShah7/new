@@ -1,0 +1,85 @@
+.authorCardSection {
+  margin: 2em 0 0;
+}
+.authorCardSection .authorCardContent .authorCardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 0 1.25em;
+}
+@media (max-width: 767px) {
+  .authorCardSection .authorCardContent .authorCardHeader {
+    margin: 0 0 1em;
+  }
+}
+@media (max-width: 480px) {
+  .authorCardSection .authorCardContent .authorCardHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.authorCardSection .authorCardContent .authorCardHeader .leftSide .authorInfo {
+  display: flex;
+  align-items: center;
+}
+.authorCardSection .authorCardContent .authorCardHeader .leftSide .authorInfo .authorImage {
+  margin-right: 1em;
+}
+.authorCardSection .authorCardContent .authorCardHeader .leftSide .authorInfo .authorImage img {
+  max-width: 3.75em;
+  width: 100%;
+  height: 3.75em;
+}
+.authorCardSection .authorCardContent .authorCardHeader .leftSide .authorInfo .authorName h6 {
+  font-weight: 500;
+  font-size: 1.25em;
+  line-height: 1;
+  color: #000000;
+  padding-bottom: 0.5em;
+}
+@media (max-width: 999px) {
+  .authorCardSection .authorCardContent .authorCardHeader .leftSide .authorInfo .authorName h6 {
+    font-size: 1.188em;
+  }
+}
+@media (max-width: 767px) {
+  .authorCardSection .authorCardContent .authorCardHeader .leftSide .authorInfo .authorName h6 {
+    font-size: 1.125em;
+  }
+}
+.authorCardSection .authorCardContent .authorCardHeader .leftSide .authorInfo .authorName span {
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.5);
+  padding-bottom: 0;
+}
+@media (max-width: 480px) {
+  .authorCardSection .authorCardContent .authorCardHeader .rightSide {
+    margin: 2em 0 1em;
+  }
+}
+.authorCardSection .authorCardContent .authorCardHeader .rightSide ul.authorSocialIcon {
+  display: flex;
+}
+.authorCardSection .authorCardContent .authorCardHeader .rightSide ul.authorSocialIcon li + li {
+  margin-left: 1.25em;
+}
+.authorCardSection .authorCardContent .authorCardHeader .rightSide ul.authorSocialIcon li a img {
+  max-width: 1.4em;
+  width: 100%;
+  height: 1.4em;
+}
+.authorCardSection .authorCardContent p {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 2;
+  letter-spacing: 0.025em;
+  color: #000000;
+  padding-bottom: 0;
+}
+.authorCardSection .authorCardContent p a {
+  color: #000EE6;
+}
+
+/*# sourceMappingURL=authorcardsection.css.map */

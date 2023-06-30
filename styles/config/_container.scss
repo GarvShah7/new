@@ -1,0 +1,17 @@
+.container{
+    max-width: 1440px;
+    // max-width: 90rem;
+    width: 90%;
+    margin: 0 auto;
+    &.fullWidth{
+        max-width: 100%;
+        width: 100%;
+    }
+    @include media(medium){
+        max-width: 95%;
+    }
+    @include media(small){
+        max-width: 90%;
+    }
+}
+

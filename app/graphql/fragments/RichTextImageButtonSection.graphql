@@ -1,0 +1,16 @@
+
+fragment RichTextImageButtonSection  on RichTextImageButtonSection{
+  _key
+   _type
+  title
+  description{
+    ...RichText
+  }
+  image{
+    ...Image
+  }
+  button{
+  ...Button
+  }
+  sectionTheme
+}

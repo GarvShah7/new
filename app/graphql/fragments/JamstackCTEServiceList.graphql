@@ -1,0 +1,8 @@
+fragment JamstackCTEServiceList on JamstackCTEServiceList {
+  _key
+  _type
+  image {
+    ...Image
+  }
+  title
+}

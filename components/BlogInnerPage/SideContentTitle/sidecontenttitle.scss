@@ -1,0 +1,106 @@
+@import "../../../styles/config/variables";
+
+.sideListSection{
+    .sideListContent{
+        background-color: $black-color;
+        border-radius: $border-radius-regular;
+        padding:1.875em 1.250em;
+        h5{
+            font-weight: $font-weight-600;
+            font-size: $font-size-20;
+            color: $white-color;
+            margin: 0 0 1em;
+            text-align: center;
+            line-height: $line-height-normal;
+        }
+        ul{
+            &.linkItems{
+                list-style-type: disc;
+                margin: 0;
+                max-height: calc(100vh - 30.375em);
+                overflow: auto;
+                overflow-anchor: none;
+                padding-left: 1.25rem;
+                padding-right: 0.875rem;
+                position: relative;
+                touch-action: auto;
+                &::-webkit-scrollbar-track
+                {
+                  border-radius: 0.625rem;
+                  background-color: #000;
+                  border: 2px solid #000;
+                  outline: 1px solid #fff;
+                  overflow: hidden;
+                }
+                &::-webkit-scrollbar
+                {
+                    width: 10px;
+                    background-color: #000;
+                }
+          
+                &::-webkit-scrollbar-thumb
+                {
+                  border-radius: 10px;
+                  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+                  background-color: $blue-color;
+                }
+               li{
+                    font-size:$font-size-16 ;
+                    font-weight:$font-weight-500;
+                    list-style-type: disc;
+                    padding: 0.625em 0 0.5em;
+                    line-height: $line-height-medium;
+                    &::marker {
+                        color: $white-color;
+                    }
+                    > a {
+                        font-weight: $font-weight-500;
+                        font-size: $font-size-16;
+                        color: $white-color;
+                        &:hover{
+                            color: $blue-color;
+                        }
+                    }
+               }
+            }
+        }
+    }
+}
+
+.sideSocialSection{
+    padding:1.563em 0 3.125em;
+    .sideSocialContent{
+        h6{
+            font-weight: $font-weight-500;
+            font-size: $font-size-14;
+            color:$black-opc-50;
+            text-align:center;
+        }
+        ul{
+            &.sideSocialList{
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                margin: 1.250em 0 0;
+                li {
+                    + li{
+                        margin:0 0 0 2em;
+                    }
+                    a{
+                        display:inline-block;
+                        img{
+                            max-width: 1.5em;
+                            width: 100%;
+                            height:1.5em;
+                            object-fit:contain;
+                            &:hover{
+                                -webkit-filter: grayscale(100%) brightness(30%) sepia(100%) hue-rotate(-180deg) saturate(700%) contrast(0.8);
+                                filter: grayscale(100%) brightness(30%) sepia(100%) hue-rotate(-180deg) saturate(700%) contrast(0.8);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

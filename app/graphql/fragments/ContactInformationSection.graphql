@@ -1,0 +1,17 @@
+fragment ContactInformationSection on ContactInformationSection {
+  _key
+  _type
+  title
+  email
+  phoneNo
+  officeAddress {
+    ...OfficeAddress
+  }
+  officeTime {
+    ...OfficeTime
+  }
+  contactUsCard {
+    ...ImageRichTextCardSection
+  }
+  sectionTheme
+}

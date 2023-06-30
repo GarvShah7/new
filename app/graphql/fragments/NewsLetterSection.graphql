@@ -1,0 +1,8 @@
+fragment NewsLetterSection on NewsLetterSection {
+  _id
+  _type
+  _key
+  title
+  description
+  sectionTheme
+}

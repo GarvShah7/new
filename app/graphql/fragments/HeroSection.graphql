@@ -1,0 +1,11 @@
+fragment HeroSection on HeroSection {
+  _key
+  _type
+  description {
+    ...RichText
+  }
+  image {
+    ...Image
+  }
+  sectionTheme
+}

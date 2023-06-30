@@ -1,0 +1,11 @@
+fragment TeamPhotosSection on TeamPhotosSection{
+  _key
+  _type
+  titleSubtitle{
+ ...TitleSubtitle
+  }
+  image{
+   ...Image
+  }
+  sectionTheme
+}

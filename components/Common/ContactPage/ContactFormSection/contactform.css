@@ -1,0 +1,567 @@
+.contactFormSection .container .contactFormContent {
+  border-radius: 10px;
+  padding: 4.375em;
+}
+@media (max-width: 1600px) {
+  .contactFormSection .container .contactFormContent {
+    padding: 4em;
+  }
+}
+@media (max-width: 1440px) {
+  .contactFormSection .container .contactFormContent {
+    padding: 3em;
+  }
+}
+@media (max-width: 1280px) {
+  .contactFormSection .container .contactFormContent {
+    padding: 3em 2em;
+  }
+}
+@media (max-width: 999px) {
+  .contactFormSection .container .contactFormContent {
+    padding: 2.7em;
+  }
+}
+@media (max-width: 767px) {
+  .contactFormSection .container .contactFormContent {
+    padding: 2.5em;
+  }
+}
+@media (max-width: 640px) {
+  .contactFormSection .container .contactFormContent {
+    padding: 2em;
+  }
+}
+.contactFormSection .container .contactFormContent .sectionInfo {
+  text-align: left;
+  max-width: 80%;
+  width: 100%;
+}
+@media (max-width: 640px) {
+  .contactFormSection .container .contactFormContent .sectionInfo {
+    max-width: 90%;
+  }
+}
+.contactFormSection .container .contactFormContent .sectionInfo > h4 {
+  padding: 0 0 0.5em;
+}
+.contactFormSection .container .contactFormContent .sectionInfo > p {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.4;
+  font-weight: 400;
+}
+.contactFormSection .container .contactFormContent .formImgWrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3.75em;
+}
+@media (max-width: 1600px) {
+  .contactFormSection .container .contactFormContent .formImgWrap {
+    grid-column-gap: 3em;
+  }
+}
+@media (max-width: 999px) {
+  .contactFormSection .container .contactFormContent .formImgWrap {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 1440px) {
+  .contactFormSection .container .contactFormContent .formImgWrap {
+    grid-column-gap: 2.5em;
+  }
+}
+@media (max-width: 1280px) {
+  .contactFormSection .container .contactFormContent .formImgWrap {
+    grid-column-gap: 2em;
+  }
+}
+@media (max-width: 1100px) {
+  .contactFormSection .container .contactFormContent .formImgWrap {
+    grid-column-gap: 1.7em;
+  }
+}
+.contactFormSection .container .contactFormContent .formImgWrap .formWrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2.813em;
+  height: 100%;
+}
+@media (max-width: 1440px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .formWrap {
+    grid-column-gap: 2em;
+  }
+}
+@media (max-width: 1280px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .formWrap {
+    grid-column-gap: 1.7em;
+  }
+}
+@media (max-width: 1100px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .formWrap {
+    grid-column-gap: 1.3em;
+  }
+}
+@media (max-width: 999px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .formWrap {
+    grid-column-gap: 2em;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 999px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .formWrap .rightSide {
+    margin: 1.875em 0 0;
+  }
+}
+.contactFormSection .container .contactFormContent .formImgWrap .personImgWrap {
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 999px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap {
+    margin: 3em 0 2em;
+  }
+}
+@media (max-width: 999px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+}
+@media (max-width: 640px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .centerImage {
+  display: inline-block;
+}
+@media (max-width: 640px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .centerImage {
+    margin: 0 auto 3em;
+  }
+}
+.contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .centerImage img {
+  max-width: 100%;
+  width: 100%;
+  height: 18em;
+}
+@media (max-width: 1600px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .centerImage img {
+    height: 16em;
+  }
+}
+@media (max-width: 1440px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .centerImage img {
+    height: 15em;
+  }
+}
+@media (max-width: 1280px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .centerImage img {
+    height: 14em;
+  }
+}
+@media (max-width: 1100px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .centerImage img {
+    height: 11em;
+  }
+}
+@media (max-width: 999px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .centerImage img {
+    height: 20em;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+}
+@media (max-width: 767px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .centerImage img {
+    height: 16em;
+  }
+}
+@media (max-width: 640px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .centerImage img {
+    height: 14em;
+  }
+}
+@media (max-width: 640px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box {
+  text-align: left;
+  background-size: 5.5em;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 35%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 999px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box {
+    position: static;
+    max-width: 100%;
+  }
+  .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box + .box {
+    margin: 2em 0 0;
+  }
+}
+@media (max-width: 640px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 640px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box > div {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+  }
+}
+.contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box .icon {
+  max-width: 5em;
+  width: 100%;
+}
+@media (max-width: 1440px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box .icon {
+    max-width: 4.5em;
+  }
+}
+@media (max-width: 1280px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box .icon {
+    max-width: 4em;
+  }
+}
+@media (max-width: 1100px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box .icon {
+    max-width: 3em;
+  }
+}
+@media (max-width: 999px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box .icon {
+    display: none;
+  }
+}
+.contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box.box-3, .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box.box-4 {
+  flex-direction: row-reverse;
+}
+@media (max-width: 999px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box.box-3, .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box.box-4 {
+    flex-direction: row;
+  }
+}
+.contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box.box-3 > div, .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box.box-4 > div {
+  display: flex;
+  flex-direction: column;
+}
+.contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box.box-3 .icon, .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box.box-4 .icon {
+  margin: 0 1.5em 0 0;
+}
+@media (max-width: 999px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box.box-3 .icon, .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box.box-4 .icon {
+    display: none;
+  }
+}
+@media (max-width: 1280px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box.box-3 .icon, .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box.box-4 .icon {
+    margin: 0 1.1em 0 0;
+  }
+}
+@media (max-width: 1100px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box.box-3 .icon, .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box.box-4 .icon {
+    margin: 0 1em 0 0;
+  }
+}
+.contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box.box-0 {
+  top: 0;
+  left: 0;
+}
+.contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box.box-1 {
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (max-width: 1100px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box.box-1 {
+    top: 45%;
+  }
+}
+@media (max-width: 999px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box.box-1 {
+    transform: none;
+  }
+}
+.contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box.box-1 .icon img {
+  max-width: 4.5em;
+}
+.contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box.box-2 {
+  top: unset;
+  bottom: 0;
+}
+.contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box.box-2 .icon {
+  top: -3vw;
+}
+.contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box.box-3 {
+  top: 0;
+  left: unset;
+  right: 0;
+}
+@media (max-width: 999px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box.box-3 .icon {
+    display: none;
+  }
+}
+.contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box.box-3 .icon img {
+  max-width: 4em;
+}
+.contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box.box-4 {
+  top: unset;
+  left: unset;
+  right: 0;
+  bottom: 4vw;
+}
+.contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box > div h6, .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box > div span {
+  font-weight: 700;
+  font-size: 1.125em;
+  line-height: 1;
+  color: #FFFFFF;
+}
+@media (max-width: 1440px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box > div h6, .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box > div span {
+    font-size: 1.063em;
+  }
+}
+@media (max-width: 1280px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box > div h6, .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box > div span {
+    font-size: 1em;
+  }
+}
+@media (max-width: 1100px) {
+  .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box > div h6, .contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box > div span {
+    font-size: 0.938em;
+  }
+}
+.contactFormSection .container .contactFormContent .formImgWrap .personImgWrap .boxWrap .box > div > span {
+  font-weight: 400;
+  margin: 0.5em 0 0;
+  display: block;
+  line-height: 1.4;
+}
+.contactFormSection .container .contactFormContent .fieldBox input {
+  background-position: left 1em center;
+  background-repeat: no-repeat;
+  background-size: 1em;
+  padding-left: 1em;
+  color: #FFFFFF;
+  border: 2px solid transparent;
+}
+.contactFormSection .container .contactFormContent .fieldBox input::autofill {
+  color: #FFFFFF !important;
+}
+.contactFormSection .container .contactFormContent .fieldBox input.error {
+  border-color: #B00020;
+}
+.contactFormSection .container .contactFormContent .fieldBox + .fieldBox {
+  margin: 1.875em 0 0;
+}
+.contactFormSection .container .contactFormContent .fieldBox label {
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  display: block;
+  padding: 0 0 0.75em;
+}
+@media (max-width: 640px) {
+  .contactFormSection .container .contactFormContent .fieldBox label {
+    padding: 0 0 1em;
+  }
+}
+.contactFormSection .container .contactFormContent .fieldBox input, .contactFormSection .container .contactFormContent .fieldBox textarea {
+  background-color: #323030 !important;
+  color: #FFFFFF !important;
+  border-radius: 10px;
+  height: 47px;
+  width: 100%;
+}
+@media (max-width: 1440px) {
+  .contactFormSection .container .contactFormContent .fieldBox input, .contactFormSection .container .contactFormContent .fieldBox textarea {
+    height: 45px;
+  }
+}
+@media (max-width: 1280px) {
+  .contactFormSection .container .contactFormContent .fieldBox input, .contactFormSection .container .contactFormContent .fieldBox textarea {
+    height: 43px;
+  }
+}
+@media (max-width: 999px) {
+  .contactFormSection .container .contactFormContent .fieldBox input, .contactFormSection .container .contactFormContent .fieldBox textarea {
+    height: 40px;
+  }
+}
+.contactFormSection .container .contactFormContent .fieldBox textarea {
+  height: 100%;
+  padding: 0.8em 1em;
+  border: 2px solid transparent;
+}
+.contactFormSection .container .contactFormContent .fieldBox textarea.error {
+  background-color: transparent;
+  border-color: #B00020;
+}
+.contactFormSection .container .contactFormContent .fieldBox textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.contactFormSection .container .contactFormContent .fieldBox .badgeWrap {
+  display: flex;
+}
+.contactFormSection .container .contactFormContent .fieldBox .badgeWrap::-webkit-scrollbar {
+  width: 0 !important;
+}
+@media (max-width: 640px) {
+  .contactFormSection .container .contactFormContent .fieldBox .badgeWrap {
+    display: block;
+    overflow: auto;
+    white-space: nowrap;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.contactFormSection .container .contactFormContent .fieldBox .badgeWrap .badge {
+  border: 2px solid transparent;
+  background-color: #323030;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 0.875em;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  padding: 0.571em 1.143em;
+}
+.contactFormSection .container .contactFormContent .fieldBox .badgeWrap .badge.active {
+  background-color: #000EE6;
+}
+.contactFormSection .container .contactFormContent .fieldBox .badgeWrap .badge.error {
+  border-color: #B00020;
+}
+.contactFormSection .container .contactFormContent .fieldBox .badgeWrap .badge + .badge {
+  margin-left: 10px;
+}
+@media (max-width: 480px) {
+  .contactFormSection .container .contactFormContent .fieldBox .badgeWrap .badge {
+    font-size: 0.75em;
+  }
+}
+.contactFormSection .container .contactFormContent .fieldBox .badgeWrap .badge:hover, .contactFormSection .container .contactFormContent .fieldBox .badgeWrap .badge.active {
+  background-color: #000EE6;
+  color: #FFFFFF;
+}
+.contactFormSection .container .contactFormContent .fieldBox.full {
+  margin: 2.875em 0 0;
+}
+.contactFormSection .container .contactFormContent .fieldBox.message {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.contactFormSection .container .contactFormContent .confirmBox {
+  margin: 1.5em 0 2.688em;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 999px) {
+  .contactFormSection .container .contactFormContent .confirmBox {
+    margin: 1.5em 0 2.3em;
+  }
+}
+@media (max-width: 767px) {
+  .contactFormSection .container .contactFormContent .confirmBox {
+    margin: 1.5em 0 2em;
+  }
+}
+.contactFormSection .container .contactFormContent .confirmBox > span {
+  font-weight: 400;
+  font-size: 0.875em;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: 5px;
+  line-height: 1.4;
+  max-width: 80%;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .contactFormSection .container .contactFormContent .confirmBox > span {
+    max-width: 90%;
+  }
+}
+@media (max-width: 640px) {
+  .contactFormSection .container .contactFormContent .confirmBox > span {
+    max-width: 100%;
+  }
+}
+.contactFormSection .container .contactFormContent .formButton input {
+  border: 0;
+  text-transform: capitalize;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.contactFormSection .container .contactFormContent .formButton input:hover {
+  background-color: #000EE6;
+}
+
+.styled-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+.styled-checkbox + label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+}
+.styled-checkbox + label:before {
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+}
+@media (max-width: 640px) {
+  .styled-checkbox + label:before {
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+  }
+}
+.styled-checkbox:checked + label:before {
+  background-color: transparent;
+}
+.styled-checkbox:checked + label:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 9px;
+  background: #FFFFFF;
+  width: 2px;
+  height: 2px;
+  box-shadow: 2px 0 0 #FFFFFF, 4px 0 0 #FFFFFF, 4px -2px 0 #FFFFFF, 4px -4px 0 #FFFFFF, 4px -6px 0 #FFFFFF, 4px -8px 0 #FFFFFF;
+  transform: rotate(45deg);
+}
+@media (max-width: 640px) {
+  .styled-checkbox:checked + label:after {
+    width: 1.5px;
+    height: 1.5px;
+    left: 3px;
+    top: 7px;
+  }
+}
+
+/*# sourceMappingURL=contactform.css.map */

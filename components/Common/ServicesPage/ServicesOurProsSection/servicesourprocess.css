@@ -1,0 +1,128 @@
+.ourProcessSection .container .ourProcessContent .ourProcessGrid {
+  grid-column-gap: 5em;
+}
+@media (max-width: 1440px) {
+  .ourProcessSection .container .ourProcessContent .ourProcessGrid {
+    grid-column-gap: 4em;
+  }
+}
+@media (max-width: 1280px) {
+  .ourProcessSection .container .ourProcessContent .ourProcessGrid {
+    grid-column-gap: 3em;
+  }
+}
+@media (max-width: 999px) {
+  .ourProcessSection .container .ourProcessContent .ourProcessGrid {
+    grid-template-columns: 1fr;
+    grid-row-gap: 3em;
+  }
+}
+@media (max-width: 999px) {
+  .ourProcessSection .container .ourProcessContent .ourProcessGrid .leftSide {
+    text-align: center;
+  }
+}
+.ourProcessSection .container .ourProcessContent .ourProcessGrid .leftSide h3 {
+  padding-bottom: 0.5em;
+}
+.ourProcessSection .container .ourProcessContent .ourProcessGrid .leftSide p {
+  font-weight: 500;
+  font-size: 1.5em;
+  line-height: 1.7;
+  color: #FFFFFF;
+  padding: 0;
+}
+@media (max-width: 1280px) {
+  .ourProcessSection .container .ourProcessContent .ourProcessGrid .leftSide p {
+    font-size: 1.375em;
+  }
+}
+@media (max-width: 999px) {
+  .ourProcessSection .container .ourProcessContent .ourProcessGrid .leftSide p {
+    font-size: 1.25em;
+    max-width: 50%;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .ourProcessSection .container .ourProcessContent .ourProcessGrid .leftSide p {
+    font-size: 1.125em;
+    max-width: 60%;
+  }
+}
+@media (max-width: 640px) {
+  .ourProcessSection .container .ourProcessContent .ourProcessGrid .leftSide p {
+    max-width: 70%;
+  }
+}
+@media (max-width: 480px) {
+  .ourProcessSection .container .ourProcessContent .ourProcessGrid .leftSide p {
+    max-width: 80%;
+  }
+}
+@media (max-width: 400px) {
+  .ourProcessSection .container .ourProcessContent .ourProcessGrid .leftSide p {
+    max-width: 90%;
+  }
+}
+.ourProcessSection .container .ourProcessContent .ourProcessGrid .leftSide p br {
+  display: none;
+}
+.ourProcessSection .container .ourProcessContent .ourProcessGrid .rightSide {
+  background-image: url("/assets/images/ipad-pro-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3em 2.3em 0;
+  position: relative;
+  max-width: 52em;
+  width: 100%;
+  margin-left: auto;
+}
+@media (max-width: 999px) {
+  .ourProcessSection .container .ourProcessContent .ourProcessGrid .rightSide {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .ourProcessSection .container .ourProcessContent .ourProcessGrid .rightSide {
+    padding: 2.7em 2em 0;
+  }
+}
+.ourProcessSection .container .ourProcessContent .ourProcessGrid .rightSide img {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.ourProcessSection .container .ourProcessContent .ourProcessGrid .rightSide > .pointerImage {
+  position: absolute;
+  top: 52%;
+  max-width: 18em;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .ourProcessSection .container .ourProcessContent .ourProcessGrid .rightSide > .pointerImage {
+    max-width: 18em;
+  }
+}
+@media (max-width: 767px) {
+  .ourProcessSection .container .ourProcessContent .ourProcessGrid .rightSide > .pointerImage {
+    top: 50%;
+    max-width: 16em;
+  }
+}
+@media (max-width: 640px) {
+  .ourProcessSection .container .ourProcessContent .ourProcessGrid .rightSide > .pointerImage {
+    max-width: 14em;
+  }
+}
+@media (max-width: 480px) {
+  .ourProcessSection .container .ourProcessContent .ourProcessGrid .rightSide > .pointerImage {
+    max-width: 10em;
+  }
+}
+
+/*# sourceMappingURL=servicesourprocess.css.map */

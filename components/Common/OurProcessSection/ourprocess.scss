@@ -1,0 +1,87 @@
+@import '../../styles/config/variables';
+
+.ourProcessSection{
+    .container{
+        .ourProcessContent{
+            .ourProcessList{
+                display: flex;
+                justify-content: space-between;
+                padding: 3em 0 0;
+                overflow: hidden;
+                @include media(small){
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-column-gap: 2em;
+                    grid-row-gap: 2em;
+                }
+                @include media(very-small){
+                    grid-template-columns: 1fr 1fr;
+                }
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 20em;
+                    @include media(small){
+                        width: auto;
+                    }
+                    img{
+                        max-width: 4.375em;
+                        width:100%;
+                    }
+                    &:not(:last-child){
+                        .progressNumberWrap{
+                            position:relative;
+                            &:after{
+                                content: "";
+                                background-color: $black-color;
+                                width: 12.5vw;
+                                height: 5px;
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                left: 100%;
+                                z-index: -1;
+                                @include media(small){
+                                    content: none;
+                                }
+                             }
+                        }
+                    }
+                    .progressNumber{
+                        font-weight: $font-weight-600;
+                        font-size: 1em;
+                        color: $white-color;
+                        width: 2.5em;
+                        height: 2.5em;
+                        border-radius: 50%;
+                        background-color: $blue-color;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 0.5em 0;
+                    }
+                    h6{
+                        font-weight:$font-weight-500;
+                        font-size:$font-size-20;
+                        color: $black-color;
+                        @include media(large){
+                            font-size:$font-size-19;
+                        }
+                        @include media(small){
+                            font-size:$font-size-18;
+                        }
+                        @include media(medium-small){
+                            font-size:$font-size-17;
+                        }
+                        @include media(very-small){
+                            font-size:$font-size-16;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

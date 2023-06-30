@@ -1,0 +1,27 @@
+@import "../../../styles/config/variables";
+
+.homeBlogSection{
+    .container{
+        .homeBlogSectionContent{
+            .postGrid{
+                .postBox{
+                    box-shadow: -1px -1px 3.30584px rgba(206, 206, 206, 0.25), 1px 1px 5px rgba(206, 206, 206, 0.25);
+                    border-radius: $border-radius-regular;
+                    padding: 1.875em;
+                    &:hover{
+                        box-shadow: 0 35px 62px rgb(118 124 167 / 16%);
+                    }
+                    
+                    @include media(extra-large){
+                        padding: 1.5em;
+                    }
+                    @include media(large){
+                        padding: 1.3em;
+                    }
+                    
+
+                }
+            }
+        }
+    }
+}

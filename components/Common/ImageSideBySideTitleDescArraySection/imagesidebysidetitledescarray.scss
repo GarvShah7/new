@@ -1,0 +1,79 @@
+@import '../../styles/config/variables';
+
+.imgSidebySideTitleDescArraySection{
+    .container{
+        .imgSidebySideTitleDescArrayContent{
+            .sectionInnerSpace{
+                margin: 0;
+                .container{
+                    margin:0;
+                }
+            }
+            .imgSidebySideTitleDescArrayGrid{
+                h3{
+                    font-weight: $font-weight-500;
+                    font-size: $font-size-20;
+                    letter-spacing: 0.01em;
+                    color: $blue-color;
+                    padding: 0 0 0.5em;
+                    @include media(small){
+                        font-size: $font-size-19;
+                    }
+                    @include media(medium-small){
+                        font-size: $font-size-18;
+                    }
+                }
+                p{
+                    font-weight: $font-weight-400;
+                    font-size: $font-size-16;
+                    letter-spacing: 0.01em;
+                    color: $black-opc-70;
+                    @include media(small){
+                        font-size: $font-size-15;
+                    }
+                }
+                &.gridBox{
+                    grid-column-gap: 4.5em;
+                    @include media(large){
+                        grid-column-gap: 4em;
+                    }
+                    @include media(medium){
+                        grid-column-gap:3.5em;
+                    }
+                    @include media(small){
+                        grid-template-columns: 1fr;
+                        grid-row-gap:3em;
+                    }
+                }
+                .rightSide{
+                   .descArrayGrid{
+                    column-count: 2;
+                    column-gap: 1em;
+                    @include media(small){
+                        column-count: 1;
+                        .descArrayBox{
+                            margin-bottom: 1em;
+                        }
+                    }
+                     &.gridBox{
+                        grid-column-gap: 4em;
+                        @include media(large){
+                            grid-column-gap: 3.7em;
+                        }
+                        @include media(medium){
+                            grid-column-gap:3.5em;
+                        }
+                        @include media(small){
+                            grid-column-gap:3.3em;
+                        }
+                        @include media(medium-small){
+                            grid-template-columns: 1fr;
+                            grid-row-gap:1em;
+                        }
+                    }
+                   }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,110 @@
+.reviewUsSection .container .reviewUsContent {
+  padding: 3.75em 6.25em;
+}
+.reviewUsSection .container .reviewUsContent.gridBox {
+  grid-column-gap: 12em;
+}
+@media (max-width: 1440px) {
+  .reviewUsSection .container .reviewUsContent.gridBox {
+    grid-column-gap: 10em;
+  }
+}
+@media (max-width: 1280px) {
+  .reviewUsSection .container .reviewUsContent.gridBox {
+    grid-column-gap: 6em;
+  }
+}
+@media (max-width: 1100px) {
+  .reviewUsSection .container .reviewUsContent.gridBox {
+    grid-column-gap: 4em;
+  }
+}
+@media (max-width: 999px) {
+  .reviewUsSection .container .reviewUsContent.gridBox {
+    grid-column-gap: 2em;
+  }
+}
+@media (max-width: 767px) {
+  .reviewUsSection .container .reviewUsContent.gridBox {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 1440px) {
+  .reviewUsSection .container .reviewUsContent {
+    padding: 3.5em 5em;
+  }
+}
+@media (max-width: 1280px) {
+  .reviewUsSection .container .reviewUsContent {
+    padding: 3em 4em;
+  }
+}
+@media (max-width: 999px) {
+  .reviewUsSection .container .reviewUsContent {
+    padding: 3em 2.5em;
+  }
+}
+@media (max-width: 767px) {
+  .reviewUsSection .container .reviewUsContent {
+    padding: 3em 2em;
+  }
+}
+@media (max-width: 640px) {
+  .reviewUsSection .container .reviewUsContent {
+    padding: 2.5em 1.5em;
+  }
+}
+.reviewUsSection .container .reviewUsContent h4 {
+  color: #FFFFFF;
+}
+.reviewUsSection .container .reviewUsContent p {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+  line-height: 1.7;
+  padding-bottom: 0;
+}
+.reviewUsSection .container .reviewUsContent .leftSide .withImageTitle {
+  padding: 0 0 1em;
+}
+@media (max-width: 767px) {
+  .reviewUsSection .container .reviewUsContent .leftSide .withImageTitle {
+    padding: 0 0 1.7em;
+  }
+}
+.reviewUsSection .container .reviewUsContent .leftSide .withImageTitle h4, .reviewUsSection .container .reviewUsContent .leftSide .withImageTitle img {
+  display: inline-block !important;
+}
+.reviewUsSection .container .reviewUsContent .leftSide .withImageTitle img {
+  padding: 0 0.5em;
+  max-width: 7em;
+  height: 2.5em;
+  object-fit: contain;
+  aspect-ratio: unset !important;
+}
+.reviewUsSection .container .reviewUsContent .leftSide .withImageTitle img:first-child {
+  max-width: 3em;
+}
+@media (max-width: 415px) {
+  .reviewUsSection .container .reviewUsContent .leftSide .withImageTitle h4:first-child {
+    padding: 0 0 1.5em;
+  }
+}
+.reviewUsSection .container .reviewUsContent .leftSide .withImageTitle h4:first-child + img {
+  height: 4.5em;
+  margin: -32px 0 0;
+}
+@media (max-width: 415px) {
+  .reviewUsSection .container .reviewUsContent .leftSide .withImageTitle h4:first-child + img + h4 + img + h4 {
+    padding: 0.5em 0 0;
+  }
+}
+.reviewUsSection .container .reviewUsContent .rightSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reviewUsSection .container .reviewUsContent .rightSide .button:hover {
+  padding-right: 4em;
+}
+
+/*# sourceMappingURL=reviews.css.map */

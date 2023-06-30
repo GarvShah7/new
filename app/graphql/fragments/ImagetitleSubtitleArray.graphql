@@ -1,0 +1,9 @@
+fragment ImagetitleSubtitleArray on ImagetitleSubtitleArray {
+  _key
+  _type
+  titleArray
+  subtitleArray
+  arrowImage: image {
+    ...Image
+  }
+}

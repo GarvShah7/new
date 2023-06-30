@@ -1,0 +1,13 @@
+fragment HomeServicesSection on HomeServicesSection {
+  _key
+  _type
+  titleSubtitle {
+    ...TitleSubtitle
+  }
+  servicesDetails {
+    ...ServicesDetails
+  }
+  withoutNumber
+  serviceDetailsColumn
+  sectionTheme
+}

@@ -1,0 +1,8 @@
+fragment ImageWithTitleArray on ImageWithTitleArray {
+  _key
+  _type
+  image {
+    ...Image
+  }
+  title
+}

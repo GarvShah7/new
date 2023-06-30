@@ -1,0 +1,11 @@
+fragment  HiringModelDetails on HiringModelDetails{
+  _key
+  _type
+  modelDetailsTitle:title
+  modelDetailsDescription:description{
+    ...RichText
+  }
+  image{
+...Image
+  }
+}

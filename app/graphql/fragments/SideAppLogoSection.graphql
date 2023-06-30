@@ -1,0 +1,8 @@
+fragment SideAppLogoSection on SideAppLogoSection {
+  _key
+  _type
+  title
+  appLogo {
+    ...FooterLogo
+  }
+}

@@ -1,0 +1,14 @@
+fragment HomeHeroSection on HomeHeroSection {
+  _key
+  _type
+  sectionTheme
+  mainTitle
+  mainTitleArray
+  subTitle
+  title
+  description
+  button {
+    ...Button
+  }
+  sectionTheme
+}

@@ -1,0 +1,11 @@
+fragment TitleSubtitleWithImageArraySection on TitleSubtitleWithImageArraySection {
+  _key
+  _type
+  titleSubtitle {
+    ...TitleSubtitle
+  }
+  imageArray: image {
+    ...Image
+  }
+  sectionTheme
+}

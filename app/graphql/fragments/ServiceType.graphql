@@ -1,0 +1,6 @@
+fragment ServiceType on ServiceType {
+  _id
+  _type
+  _key
+  label
+}

@@ -1,0 +1,75 @@
+@import "../../styles/config/variables";
+
+.jamstackCTESection{
+    background: linear-gradient(98.81deg,  $grad-red 0%, $grad-yellow 102.22%);
+    .container{
+        .jamstackCTEContent{
+            &.gridBox{
+                @include media(medium){
+                    grid-template-columns: 1fr;
+                }
+                .leftSide{
+                    h4,p{
+                        color: $white-color;
+                    }
+                    h4{
+                        font-weight: $font-weight-600;
+                        padding: 0 0 0.833em;
+                    }
+                    p{
+                        line-height: $line-height-large;
+                        padding-bottom: 0;
+                    }
+                    ul{
+                        padding: 2em 0 0;
+                        @include media(medium){
+                            padding:1.5em 0 0;
+                        }
+                        li{
+                            display: flex;
+                            align-items: center;
+                            font-size: $font-size-16;
+                            font-weight:$font-weight-400;
+                            @include media(very-small){
+                                display: block;
+                                font-size: $font-size-15;
+                            }
+                            &:not(:last-child){
+                                padding: 0 0 0.5em;
+                            }
+                            > span{
+                                &.correctIcon{
+                                    img{
+                                        max-width: 2em;
+                                        width: 100%;
+                                        padding: 0 1em 0 0;
+                                        height: 2em;
+                                        object-fit: contain;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .sectionButton{
+                        padding: 3.125em 0 0;
+                        @include media(medium){
+                            padding: 2em 0 0;
+                        }
+                    }
+                }
+                .rightSide{
+                    margin: 3.125em 0 0;
+                    img{
+                        height: 32em;
+                        max-width: 100%;
+                        width: 100%;
+                        object-fit:contain;
+                        @include media(medium){
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}

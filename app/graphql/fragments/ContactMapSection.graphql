@@ -1,0 +1,6 @@
+fragment ContactMapSection on ContactMapSection{
+  _key
+  _type
+  mapImage
+  sectionTheme
+}

@@ -1,0 +1,89 @@
+.titledescsbsSection.without-bg-image .container .titledescsbsContent {
+  background-image: none;
+  padding: 0;
+}
+.titledescsbsSection.without-bg-image .container .titledescsbsContent .gridBox {
+  grid-template-columns: 1fr 3fr;
+}
+@media (max-width: 1100px) {
+  .titledescsbsSection.without-bg-image .container .titledescsbsContent .gridBox {
+    grid-template-columns: 1fr;
+  }
+}
+.titledescsbsSection .container .titledescsbsContent {
+  background-image: url("/assets/images/codage-bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  padding: 16em 0;
+}
+@media (max-width: 1440px) {
+  .titledescsbsSection .container .titledescsbsContent {
+    padding: 12em 0;
+  }
+}
+@media (max-width: 1280px) {
+  .titledescsbsSection .container .titledescsbsContent {
+    padding: 8em 0;
+  }
+}
+@media (max-width: 999px) {
+  .titledescsbsSection .container .titledescsbsContent {
+    padding: 0;
+    background-image: none;
+  }
+}
+.titledescsbsSection .container .titledescsbsContent .gridBox {
+  grid-row-gap: 1.5em;
+  align-items: center;
+}
+@media (max-width: 999px) {
+  .titledescsbsSection .container .titledescsbsContent .gridBox {
+    grid-template-columns: 1fr;
+    grid-row-gap: 1em;
+  }
+}
+.titledescsbsSection .container .titledescsbsContent .gridBox h3 {
+  font-weight: 600;
+  font-size: 3em;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  color: #000000;
+  max-width: 90%;
+  width: 100%;
+}
+@media (max-width: 1440px) {
+  .titledescsbsSection .container .titledescsbsContent .gridBox h3 {
+    max-width: 100%;
+  }
+}
+@media (max-width: 1280px) {
+  .titledescsbsSection .container .titledescsbsContent .gridBox h3 {
+    font-size: 2.5em;
+  }
+}
+@media (max-width: 767px) {
+  .titledescsbsSection .container .titledescsbsContent .gridBox h3 {
+    font-size: 2.25em;
+  }
+}
+.titledescsbsSection .container .titledescsbsContent .gridBox p {
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 2;
+  letter-spacing: 0.025em;
+  color: rgba(0, 0, 0, 0.7);
+  padding-bottom: 0;
+}
+@media (max-width: 1280px) {
+  .titledescsbsSection .container .titledescsbsContent .gridBox p {
+    font-size: 1.063em;
+  }
+}
+@media (max-width: 999px) {
+  .titledescsbsSection .container .titledescsbsContent .gridBox p {
+    font-size: 1em;
+  }
+}
+
+/*# sourceMappingURL=titledescsbs.css.map */

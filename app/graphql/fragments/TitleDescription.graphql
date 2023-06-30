@@ -1,0 +1,9 @@
+fragment TitleDescription  on TitleDescription{
+  _key
+  _type
+  title
+  description{
+  ...RichText
+  }
+  sectionTheme
+}

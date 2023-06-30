@@ -1,0 +1,83 @@
+.imageGrid .rowOne {
+  display: flex;
+}
+.imageGrid .rowOne .imageBox:nth-child(1) {
+  flex: 3;
+}
+.imageGrid .rowOne .imageBox:nth-child(2) {
+  flex: 2;
+}
+.imageGrid .rowOne .imageBox:nth-child(3) {
+  flex: 1;
+}
+.imageGrid .rowOne .imageBox:nth-child(4) {
+  flex: 2;
+}
+.imageGrid .rowTwo {
+  display: flex;
+}
+.imageGrid .rowTwo .imageBox:nth-child(1) {
+  flex: 1;
+}
+.imageGrid .rowTwo .imageBox:nth-child(2) {
+  flex: 2;
+}
+.imageGrid .rowTwo .imageBox:nth-child(3) {
+  flex: 3;
+}
+.imageGrid .rowTwo .imageBox:nth-child(4) {
+  flex: 2;
+}
+.imageGrid .rowThree {
+  display: flex;
+}
+.imageGrid .rowThree .imageBox:nth-child(1) {
+  flex: 4;
+}
+.imageGrid .rowThree .imageBox:nth-child(2) {
+  flex: 1;
+}
+.imageGrid .rowThree .imageBox:nth-child(3) {
+  flex: 1;
+}
+.imageGrid .rowThree .imageBox:nth-child(4) {
+  flex: 2;
+}
+@media (max-width: 767px) {
+  .imageGrid > div {
+    flex-direction: column;
+  }
+}
+.imageGrid .imageBox {
+  margin: 10px;
+}
+@media (max-width: 1280px) {
+  .imageGrid .imageBox {
+    flex: 3 !important;
+  }
+}
+@media (max-width: 999px) {
+  .imageGrid .imageBox {
+    flex: 2 !important;
+  }
+}
+.imageGrid .imageBox img {
+  border-radius: 10px;
+  max-width: 100%;
+  width: 100%;
+  height: 13.125em;
+  object-fit: cover;
+  object-position: center;
+}
+@media (max-width: 999px) {
+  .imageGrid .imageBox img {
+    height: 10em;
+  }
+}
+@media (max-width: 767px) {
+  .imageGrid .imageBox img {
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=TitleSubtitleWithImageArraySection.css.map */

@@ -1,0 +1,11 @@
+fragment OfficeAddress on OfficeAddress {
+  _key
+  _type
+  addressTitle: title
+  addressDescription: description {
+    ...RichText
+  }
+  directions {
+    ...Link
+  }
+}

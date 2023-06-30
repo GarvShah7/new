@@ -1,0 +1,102 @@
+.newsLetterSection .newsLetterContent {
+  background-color: #000EE6;
+  border-radius: 10px;
+  padding: 1.875em;
+}
+.newsLetterSection .newsLetterContent.dark {
+  background: linear-gradient(111.26deg, #000000 100.21%, #111820 100.94%);
+}
+.newsLetterSection .newsLetterContent .newsLetterHeader {
+  padding: 0 0 0.75em;
+}
+.newsLetterSection .newsLetterContent .newsLetterHeader h4 {
+  font-weight: 600;
+  font-size: 1.375em;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+  padding-bottom: 0.3em;
+}
+.newsLetterSection .newsLetterContent .newsLetterHeader p {
+  font-weight: 400;
+  font-size: 0.75em;
+  color: #FFFFFF;
+  line-height: 1.4;
+}
+.newsLetterSection .newsLetterContent .newsLetterForm form {
+  display: flex;
+}
+.newsLetterSection .newsLetterContent .newsLetterForm form input {
+  border: 1.2px solid #FFFFFF;
+  border-radius: 20px;
+  max-width: 10.25em;
+  width: 100%;
+  height: 2.563em;
+  padding: 0 0.938em;
+  color: #FFFFFF;
+}
+.newsLetterSection .newsLetterContent .newsLetterForm form input::placeholder {
+  font-weight: 600;
+  font-size: 0.75em;
+  color: #FFFFFF;
+}
+.newsLetterSection .newsLetterContent .newsLetterForm form input.error {
+  border: 1.2px solid #B00020;
+}
+.newsLetterSection .newsLetterContent .newsLetterForm form .button {
+  margin: 0 0 0 1em;
+  border-radius: 20px;
+  width: auto;
+  height: 3.417em;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 0.75em;
+  color: #000EE6;
+  background-color: #FFFFFF;
+  background-image: url("/assets/images/send.svg");
+  background-repeat: no-repeat;
+  background-position: left 1em center;
+  display: flex;
+  padding: 0 2em 0 3.3em;
+  cursor: pointer;
+}
+.newsLetterSection .newsLetterContent .newsLetterForm form .button:hover {
+  background-color: #FFFFFF;
+  color: #000EE6;
+}
+.newsLetterSection .newsLetterContent .newsLetterForm .thankYouText {
+  margin: 0 !important;
+  background-color: #FFFFFF;
+  color: #000EE6;
+  padding: 0.813em 1.125em;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newsLetterSection .newsLetterContent .newsLetterForm .thankYouText span {
+  font-weight: 600;
+  font-size: 0.75em;
+}
+.newsLetterSection .newsLetterContent .newsLetterForm .thankYouText img {
+  margin: 0 0 0 1em;
+  height: 25px;
+}
+.newsLetterSection .newsLetterContent .newsLetterForm .validation, .newsLetterSection .newsLetterContent .newsLetterForm .thankYouText {
+  margin: 1.7em 0 0;
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+}
+.newsLetterSection .newsLetterContent .newsLetterForm .validation.sending, .newsLetterSection .newsLetterContent .newsLetterForm .thankYouText.sending {
+  color: #FFFFFF;
+}
+.newsLetterSection .newsLetterContent .newsLetterForm .validation.error, .newsLetterSection .newsLetterContent .newsLetterForm .thankYouText.error {
+  color: #B00020;
+}
+.newsLetterSection .newsLetterContent .newsLetterForm .validation.thankYou, .newsLetterSection .newsLetterContent .newsLetterForm .thankYouText.thankYou {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=newsletter.css.map */

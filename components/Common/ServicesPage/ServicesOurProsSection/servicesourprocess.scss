@@ -1,0 +1,104 @@
+@import '../../../styles/config/variables';
+
+.ourProcessSection{
+    .container{
+        .ourProcessContent{
+            .ourProcessGrid{
+                grid-column-gap: 5em;
+                @include media(extra-large){
+                    grid-column-gap: 4em;
+                }
+                @include media(large){
+                    grid-column-gap: 3em;
+                }
+                @include media(medium){
+                    grid-template-columns: 1fr;
+                    grid-row-gap: 3em;
+                }
+                .leftSide{
+                    @include media(medium){
+                        text-align: center;
+                    }
+                    h3{
+                        padding-bottom: 0.5em;
+                    }
+                    p{
+                        font-weight: $font-weight-500;
+                        font-size: $font-size-24;
+                        line-height: $line-height-large;
+                        color: $white-color;
+                        padding: 0;
+                        @include media(large){
+                            font-size: $font-size-22;
+                        }
+                        @include media(medium){
+                            font-size: $font-size-20;
+                            max-width: 50%;
+                            width: 100%;
+                            margin: 0 auto;
+                        }
+                        @include media(small){
+                            font-size: $font-size-18;
+                            max-width: 60%;
+                        }
+                        @include media(medium-small){
+                            max-width: 70%;
+                        }
+                        @include media(very-small){
+                            max-width: 80%;
+                        }
+                        @include media(extra-small){
+                            max-width: 90%;
+                        }
+                        br{
+                            display: none;
+                        }
+                    }
+                }
+                .rightSide{
+                   background-image: url("/assets/images/ipad-pro-bg.png");
+                   background-repeat: no-repeat;
+                   background-size: cover;
+                   display: flex;
+                   justify-content: center;
+                   align-items: center;
+                   padding: 3em 2.3em 0;
+                   position:relative;
+                   max-width: 52em;
+                   width: 100%;
+                   margin-left: auto;
+                   @include media(medium){
+                    margin: 0 auto;
+                   }
+                   @include media(small){
+                    padding: 2.7em 2em 0;
+                   }
+                   img{
+                    max-width: 100%;
+                    width: 100%;
+                    border-radius: 10px 10px 0 0;
+                   }
+                   > .pointerImage{
+                        position: absolute;
+                        top:52%;
+                        max-width: 18em;
+                        width: 100%;
+                        @include media(small){
+                            max-width: 18em;
+                        }
+                        @include media(small){
+                            top: 50%;
+                            max-width: 16em;
+                        }
+                        @include media(medium-small){
+                            max-width: 14em;
+                        }
+                        @include media(very-small){
+                            max-width: 10em;
+                        }
+                   }
+                }
+            }
+        }
+    }
+}

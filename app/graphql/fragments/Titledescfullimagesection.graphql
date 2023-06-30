@@ -1,0 +1,11 @@
+fragment Titledescfullimagesection on Titledescfullimagesection {
+  _key
+  _type
+  titleSubtitle {
+    ...TitleSubtitle
+  }
+  image {
+    ...Image
+  }
+  sectionTheme
+}

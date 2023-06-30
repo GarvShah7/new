@@ -1,0 +1,6 @@
+fragment NavbarLinks on NavbarLinks {
+  _key
+  _type
+  navLink
+  navLabel
+}

@@ -1,0 +1,7 @@
+fragment RightSymbolTitleArray on RightSymbolTitleArray {
+  _key
+  _type
+  jamstackCTEServiceList {
+    ...JamstackCTEServiceList
+  }
+}

@@ -1,0 +1,13 @@
+fragment TitleDescriptionArrayWithSideTitleArraySection on TitleDescriptionArrayWithSideTitleArraySection{
+  _key
+  _type
+  title
+  titleSubtitle{
+    ...TitleSubtitle
+  }
+  TitleDescription{
+   ...ImageTitleDescriptionDetails
+  }
+  sideTitleArray
+  sectionTheme
+}

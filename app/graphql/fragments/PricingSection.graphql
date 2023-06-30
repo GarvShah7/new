@@ -1,0 +1,13 @@
+fragment PricingSection on PricingSection {
+  _id
+  _type
+  _key
+  titleSubtitle {
+    ...TitleSubtitle
+  }
+  mainTitle
+  pricingSection {
+    ...Pricing
+  }
+  sectionTheme
+}

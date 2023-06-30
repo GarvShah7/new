@@ -1,0 +1,10 @@
+fragment SanityImageAsset on SanityImageAsset {
+  path
+  url
+  metadata {
+    dimensions {
+      height
+      width
+    }
+  }
+}

@@ -1,0 +1,12 @@
+fragment SolutionSection on SolutionSection {
+  _id
+  _type
+  _key
+  titleSubtitle {
+    ...TitleSubtitle
+  }
+  solutionDetails {
+    ...SolutionDetails
+  }
+  sectionTheme
+}

@@ -1,0 +1,15 @@
+fragment Package on Package {
+  _id
+  _type
+  _key
+  label
+  package_title
+  package_price_value
+  package_price
+  package_duration
+  package_details {
+    ...ComparisionField
+  }
+  package_summary
+  popularity
+}

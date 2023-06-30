@@ -1,0 +1,10 @@
+fragment MetaAttribute on MetaAttribute {
+  _key
+  _type
+  attribute_key
+  attribute_type
+  attribute_value_image {
+    ...Image
+  }
+  attribute_value_string
+}

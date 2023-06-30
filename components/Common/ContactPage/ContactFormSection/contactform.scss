@@ -1,0 +1,496 @@
+@import '../../../styles/config/variables';
+
+.contactFormSection{
+    .container{
+        .contactFormContent{
+            border-radius: $border-radius-regular;
+            padding:4.375em;
+            @include media(wide){
+                padding:4em;
+            }
+            @include media(extra-large){
+                padding:3em;
+            }
+            @include media(large){
+                padding:3em 2em;
+            }
+            @include media(medium){
+                padding:2.7em;
+            }
+            @include media(small){
+                padding:2.5em;
+            }
+            @include media(medium-small){
+                padding:2em;
+            }
+            .sectionInfo{
+                text-align:left;
+                max-width:80%;
+                width:100%;
+                @include media(medium-small){
+                    max-width:90%;
+                }
+                > h4{
+                    padding: 0 0 0.5em;
+                }
+                > p{
+                    color: $white-opc-70;
+                    line-height: $line-height-medium;
+                    font-weight: $font-weight-400;
+                }
+            }
+            .formImgWrap{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-column-gap: 3.75em;
+                @include media(wide){
+                    grid-column-gap: 3em;
+                }
+                @include media(medium){
+                    grid-template-columns: 1fr;
+                }
+                @include media(extra-large){
+                    grid-column-gap: 2.5em;
+                }
+                @include media(large){
+                    grid-column-gap: 2em;
+                }
+                @include media(large-medium){
+                    grid-column-gap: 1.7em;
+                }
+                .formWrap{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-column-gap: 2.813em;
+                    height: 100%;
+                    @include media(extra-large){
+                        grid-column-gap: 2em;
+                    }
+                    @include media(large){
+                        grid-column-gap: 1.7em;
+                    }
+                    @include media(large-medium){
+                        grid-column-gap: 1.3em;
+                    }
+                    @include media(medium){
+                        grid-column-gap: 2em;
+                        grid-template-columns: 1fr;
+                    }
+                    .rightSide{
+                        @include media(medium){
+                            margin: 1.875em 0 0;
+                        }
+                    }
+                }
+                .personImgWrap{
+                    @include media(medium){
+                        margin: 3em 0 2em;
+                    }
+                    @include media(medium){
+                        justify-content:space-between;
+                        flex-direction: row-reverse;
+                    }
+                    @include media(medium-small){
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+                    text-align: center;
+                    position:relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .centerImage{
+                        display: inline-block;
+                        @include media(medium-small){
+                            margin: 0 auto 3em;
+                        }
+                        img{
+                            max-width: 100%;
+                            width: 100%;
+                            height: 18em;
+                            @include media(wide){
+                                height: 16em;
+                            }
+                            @include media(extra-large){
+                                height: 15em;
+                            }
+                            @include media(large){
+                                height: 14em;
+                            }
+                            @include media(large-medium){
+                                height: 11em;
+                            }
+                           
+                            @include media(medium){
+                                height: 20em;
+                                -webkit-transform: scaleX(-1);
+                                transform: scaleX(-1);
+                            }
+                            @include media(small){
+                                height: 16em;
+                            }
+                            @include media(medium-small){
+                                height: 14em;
+                            }
+                        }
+                    }
+                    .boxWrap{
+                        @include media(medium-small){
+                            max-width: 100%;
+                            width: 100%;
+                        }
+                        .box{
+                            text-align: left;   
+                            background-size: 5.5em;
+                            display: inline-block;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            max-width: 35%;
+                            width: 100%;
+                            display:flex;
+                            align-items: center;
+                            @include media(medium){
+                                position: static;
+                                max-width: 100%;
+                                + .box{
+                                    margin: 2em 0 0;
+                                }
+                            }
+                            @include media(medium-small){
+                                max-width: 100%;
+                                width: 100%;
+                            }
+                            > div{
+                                @include media(medium-small){
+                                    max-width: 100%;
+                                    width: 100%;
+                                    text-align: center;
+                                }
+                            }
+                            .icon{
+                                max-width: 5em;
+                                width: 100%;
+                                @include media(extra-large){
+                                    max-width: 4.5em;
+                                }
+                                @include media(large){
+                                    max-width: 4em;
+                                }
+                                @include media(large-medium){
+                                    max-width: 3em;
+                                }
+                                @include media(medium){
+                                    display: none;
+                                }
+                            }
+                            &.box-3, &.box-4{
+                                flex-direction: row-reverse;
+                                @include media(medium){
+                                    flex-direction:row;
+                                }
+                               > div{
+                                    display: flex;
+                                    flex-direction: column;
+                               }
+                               .icon{
+                                @include media(medium){
+                                    display: none;
+                                }
+                                    margin: 0 1.5em 0 0;
+                                    @include media(extar-large){
+                                        margin: 0 1.3em 0 0; 
+                                    }
+                                    @include media(large){
+                                        margin: 0 1.1em 0 0; 
+                                    }
+                                    @include media(large-medium){
+                                        margin: 0 1em 0 0; 
+                                    }
+                               }
+                            }
+                            &.box-0{
+                                top:0;
+                                left:0;
+                            }
+                            &.box-1{
+                                top:50%;
+                                transform: translateY(-50%);
+                                @include media(large-medium){
+                                    top:45%;
+                                }
+                                @include media(medium){
+                                    transform: none;
+                                }
+                                .icon{
+                                    img{
+                                        max-width: 4.5em;
+                               
+                                    }
+                                }
+                            }
+                            &.box-2{
+                                top:unset;
+                                bottom:0;
+                                .icon{
+                                    top:-3vw;
+                                }
+                            }
+                            &.box-3{
+                                top:0;
+                                left:unset;
+                                right:0;
+                                .icon{
+                                    @include media(medium){
+                                        display: none;
+                                    }
+                                    img{
+                                        max-width: 4em;
+                                    }
+                                }
+                            }
+                            &.box-4{
+                                top:unset;
+                                left:unset;
+                                right:0;
+                                bottom: 4vw;
+                            }
+                           > div{
+                                h6,span{
+                                    font-weight: $font-weight-700;
+                                    font-size: $font-size-18;
+                                    line-height: $line-height-normal;
+                                    color: $white-color;
+                                    @include media(extra-large){
+                                        font-size: $font-size-17;
+                                    }
+                                    @include media(large){
+                                        font-size: $font-size-16;
+                                    }
+                                    @include media(large-medium){
+                                        font-size: $font-size-15;
+                                    }
+                                }
+                                > span{
+                                    font-weight: $font-weight-400;
+                                    margin:0.5em 0 0;
+                                    display: block;
+                                    line-height:$line-height-medium;
+                                }
+                           }
+                        }
+                    }
+                }
+            }
+            .fieldBox{ 
+                input{
+                    background-position: left 1em center;
+                    background-repeat: no-repeat;
+                    background-size: 1em;
+                    padding-left: 1em;
+                    color:$white-color;
+                    border:2px solid transparent;
+                    &::autofill{
+                        color: $white-color !important;
+                    }
+                    &.error{
+        
+                        border-color:$error-color;
+                    }
+                }
+
+                + .fieldBox{
+                    margin: 1.875em 0 0;
+                }
+                label{
+                    font-weight: $font-weight-500;
+                    font-size: $font-size-16;
+                    line-height: $line-height-normal;
+                    letter-spacing: -0.02em;
+                    color:$white-color;
+                    display: block;
+                    padding: 0 0 0.75em;
+                    @include media(medium-small){
+                        padding: 0 0 1em; 
+                    }
+                }
+                input,textarea{
+                    background-color:$charcoal-color !important;
+                    color: $white-color !important;
+                    border-radius: 10px;
+                    height: 47px;
+                    
+                    width: 100%;
+                    @include media(extra-large){
+                        height: 45px;
+                    }
+                    @include media(large){
+                        height: 43px;
+                    }
+                    @include media(medium){
+                        height: 40px;
+                    }
+                    
+                }
+                textarea{
+                    height: 100%;
+                    padding: 0.8em 1em;
+                    border:2px solid transparent;
+                    &.error{
+                        background-color: transparent;
+                        border-color:$error-color;
+                    }
+                    &::placeholder{
+                        color: $white-opc-50;
+                    }
+                }
+                .badgeWrap{
+                    &::-webkit-scrollbar { width: 0 !important }
+                    display: flex;
+                    @include media(medium-small){
+                  
+                        display: block;
+                        overflow: auto;
+                        white-space: nowrap;
+                        max-width: 100%;
+                        width: 100%;
+                    }
+   
+                    .badge{
+                        border:2px solid transparent;
+                        &.active{
+                            background-color: $blue-color;
+                        }
+                        &.error{
+                            border-color: $error-color;
+                        }
+                        + .badge{
+                            margin-left: 10px;
+                   
+                        }
+                
+                        background-color: $charcoal-color;
+                        border-radius: $border-radius-5;
+                        font-weight: $font-weight-400;
+                        font-size: $font-size-14;
+                        letter-spacing: -0.02em;
+                        color: $white-color;
+                        padding: 0.571em 1.143em;
+                        @include media(very-small){
+                            font-size: $font-size-12;
+                        }
+                        
+                        &:hover,&.active{
+                            background-color: $blue-color;
+                            color: $white-color;
+                        }
+                    }
+                }
+                &.full{
+                    margin: 2.875em 0 0;
+                }
+                &.message{
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                }
+                
+            }
+            .confirmBox{
+                margin: 1.5em 0 2.688em;
+                display:flex;
+                align-items: center;
+                @include media(medium){
+                    margin: 1.5em 0 2.3em;
+                }
+                @include media(small){
+                    margin: 1.5em 0 2em;
+                }
+                > span{
+                    font-weight: $font-weight-400;
+                    font-size: $font-size-14;
+                    letter-spacing: -0.02em;
+                    color: $white-opc-70;
+                    margin-left: 5px;
+                    line-height: $line-height-medium;
+                    max-width: 80%;
+                    width: 100%;
+                    @include media(small){
+                        max-width: 90%;
+                    }
+                    @include media(medium-small){
+                        max-width: 100%;
+                    }
+                }
+            }
+            .formButton{
+                input{
+                    border:0;
+                    text-transform: $text-transform-capitalize;
+                    transition: all 0.2s ease-in-out;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: $blue-color;
+                    }
+                }
+            }
+        }   
+    }
+}
+
+
+
+.styled-checkbox {
+    position: absolute; 
+    opacity: 0; 
+  
+    & + label {
+      position: relative;
+      cursor: pointer;
+      padding: 0;
+    }
+  
+    & + label:before {
+      content: '';
+      margin-right: 10px;
+      display: inline-block;
+      vertical-align: text-top;
+      width: 20px;
+      height: 20px;
+      border:1px solid $white-color;
+      border-radius: 2px;
+      @include media(medium-small){
+        width: 16px;
+        height: 16px;
+        margin-right: 7px;
+      }
+    }
+    
+    &:checked + label:before {
+      background-color:transparent;
+    }
+
+    &:checked + label:after {
+      content: '';
+      position: absolute;
+      left: 5px;
+      top: 9px;
+      background: $white-color;
+      width: 2px;
+      height: 2px;
+      box-shadow: 
+        2px 0 0 $white-color,
+        4px 0 0 $white-color,
+        4px -2px 0 $white-color,
+        4px -4px 0 $white-color,
+        4px -6px 0 $white-color,
+        4px -8px 0 $white-color;
+      transform: rotate(45deg);
+      @include media(medium-small){
+        width: 1.5px;
+        height: 1.5px;
+        left: 3px;
+        top: 7px;
+      }
+    }
+  }

@@ -1,0 +1,11 @@
+fragment ImageButtonTitle on ImageButtonTitle {
+  _key
+  _type
+  image {
+    ...Image
+  }
+  button {
+    ...Button
+  }
+  title
+}

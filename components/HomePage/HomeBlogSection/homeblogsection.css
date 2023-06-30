@@ -1,0 +1,20 @@
+.homeBlogSection .container .homeBlogSectionContent .postGrid .postBox {
+  box-shadow: -1px -1px 3.30584px rgba(206, 206, 206, 0.25), 1px 1px 5px rgba(206, 206, 206, 0.25);
+  border-radius: 10px;
+  padding: 1.875em;
+}
+.homeBlogSection .container .homeBlogSectionContent .postGrid .postBox:hover {
+  box-shadow: 0 35px 62px rgba(118, 124, 167, 0.16);
+}
+@media (max-width: 1440px) {
+  .homeBlogSection .container .homeBlogSectionContent .postGrid .postBox {
+    padding: 1.5em;
+  }
+}
+@media (max-width: 1280px) {
+  .homeBlogSection .container .homeBlogSectionContent .postGrid .postBox {
+    padding: 1.3em;
+  }
+}
+
+/*# sourceMappingURL=homeblogsection.css.map */

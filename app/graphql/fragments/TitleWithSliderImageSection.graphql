@@ -1,0 +1,13 @@
+fragment TitleWithSliderImageSection  on TitleWithSliderImageSection{
+  _key
+  _type
+  titleSubtitle{
+    ...TitleSubtitle
+   
+  }
+  imageTitle{
+    ...ImageTitle
+  }
+  ifCenterImage
+  sectionTheme
+}

@@ -1,0 +1,8 @@
+fragment ImageTitle on ImageTitle {
+  _key
+  _type
+  title
+  image {
+    ...Image
+  }
+}

@@ -1,0 +1,109 @@
+@import "../../../styles/config/variables";
+
+.newsLetterSection{
+    .newsLetterContent{
+        &.dark{
+            background: linear-gradient(111.26deg, #000000 100.21%, #111820 100.94%);
+            
+        }
+        background-color: $blue-color;
+        border-radius:  $border-radius-regular;
+        padding: 1.875em;
+        .newsLetterHeader{
+            padding: 0 0 0.750em;
+            h4{
+                font-weight: $font-weight-600;
+                font-size: $font-size-22;
+                letter-spacing: -0.03em;
+                color: $white-color;
+                padding-bottom: 0.3em;
+            }
+            p{
+                font-weight: $font-weight-400;
+                font-size: $font-size-12;
+                color: $white-color;
+                line-height: $line-height-medium;
+            }
+        }
+        .newsLetterForm{
+           form{
+            display:flex;
+            input{
+                border: 1.2px solid $white-color;
+                border-radius: $border-radius-20;
+                max-width: 10.250em;
+                width: 100%;
+                height:2.563em;
+                padding: 0 0.938em;
+                color:$white-color;
+                &::placeholder{
+                    font-weight: $font-weight-600;
+                    font-size: $font-size-12;
+                    color: $white-color;
+                }
+                &.error{
+                    border: 1.2px solid $error-color;
+                }
+            }
+            .button{
+                margin:0 0 0 1em;
+                border-radius: $border-radius-20;
+                width:auto;
+                height:3.417em;
+                line-height:$line-height-normal;
+                font-weight: $font-weight-600;
+                font-size: $font-size-12;
+                color: $blue-color;
+                background-color: $white-color;
+                background-image: url("/assets/images/send.svg");
+                background-repeat: no-repeat;
+                background-position:left 1em center;
+                display:flex;
+                padding:0 2em 0 3.3em;
+                cursor: pointer;
+                &:hover{
+                    background-color:$white-color;
+                    color:$blue-color;
+                }
+            }
+           }
+           .thankYouText{
+                margin: 0 !important;
+                background-color: $white-color;
+                color: $blue-color;
+                padding: 0.813em 1.125em;
+                border-radius:  $border-radius-20;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                span{
+                    font-weight: $font-weight-600;
+                    font-size: $font-size-12;
+                }
+                img{
+                    margin:0 0 0 1em;
+                    height: 25px;
+                }
+     
+           }
+           .validation,.thankYouText{
+            margin: 1.7em 0 0;
+            max-width: 100%;
+            width: 100%;
+            text-align: center;
+            text-transform:$text-transform-capitalize;
+            &.sending{
+                color: $white-color;
+            }
+            &.error{
+                color: $error-color;
+            }
+            &.thankYou{
+                color: $white-color;
+                font-weight:$font-weight-600;
+            }
+           }
+          
+        }
+    }
+}

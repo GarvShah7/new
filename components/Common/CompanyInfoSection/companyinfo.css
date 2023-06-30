@@ -1,0 +1,176 @@
+.companyInfosection .container .companyInfoContent .countWrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 2em;
+  align-items: center;
+  max-width: 60%;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 1600px) {
+  .companyInfosection .container .companyInfoContent .countWrap {
+    max-width: 70%;
+  }
+}
+@media (max-width: 1440px) {
+  .companyInfosection .container .companyInfoContent .countWrap {
+    max-width: 80%;
+  }
+}
+@media (max-width: 1280px) {
+  .companyInfosection .container .companyInfoContent .countWrap {
+    max-width: 90%;
+    grid-column-gap: 1.7em;
+  }
+}
+@media (max-width: 999px) {
+  .companyInfosection .container .companyInfoContent .countWrap {
+    max-width: 100%;
+    grid-column-gap: 1.5em;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 1.5em;
+  }
+}
+.companyInfosection .container .companyInfoContent .countWrap h4 {
+  font-weight: 600;
+  font-size: 3.125em;
+  color: #FFFFFF;
+  text-align: center;
+}
+.companyInfosection .container .companyInfoContent .countWrap h4.plusIcon:after {
+  content: "+";
+  display: inline-block;
+}
+@media (max-width: 1280px) {
+  .companyInfosection .container .companyInfoContent .countWrap h4 {
+    font-size: 3em;
+  }
+}
+@media (max-width: 999px) {
+  .companyInfosection .container .companyInfoContent .countWrap h4 {
+    font-size: 2.813em;
+  }
+}
+@media (max-width: 767px) {
+  .companyInfosection .container .companyInfoContent .countWrap h4 {
+    font-size: 2.625em;
+  }
+}
+@media (max-width: 640px) {
+  .companyInfosection .container .companyInfoContent .countWrap h4 {
+    font-size: 2.5em;
+  }
+}
+.companyInfosection .container .companyInfoContent .countWrap h6 {
+  font-weight: 500;
+  font-size: 1em;
+  color: #FFFFFF;
+  text-align: center;
+}
+@media (max-width: 999px) {
+  .companyInfosection .container .companyInfoContent .countWrap h6 {
+    font-size: 0.938em;
+  }
+}
+@media (max-width: 767px) {
+  .companyInfosection .container .companyInfoContent .countWrap h6 {
+    font-size: 0.875em;
+  }
+}
+.companyInfosection .container .companyInfoContent .countImgGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1em;
+  margin: 3.125em 0 0;
+}
+@media (max-width: 999px) {
+  .companyInfosection .container .companyInfoContent .countImgGrid {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 1em;
+  }
+}
+@media (max-width: 640px) {
+  .companyInfosection .container .companyInfoContent .countImgGrid {
+    grid-template-columns: 1fr;
+  }
+}
+.companyInfosection .container .companyInfoContent .countImgGrid .countImgBox img {
+  border-radius: 10px;
+  max-width: 100%;
+  width: 100%;
+  height: 15.25em;
+  object-fit: cover;
+}
+@media (max-width: 1280px) {
+  .companyInfosection .container .companyInfoContent .countImgGrid .countImgBox img {
+    height: 12em;
+  }
+}
+@media (max-width: 640px) {
+  .companyInfosection .container .companyInfoContent .countImgGrid .countImgBox img {
+    height: 16em;
+  }
+}
+.companyInfosection .container .companyInfoContent .appIconWrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1em;
+  list-style-type: none;
+  max-width: 70%;
+  width: 100%;
+  margin: 3.125em auto 0;
+}
+@media (max-width: 1440px) {
+  .companyInfosection .container .companyInfoContent .appIconWrap {
+    max-width: 80%;
+  }
+}
+@media (max-width: 1280px) {
+  .companyInfosection .container .companyInfoContent .appIconWrap {
+    max-width: 90%;
+    white-space: nowrap;
+    overflow: auto;
+  }
+  .companyInfosection .container .companyInfoContent .appIconWrap::-webkit-scrollbar {
+    width: 0 !important;
+  }
+}
+@media (max-width: 999px) {
+  .companyInfosection .container .companyInfoContent .appIconWrap {
+    max-width: 100%;
+  }
+}
+.companyInfosection .container .companyInfoContent .appIconWrap li {
+  text-align: center;
+}
+.companyInfosection .container .companyInfoContent .appIconWrap li img {
+  max-width: 7.313em;
+  width: 100%;
+  height: 7.313em;
+  object-fit: cover;
+  margin: 0 0 1em;
+}
+@media (max-width: 1600px) {
+  .companyInfosection .container .companyInfoContent .appIconWrap li img {
+    max-width: 7em;
+    height: 7em;
+  }
+}
+@media (max-width: 1440px) {
+  .companyInfosection .container .companyInfoContent .appIconWrap li img {
+    max-width: 5em;
+    height: 5em;
+  }
+}
+.companyInfosection .container .companyInfoContent .appIconWrap li h6 {
+  font-weight: 500;
+  font-size: 1em;
+  color: #FFFFFF;
+}
+@media (max-width: 1280px) {
+  .companyInfosection .container .companyInfoContent .appIconWrap li h6 {
+    padding: 0 1em;
+  }
+}
+
+/*# sourceMappingURL=companyinfo.css.map */

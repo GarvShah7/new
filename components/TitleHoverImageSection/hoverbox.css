@@ -1,0 +1,63 @@
+.hoverBoxSection .container .hoverBoxSectionContent .hoverBoxWrap.gridBox {
+  grid-column-gap: 1.25em;
+  grid-row-gap: 1.25em;
+}
+@media (max-width: 999px) {
+  .hoverBoxSection .container .hoverBoxSectionContent .hoverBoxWrap.gridBox {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .hoverBoxSection .container .hoverBoxSectionContent .hoverBoxWrap.gridBox {
+    grid-template-columns: 1fr;
+  }
+}
+.hoverBoxSection .container .hoverBoxSectionContent .hoverBoxWrap.gridBox .hoverBox {
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+.hoverBoxSection .container .hoverBoxSectionContent .hoverBoxWrap.gridBox .hoverBox img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.hoverBoxSection .container .hoverBoxSectionContent .hoverBoxWrap.gridBox .hoverBox .hoverContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.hoverBoxSection .container .hoverBoxSectionContent .hoverBoxWrap.gridBox .hoverBox .hoverContent span {
+  color: #FFFFFF;
+  font-size: 1.375em;
+  font-weight: 600;
+  max-width: 60%;
+  width: 100%;
+  line-height: 1.4;
+}
+@media (max-width: 1280px) {
+  .hoverBoxSection .container .hoverBoxSectionContent .hoverBoxWrap.gridBox .hoverBox .hoverContent span {
+    font-size: 1.25em;
+  }
+}
+.hoverBoxSection .container .hoverBoxSectionContent .hoverBoxWrap.gridBox .hoverBox:hover img {
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+.hoverBoxSection .container .hoverBoxSectionContent .hoverBoxWrap.gridBox .hoverBox:hover .hoverContent {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=hoverbox.css.map */

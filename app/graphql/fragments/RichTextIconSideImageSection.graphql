@@ -1,0 +1,19 @@
+fragment RichTextIconSideImageSection on RichTextIconSideImageSection {
+  _key
+  _type
+  sectionTheme
+  titleSubtitleOption
+  titleSubtitle {
+    ...TitleSubtitle
+  }
+  description {
+    ...RichText
+  }
+  developmentIconTitle {
+    ...IconTitleArray
+  }
+  iconTitleDirection
+  image {
+    ...Image
+  }
+}

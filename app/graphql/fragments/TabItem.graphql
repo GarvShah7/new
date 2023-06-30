@@ -1,0 +1,8 @@
+fragment TabItem on TabItem {
+  _key
+  _type
+  title
+  appIconLinkItem {
+    ...AppIconLinkItem
+  }
+}

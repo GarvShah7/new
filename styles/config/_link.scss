@@ -1,0 +1,180 @@
+.link{
+    font-family: $font-primary;
+    font-size: $font-size-16;
+    font-weight: $font-weight-500;
+    .arrowIcon{
+        display: none;
+    }
+    &.withBorder{
+        display: inline-block;
+        > span{
+            color: $black-opc-50;
+            font-size: $font-size-14;
+            font-weight:$font-weight-400;
+            padding-bottom:0.5em;
+            border-bottom:1px solid $blue-color;
+        }
+    }
+    &.withArrow{
+        display: flex;
+        align-items: center;
+        &.blueLink{
+            > span{
+                color: $blue-color;
+            }
+            .arrowIcon{
+                border: 0.125rem solid $blue-color;
+                &:before,&:after{
+                    content:"";
+                    background-image: url("/assets/images/arrow-blue.svg");
+                }
+                &:after{
+                    background-image: url("/assets/images/half-arrow-white.svg");
+                }
+            }
+            &:hover{
+                .arrowIcon{
+                    background-color: $blue-color;
+                    border: 0.125rem solid $blue-color;
+                    &:before{
+                        width: 0;
+                    }
+                    &:after{
+                        width: 0.8125em;
+                    }
+                }
+            }
+        }
+        &.blackLink{
+            > span{
+                color: $black-color;
+            }
+            .arrowIcon{
+                border: 0.125rem solid $black-color;
+                &:before,&:after{
+                    content:"";
+                    background-image: url("/assets/images/arrow-black.svg");
+                }
+                &:after{
+                    background-image: url("/assets/images/half-arrow-white.svg");
+                }
+            }
+            &:hover{
+                .arrowIcon{
+                    background-color: $blue-color;
+                    border: 0.125rem solid $blue-color;
+                    &:before{
+                        width: 0;
+                    }
+                    &:after{
+                        width: 0.8125em;
+                    }
+                }
+            }
+        }
+        > span{
+            font-weight: $font-weight-500;
+            font-size: $font-size-16;
+            line-height: $line-height-normal;
+            letter-spacing: 0.03em;
+            color: $black-color;
+        }
+        .arrowIcon{
+            border: 0.125rem solid $black-color;
+            width: 1.875em;
+            height: 1.875em;
+            display: block;
+            border-radius: 50%;
+            margin: 0 1em 0 0;
+            position: relative;
+            @include media(small){
+                width: 1.65em;
+                height: 1.65em;
+            }
+            &:before,&:after{
+                content:"";
+                position: absolute;
+                background-image: url("/assets/images/arrow-black.svg");
+                background-repeat: no-repeat;
+                background-position: left center;
+                background-size: cover;
+                background-position: 50%;
+                background-size: 100%;
+                bottom: 0;
+                height: 0.8125rem;
+                right: 50%;
+                top: 50%;
+                transform: translate(15%,-50%);
+                transition: .3s ease-in-out;
+                width: 3em;
+                z-index: 1;
+                @include media(small){
+                    height: 0.75rem;
+                    width: 2.5em;
+                }
+            }
+            &:after{
+                background-image: url("/assets/images/half-arrow-white.svg");
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 0;
+            }
+        }
+        &:hover{
+            .arrowIcon{
+                background-color: $blue-color;
+                border: 0.125rem solid $blue-color;
+                &:before{
+                    width: 0;
+                }
+                &:after{
+                    width: 0.8125em;
+                }
+            }
+        }
+    }
+}
+
+.bg-black{
+    .link{
+        &.withArrow{
+            > span{
+                color: $white-color;
+            }
+            .arrowIcon{
+                border: 0.125rem solid $white-color;
+                &:before,&:after{
+                    background-image: url("/assets/images/arrow-white.svg");
+                }
+                &:after{
+                    background-image: url("/assets/images/half-arrow-white.svg");
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    width: 0;
+                }
+            }
+            &:hover{
+                .arrowIcon{
+                    background-color: $blue-color;
+                    border: 0.125rem solid $blue-color;
+                    &:before{
+                        width: 0;
+                    }
+                    &:after{
+                        width: 0.8125em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.link.white{
+    color: $white-color;
+}
+.link.black{
+    color: $black-color;
+}
+.link.blue{
+    color: $blue-color;
+}

@@ -1,0 +1,10 @@
+fragment ImageRichTextCardSection on ImageRichTextCardSection {
+  _key
+  _type
+  image {
+    ...Image
+  }
+  description {
+    ...RichText
+  }
+}

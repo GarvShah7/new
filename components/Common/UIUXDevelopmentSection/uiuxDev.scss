@@ -1,0 +1,156 @@
+@import '../../styles/config/variables';
+
+.uiuxDevSection{
+    .container{
+        .uiuxDevContent{
+            .uiuxDevList{
+                white-space: nowrap;
+                overflow: auto;
+                &::-webkit-scrollbar { width: 0 !important }
+                > ul{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0 0 2em;
+                    li{
+                        font-weight: $font-weight-400;
+                        font-size: $font-size-18;
+                        letter-spacing: 0.07em;
+                        color: $black-color;
+                        display: flex;
+                        align-items: center;
+                        @include media(medium){
+                            font-size: $font-size-17;
+                        }
+                        @include media(small){
+                            font-size: $font-size-16;
+                        }
+                        + li{
+                            margin-left: 1em;
+                        }
+                        &:before{
+                            content: "";
+                            width: 6px;
+                            height: 6px;
+                            background-color: $black-color;
+                            display: inline-block;
+                            border-radius: 50%;
+                            margin: 0 10px 0 0;
+                        }
+                    }
+                }
+                &.servicesGridList{
+                    display: grid;
+                    grid-template-columns:1fr 1fr 1fr 1fr;
+                    grid-column-gap: 2em;
+                    max-width: 80%;
+                    width: 100%;
+                    margin: 0 auto;
+                    @include media(large){
+                        max-width: 90%;
+                    }
+                    @include media(medium){
+                        max-width: 100%;
+                        grid-template-columns:1fr 1fr;
+                    }
+                    @include media(small){
+                        grid-template-columns:1fr;
+                    }
+                    .serviceDetails{
+                        .serviceTitle{
+                            h4{
+                                font-weight: $font-weight-600;
+                                font-size: $font-size-22;
+                                color: $black-color;
+                                margin: 0 0 1em;
+                                @include media(large){
+                                    font-size: $font-size-20;
+                                }
+                                @include media(medium){
+                                    font-size: $font-size-19;
+                                }
+                                @include media(small){    padding: 2.188em 0 0;
+                                    font-size: $font-size-18;
+                                }
+                            }
+                        }
+                        > ul{
+                            li{
+                                margin: 0 0 1em;
+                                display: flex;
+                                align-items: center;
+                                img{
+                                    max-width: 1em;
+                                    width: 100%;
+                                    margin: 0 0.5em 0 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .uiuxImgGrid{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-column-gap: 1em;
+                @include media(medium){
+                    grid-template-columns: 1fr 1fr;
+                    grid-row-gap:1em;
+                }
+                @include media(medium-small){
+                    grid-template-columns: 1fr;
+                }
+                .uiuxImgBox{
+                    img{
+                        max-width: 100%;
+                        width: 100%;
+                        height: 16.250em;
+                        @include media(small){
+                            height: 14em;
+                        }
+                        @include media(medium-small){
+                            height: auto;
+                        }
+                    }
+                }
+            }
+            .uiuxIconGrid{
+                display: flex;
+                justify-content: center;
+                grid-column-gap: 1em;
+                margin: 2em auto 0;
+                @include media(medium-small){
+                    display: inline-block;
+                    white-space: nowrap;
+                    overflow: auto;
+                    &::-webkit-scrollbar { width: 0 !important }
+                    li{
+                        display: inline-block;
+                        + li{
+                            margin-left: 1em;
+                        }
+                    }
+                }
+                li{
+                    text-align: center;
+                    img{
+                        width: 6em;
+                        height: 6em;
+                        @include media(medium){
+                            width: 5em;
+                            height: 5em;
+                        }
+                        @include media(small){
+                            width: 4.5em;
+                            height: 4.5em;
+                        }
+                        @include media(very-small){
+                            width: 4em;
+                            height: 4em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+fragment OfficeTime on OfficeTime {
+  _key
+  _type
+  timeTitle: title
+  timeDescription: description {
+    ...RichText
+  }
+}

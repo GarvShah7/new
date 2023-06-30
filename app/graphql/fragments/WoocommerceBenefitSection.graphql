@@ -1,0 +1,14 @@
+fragment WoocommerceBenefitSection  on WoocommerceBenefitSection{
+  _key
+  _type
+  titleSubtitle{
+    ...TitleSubtitle
+  }
+  benefitImage:image{
+    ...Image
+  }
+  woocommercebenefitRichText:description{
+    ...RichText
+  }
+  sectionTheme
+}

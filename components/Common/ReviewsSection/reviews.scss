@@ -1,0 +1,102 @@
+@import "../../styles/config/variables";
+
+.reviewUsSection{
+    .container{
+        .reviewUsContent{
+            &.gridBox{
+                grid-column-gap: 12em;
+                @include media(extra-large){
+                    grid-column-gap: 10em;
+                }
+                @include media(large){
+                    grid-column-gap: 6em;
+                }
+                @include media(large-medium){
+                    grid-column-gap: 4em;
+                }
+                @include media(medium){
+                    grid-column-gap: 2em;
+                }
+                @include media(small){
+                  grid-template-columns: 1fr;
+                }
+            }
+            padding: 3.750em 6.250em;
+            @include media(extra-large){
+                padding: 3.5em 5em;
+            }
+            @include media(large){
+                padding: 3em 4em;
+            }
+            @include media(medium){
+                padding: 3em 2.5em;
+            }
+            @include media(small){
+                padding: 3em 2em;
+            }
+            @include media(medium-small){
+                padding: 2.5em 1.5em;
+            }
+            h4{
+                color: $white-color;
+            }
+            p{
+                color: $white-opc-50;
+                font-weight:$font-weight-500;
+                line-height: $line-height-large;
+                padding-bottom: 0;
+            }
+            .leftSide{
+                .withImageTitle{
+                    padding: 0 0 1em;
+                    @include media(small){
+                        padding: 0 0 1.7em;
+                    }
+                    h4,img{
+                        display: inline-block !important;
+                    }
+                    img{
+                        padding: 0 0.5em;
+                        max-width: 7em;
+                        height: 2.5em;
+                        object-fit:contain;
+                        aspect-ratio: unset !important;
+                        &:first-child{
+                            max-width: 3em;
+                        }
+                    }
+                    h4{
+                        &:first-child{
+                            @include media(custom-small){
+                                padding: 0 0 1.5em;
+                            }
+                            + img{
+                                height: 4.5em;
+                                margin: -32px 0 0;
+                                + h4 {
+                                    + img{
+                                       + h4{
+                                            @include media(custom-small){
+                                                padding: 0.5em 0 0;
+                                            }
+                                       }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .rightSide{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .button{
+                    &:hover{
+                        padding-right: 4em;
+                    }
+                }
+            }
+        }
+    }
+}

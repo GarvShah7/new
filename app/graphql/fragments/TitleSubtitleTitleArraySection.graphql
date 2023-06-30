@@ -1,0 +1,9 @@
+fragment TitleSubtitleTitleArraySection on TitleSubtitleTitleArraySection {
+  _key
+  _type
+  titleArray:title
+  titleSubtitle {
+    ...TitleSubtitle
+  }
+  sectionTheme
+}

@@ -1,0 +1,112 @@
+.ourProsConsSection .container .ourProsConsContent {
+  padding: 4.375em 4em;
+  border-radius: 10px;
+}
+.ourProsConsSection .container .ourProsConsContent.gridBox {
+  grid-column-gap: 6em;
+}
+@media (max-width: 1440px) {
+  .ourProsConsSection .container .ourProsConsContent.gridBox {
+    grid-column-gap: 5em;
+  }
+}
+@media (max-width: 1280px) {
+  .ourProsConsSection .container .ourProsConsContent.gridBox {
+    grid-column-gap: 4em;
+  }
+}
+@media (max-width: 999px) {
+  .ourProsConsSection .container .ourProsConsContent.gridBox {
+    grid-column-gap: 3.5em;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .ourProsConsSection .container .ourProsConsContent.gridBox {
+    grid-column-gap: 3em;
+  }
+}
+@media (max-width: 1440px) {
+  .ourProsConsSection .container .ourProsConsContent {
+    padding: 4em 3.5em;
+  }
+}
+@media (max-width: 1280px) {
+  .ourProsConsSection .container .ourProsConsContent {
+    padding: 3.5em 3em;
+  }
+}
+@media (max-width: 999px) {
+  .ourProsConsSection .container .ourProsConsContent {
+    padding: 3em 3.5em;
+  }
+}
+@media (max-width: 767px) {
+  .ourProsConsSection .container .ourProsConsContent {
+    padding: 2.7em 3em;
+  }
+}
+@media (max-width: 640px) {
+  .ourProsConsSection .container .ourProsConsContent {
+    padding: 2.3em 2.5em;
+  }
+}
+@media (max-width: 480px) {
+  .ourProsConsSection .container .ourProsConsContent {
+    padding: 2.3em 2em;
+  }
+}
+.ourProsConsSection .container .ourProsConsContent h2 {
+  line-height: 1.4;
+}
+@media (max-width: 1600px) {
+  .ourProsConsSection .container .ourProsConsContent h2 {
+    font-size: 3.5em;
+  }
+}
+@media (max-width: 1440px) {
+  .ourProsConsSection .container .ourProsConsContent h2 {
+    font-size: 3.25em;
+  }
+}
+@media (max-width: 1280px) {
+  .ourProsConsSection .container .ourProsConsContent h2 {
+    font-size: 3.125em;
+  }
+}
+@media (max-width: 999px) {
+  .ourProsConsSection .container .ourProsConsContent h2 {
+    font-size: 3em;
+  }
+}
+@media (max-width: 767px) {
+  .ourProsConsSection .container .ourProsConsContent h2 {
+    font-size: 2.813em;
+  }
+}
+@media (max-width: 480px) {
+  .ourProsConsSection .container .ourProsConsContent h2 {
+    font-size: 2.625em;
+  }
+}
+.ourProsConsSection .container .ourProsConsContent h4 {
+  font-weight: 500;
+  padding: 0 0 0.667em;
+}
+@media (max-width: 640px) {
+  .ourProsConsSection .container .ourProsConsContent h4 {
+    font-size: 1.375em;
+  }
+}
+.ourProsConsSection .container .ourProsConsContent p {
+  color: #FFFFFF;
+  line-height: 2;
+}
+.ourProsConsSection .container .ourProsConsContent .rightSide p {
+  padding: 0 0 1em;
+}
+.ourProsConsSection .container .ourProsConsContent .rightSide p:last-child() {
+  padding-bottom: 0;
+}
+
+/*# sourceMappingURL=homeourprossection.css.map */

@@ -1,0 +1,5 @@
+query getallCategory {
+  allCategory {
+    ...Category
+  }
+}

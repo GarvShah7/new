@@ -1,0 +1,16 @@
+fragment AuthorCardSection on AuthorCardSection {
+  _key
+  _type
+  title
+  image {
+    ...Image
+  }
+  authorPosition
+  description {
+    ...RichText
+  }
+  authorCardAppLogo {
+    ...FooterLogo
+  }
+  authorName
+}

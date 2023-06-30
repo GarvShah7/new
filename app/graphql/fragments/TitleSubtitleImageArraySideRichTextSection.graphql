@@ -1,0 +1,14 @@
+fragment TitleSubtitleImageArraySideRichTextSection on TitleSubtitleImageArraySideRichTextSection {
+  _key
+  _type
+  titleSubtitle {
+    ...TitleSubtitle
+  }
+  companiesLogoImage: image {
+    ...Image
+  }
+  sideRichText: description {
+    ...RichText
+  }
+  sectionTheme
+}

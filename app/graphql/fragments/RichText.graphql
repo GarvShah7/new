@@ -1,0 +1,6 @@
+fragment RichText on RichText {
+  _key
+  _type
+  customeRichTextRaw
+  customClassName
+}

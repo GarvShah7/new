@@ -1,0 +1,20 @@
+.tab{
+    font-family: $font-primary;
+    font-size: $font-size-16;
+    font-weight: $font-weight-500;
+    border-radius: $border-radius-regular;
+    padding: 0.5em 0.750em;
+    border:2px solid $black-color;
+}
+.tab.black{
+    background-color: $black-color;
+    color: $white-color;
+    &:hover{
+        background-position: left;
+        border-color: $blue-color;
+    }
+}
+.tab.black.active{
+    background-color: $blue-color;
+    color: $white-color;
+}

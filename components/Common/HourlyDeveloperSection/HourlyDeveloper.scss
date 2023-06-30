@@ -1,0 +1,68 @@
+@import "../../styles/config/variables";
+
+.hourlyBasisSection{
+    .container{
+        .hourlyBasisContent{
+            .hourlyBasisDetails{
+                text-align: center;
+                .quoteImage{
+                    margin: 0 0 1em;
+                    img{
+                        max-width:5em;
+                        width:100%;
+                    }
+                }
+                h3{
+                    font-weight: $font-weight-500;
+                    font-size: $font-size-30;
+                    letter-spacing: 0.025em;
+                    color: $blue-color;
+                    @include media(large){
+                        font-size: $font-size-28;
+                    }
+                     @include media(small){
+                        font-size: $font-size-24;
+                    }
+                }
+                .priceWrap{
+                    display: flex;
+                    justify-content:center;
+                    min-height:50px;
+                    margin: 0 0 0.5em;
+                    span{
+                        color: $black-color;
+                        &:first-child{
+                            font-weight:$font-weight-600;
+                            font-size: $font-size-22;
+                            color: $black-color;
+                            align-self: flex-start;
+                        }
+                         &:nth-child(2){
+                            font-weight:$font-weight-600;
+                            font-size: $font-size-48;
+                            align-self:flex-end;
+                            line-height: 1;
+                            @include media(medium){
+                                font-size: $font-size-45;
+                            }
+                            @include media(small){
+                                font-size: $font-size-42;
+                            }
+                        }
+                        &:nth-child(3){
+                            font-weight: $font-weight-400;
+                            font-size: $font-size-18;
+                            align-self: flex-end;
+                            line-height: 1;
+                            padding:0 0 0.4em;
+                        }
+                    }
+                }
+                p{
+                    font-size:$font-size-16;
+                    font-weight:$font-weight-300;
+                }
+            }
+        }
+    }
+}

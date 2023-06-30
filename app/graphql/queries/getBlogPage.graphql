@@ -1,0 +1,25 @@
+query getBlogPage(
+  $filter: BlogFilter
+  $blogFilter: BlogInnerFilter
+  $allPageFilter: AllPageFilter
+  $sortFilter: [BlogInnerSorting!]
+) {
+  allBlog(where: $filter) {
+    ...Blog
+  }
+  allBlogInner(where: $blogFilter, sort: $sortFilter) {
+    ...BlogPostCard
+  }
+  allServiceType {
+    ...ServiceType
+  }
+  allHireDedicatedPageTypes {
+    ...HireDedicatedPageTypes
+  }
+  allAllPage(where: $allPageFilter) {
+    ...HomeNavServices
+  }
+  allCategory {
+    ...Category
+  }
+}

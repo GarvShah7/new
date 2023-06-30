@@ -1,0 +1,24 @@
+fragment Blog on Blog {
+  _id
+  _type
+  _key
+  title
+  header {
+    ...Header
+  }
+  hero {
+    ...BlogHeroSection
+  }
+  reviewsSection {
+    ...ReviewsSection
+  }
+  footer {
+    ...Footer
+  }
+  slug {
+    ...Slug
+  }
+  seo {
+    ...Seo
+  }
+}

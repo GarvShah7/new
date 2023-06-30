@@ -1,0 +1,18 @@
+fragment ImageTitleDescriptionSection on ImageTitleDescriptionSection {
+  _key
+  _type
+  titleSubtitle {
+    ...TitleSubtitle
+  }
+  details {
+    ...ImageTitleDescriptionDetails
+  }
+  sliderOption
+  sectionTheme
+  widthOption
+  borderOption
+  imageOption
+  columns
+  align
+  ourApproach
+}

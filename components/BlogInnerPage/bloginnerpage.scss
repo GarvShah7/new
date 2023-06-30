@@ -1,0 +1,150 @@
+@import "../../styles/config/variables";
+
+.innerBlogWrap {
+    padding:3em 0 0;
+    .container {
+        .innerBlogContent {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-column-gap: 7.5em;
+            @include media(wide){
+                grid-column-gap: 7em;
+            }
+            @include media(extra-large){
+                grid-column-gap: 6em;
+            }
+            @include media(large){
+                grid-column-gap: 5em;
+                grid-template-columns: 1.5fr 2fr;
+            }
+            @include media(medium){
+                grid-column-gap: 4em;
+            }
+            @include media(small){
+                grid-template-columns: 1fr;
+            }
+            > .leftSide {
+                position: sticky;
+                align-self: flex-start;
+                top: 1.875rem;
+                @include media(small){
+                    display:none;
+                }
+            }
+            > .rightSide {
+              > section {
+                &:not(:first-child):not(.readBlogSection):not(.jamStackResourceSection):not(.authorCardSection){
+                    padding: 1em 0 0;
+                 section{
+                    margin: 2.125em 0;
+                 }
+                }
+                > h4 {
+                    font-weight: $font-weight-700;
+                    font-size: $font-size-28;
+                    line-height: $line-height-medium;
+                    letter-spacing: 0.025em;
+                    color: $black-color;
+                    padding: 0 0 0.4em;
+                    @include media(medium){
+                        font-size: $font-size-24;
+                    }
+                    @include media(small){
+                        font-size: $font-size-22;
+                    }
+                }
+                > h6 {
+                    font-weight:$font-weight-600;
+                    font-size:$font-size-18;
+                    line-height: $line-height-normal;
+                    letter-spacing: 0.025em;
+                    color: $black-color;      
+                    padding: 0.7em 0 0.6em;     
+                    @include media(medium){
+                        font-size: $font-size-17;
+                    }  
+                    @include media(small){
+                        font-size: $font-size-16;
+                    }      
+                    + img{
+                        margin: 0.5em 0 1.875em;
+                    }
+                }
+                > p {
+                    font-weight: $font-weight-400;
+                    font-size: $font-size-16;
+                    line-height: $line-height-large;
+                    letter-spacing: 0.025em;
+                    color: $black-color;
+                   
+                    @include media(small){
+                        font-size: $font-size-15;
+                    }
+                    strong {
+                        font-weight: $font-weight-600;
+                    }
+
+                    a {
+                        color: $blue-color;
+                    }
+                }
+                > ul {
+                    margin: 0.5em 0 1.5em 1.3em;
+                    @include media(medium){
+                        margin: 0 0 3em 1.2em; 
+                    }
+                    @include media(small){
+                        margin: 0 0 2.5em 1.1em; 
+                    }
+                    @include media(medium-small){
+                        margin: 0 0 2.5em 1em; 
+                    }
+                    @include media(very-small){
+                        margin: 0 0 2em 0; 
+                    }
+                    padding:0;
+                
+                    >  li {
+                        list-style: none;
+                        padding: 0.5em 0 0.5em 1.875em;
+                        position: relative;
+                        font-weight: $font-weight-400;
+                        font-size: $font-size-16;
+                        line-height: $line-height-large;
+                        letter-spacing: 0.025em;
+                        color: $black-color;
+                        @include media(small){
+                            font-size: $font-size-15;
+                        }
+                        strong {
+                            font-weight: $font-weight-600;
+                        }
+                        &::before {
+                            content: "";
+                            background-image: url("/assets/images/check.svg");
+                            background-position: 0;
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            display: block;
+                            height: 1.25em;
+                            width: 1.125em;
+                            left: 0;
+                            position: absolute;
+                            
+                            top:0.7em;
+                        }
+                    }
+                }
+                > img{ 
+                    display: none;
+                    max-width:100%;
+                    width: 100%;
+                    height: auto;
+                    margin: 0 0 1.875em;     
+                }
+              }
+     
+            }
+        }
+    }
+}

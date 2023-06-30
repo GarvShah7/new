@@ -1,0 +1,65 @@
+@import '../../styles/config/variables';
+
+.themesSection{
+    .container{
+        .themesContent{
+            .themesList{
+                display: flex;
+                justify-content:space-between;
+                min-height: 20em;
+                margin: 4em 0 0;
+                @include media(large){
+                    margin: 3em 0 0;
+                }
+                @include media(medium){
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    grid-column-gap:1em;
+                    grid-row-gap: 1.5em;
+                    margin: 2em 0 0;
+                }
+                @include media(medium-small){
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+                @include media(very-small){
+                    grid-template-columns: 1fr 1fr;
+                }
+                @include media(large){
+                    min-height: 16em;
+                }
+                li{
+                    padding: 0 1em;
+                    @include media(extra-large){
+                        padding: 0 0.7em;
+                    }
+                    &:nth-child(1){
+                        padding-top: 2em;
+                          @include media(medium){
+                            padding-top: 0;
+                          }
+                    }
+                    &:nth-child(3),&:nth-child(4),&:nth-child(6){
+                        align-self: flex-end;
+                    }
+                    &:nth-child(4){
+                        padding-bottom:2em;
+                          @include media(medium){
+                            padding-bottom: 0;
+                          }
+                    }
+                    &:nth-child(6){
+                        padding-bottom:6em;
+                         @include media(medium){
+                            padding-bottom: 0;
+                        }
+                    }
+                    img{
+                        max-width:100%;
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}

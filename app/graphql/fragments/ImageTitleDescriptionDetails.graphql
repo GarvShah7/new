@@ -1,0 +1,12 @@
+fragment ImageTitleDescriptionDetails on ImageTitleDescriptionDetails {
+  _key
+  _type
+  image {
+    ...Image
+  }
+  title
+  sideTitle
+  descriptionDetailsRichText {
+    ...RichText
+  }
+}

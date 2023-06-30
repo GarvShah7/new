@@ -1,0 +1,9 @@
+fragment ResourceDetailCard on ResourceDetailCard {
+  _key
+  _type
+  title
+  image {
+    ...Image
+  }
+  description
+}

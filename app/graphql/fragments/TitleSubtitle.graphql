@@ -1,0 +1,9 @@
+fragment TitleSubtitle on TitleSubtitle {
+  _key
+  _type
+  title
+  subtitle {
+    ...RichText
+  }
+}
+  

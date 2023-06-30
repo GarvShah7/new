@@ -1,0 +1,18 @@
+fragment CompanyInfoSection on CompanyInfoSection {
+  _id
+  _type
+  _key
+  titleSubtitle {
+    ...TitleSubtitle
+  }
+  numberTitle {
+    ...NumberTitle
+  }
+  imageArray:image {
+    ...Image
+  }
+  appIconImage {
+   ...IconTitleArray
+  }
+  sectionTheme
+}

@@ -1,0 +1,14 @@
+fragment NextJSUSeCompaniesSection on NextJSUSeCompaniesSection {
+  _key
+  _type
+  titleSubtitle {
+    ...TitleSubtitle
+  }
+  image {
+    ...Image
+  }
+  companiesLogoTitleArray {
+    ...CompaniesLogoTitleArray
+  }
+  sectionTheme
+}

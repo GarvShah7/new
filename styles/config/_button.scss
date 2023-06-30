@@ -1,0 +1,92 @@
+.button{
+    font-family: $font-primary;
+    font-size: $font-size-14;
+    font-weight: $font-weight-600;
+    border-radius: $border-radius-regular;
+    display: inline-block;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: 1.5em;
+    background-position: right 1.563em center;
+    padding: 1.071em 1.786em;
+    letter-spacing: 0.025em;
+    @include media(medium){
+        padding: 1em 1.5em;
+    }
+    &.withIcon{
+        border-radius:$border-radius-50;
+        font-weight:$font-weight-600;
+        font-size: $font-size-16;
+        line-height: $line-height-normal;
+        background-color: $white-color;
+        background-image: url("/assets/images/black-arrow.svg");
+        padding:1.3em 1.563em;
+        padding-right: 3.5em;
+        display:flex;
+        align-items:center;
+        color:$black-color;
+        @include media(medium){
+            font-size: $font-size-15;
+            padding:1.2em 1.4em;
+            padding-right: 3.5em;
+        }
+        @include media(small){
+            font-size: $font-size-14;
+            padding:1.1em 1.3em;
+            padding-right: 3.5em;
+        }
+        &:hover{
+            background-color: $blue-color;
+            padding-right: 3.5em;
+            background-image: url("/assets/images/white-arrow.svg");
+            color:$white-color;
+        }
+    }
+    &:hover{
+        background-image: url("/assets/images/button-arrow.png");
+        padding-right: 6em;
+    }
+    &.blue{
+        background-color: $blue-color;
+        color: $white-color;
+        &:hover{
+            background-color: $black-color;
+            color:$white-color;
+        }
+    }
+    &.withDefaultArrow{
+        background-color: $blue-color;
+        color: $white-color;
+        background-image: url("/assets/images/button-arrow.png");
+        padding-right: 4em;
+        &:hover{
+            background-color: $blue-color;
+        }
+    }
+    &.pink{
+        background-color: $pink-color;
+        color: $white-color;
+        &:hover{
+            background-color: $black-color;
+            color:$white-color;
+        }
+    }
+    &.black{
+        background-color: $black-color;
+        color: $white-color;
+        &:hover{
+            background-color: $blue-color;
+        }
+    }  
+    &.white{
+        background-color: $white-color;
+        color: $black-color;
+        &:hover{
+            background-color: $blue-color;
+            color:$white-color;
+        }
+    }   
+}
+
+
+

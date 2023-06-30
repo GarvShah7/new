@@ -1,0 +1,11 @@
+fragment TestimonialsCard on TestimonialsCard {
+  _key
+  _type
+  title
+  description
+  profileName
+  profileDetail
+  image {
+    ...Image
+  }
+}

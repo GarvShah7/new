@@ -1,0 +1,90 @@
+.techStackSection .container .techStackContent .techStackTabs ul.techStackTitle {
+  border-bottom: 1px solid #5F5F5F;
+  padding: 0 0 1.25em;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .techStackSection .container .techStackContent .techStackTabs ul.techStackTitle {
+    display: block;
+    overflow: auto;
+    white-space: nowrap;
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+  }
+}
+.techStackSection .container .techStackContent .techStackTabs ul.techStackTitle::-webkit-scrollbar {
+  width: 0 !important;
+}
+.techStackSection .container .techStackContent .techStackTabs ul.techStackTitle li {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.125em;
+  line-height: 1;
+  color: #FFFFFF;
+}
+.techStackSection .container .techStackContent .techStackTabs ul.techStackTitle li + li {
+  padding-left: 1.667em;
+}
+@media (max-width: 767px) {
+  .techStackSection .container .techStackContent .techStackTabs ul.techStackTitle li {
+    display: inline-block;
+  }
+}
+.techStackSection .container .techStackContent .techStackTabs ul.techStackTitle li.active, .techStackSection .container .techStackContent .techStackTabs ul.techStackTitle li:hover {
+  color: #000EE6;
+}
+.techStackSection .container .techStackContent .techStackTabs ul.texhStackList {
+  font-weight: 500;
+  font-size: 0.75em;
+  line-height: 1;
+  color: #FFFFFF;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 3.75em;
+  grid-row-gap: 1.875em;
+  padding: 1.875em 0;
+}
+@media (max-width: 1280px) {
+  .techStackSection .container .techStackContent .techStackTabs ul.texhStackList {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 999px) {
+  .techStackSection .container .techStackContent .techStackTabs ul.texhStackList {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .techStackSection .container .techStackContent .techStackTabs ul.texhStackList {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 640px) {
+  .techStackSection .container .techStackContent .techStackTabs ul.texhStackList {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .techStackSection .container .techStackContent .techStackTabs ul.texhStackList {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.techStackSection .container .techStackContent .techStackTabs ul.texhStackList .techIcon {
+  padding: 0 0 0.5em;
+  text-align: center;
+}
+.techStackSection .container .techStackContent .techStackTabs ul.texhStackList .techIcon img {
+  max-width: 6.625em;
+  width: 100%;
+}
+.techStackSection .container .techStackContent .techStackTabs ul.texhStackList h6 {
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 1;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/*# sourceMappingURL=techstack.css.map */
