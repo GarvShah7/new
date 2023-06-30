@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import { getClient } from "../../app/api/lib/sanity-client";
-import { BlogService } from "../../app/api/models";
+// import { BlogService } from "../../app/api/models";
 import { reduce_to_single } from "../../app/api/utils/reduce-to-single";
 import Layout from "../../components/Common/Layout";
 import { GetBlogPageQuery, MetaTagFragment } from "../../app/api/generated/graphql/graphql";

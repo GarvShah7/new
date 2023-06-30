@@ -6,7 +6,7 @@ import Layout from "../../components/Common/Layout";
 import { reduce_to_single } from "../../app/api/utils/reduce-to-single";
 import BlogInnerPage from "../../components/BlogInnerPage";
 import React from "react";
-import { useBlogProvider } from "../../app/api/generated/hooks/globalContext";
+// import { useBlogProvider } from "../../app/api/generated/hooks/globalContext";
 import { getMetaObjects } from "../../app/api/utils/helper";
 import { getBlogDetailPage } from "../api/getBlogDetailPage";
 

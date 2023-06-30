@@ -7,7 +7,7 @@ import {
   MetaTagFragment,
 } from "../app/api/generated/graphql/graphql";
 import { getClient } from "../app/api/lib/sanity-client";
-import { PageService } from "../app/api/models";
+// import { PageService } from "../app/api/models";
 import Layout from "../components/Common/Layout";
 import Sections from "../components/Common/Sections";
 import { getMetaObjects } from "../app/api/utils/helper";

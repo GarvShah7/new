@@ -9,7 +9,7 @@ import { PageService } from "../app/api/models";
 import Layout from "../components/Common/Layout";
 import React, { Fragment, useEffect } from "react";
 import Sections from "../components/Common/Sections";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 import { getMetaObjects } from "../app/api/utils/helper";
 import { getAllPageData } from "./api/getAllPage";
 
