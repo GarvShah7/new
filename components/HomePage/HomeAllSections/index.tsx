@@ -93,45 +93,45 @@ const HomeAllSections = ({ block, ...props }) => {
     case "homeHeroSection":
       Component = HomeHeroSection;
       break;
-    case "homeServicesSection":
-      Component = HomeServicesSection;
-      break;
-    case "homeContactUsSection":
-      Component = HomeContactUsSection;
-      break;
-    case "workSection":
-      Component = WorkSection;
-      break;
-    case "homeOurProsSection":
-      Component = HomeOurProsSection;
-      break;
-    case "solutionSection":
-      Component = SolutionSection;
-      break;
-    case "homeAboutUsSection":
-      Component = HomeAboutUsSection;
-      break;
-    case "jamstackCTESection":
-      Component = JamstackCTESection;
-      break;
-    case "homeBlogSection":
-      Component = HomeBlogSection;
-      break;
-    case "testimonialsSection":
-      Component = TestimonialsSection;
-      break;
-    case "reviewsSection":
-      Component = ReviewsSection;
-      break;
-    case "titleHoverImageSection":
-      Component = TitleHoverImageSection;
-      break;
-    case "homeVideoSection":
-      Component = VideoSection;
-      break;
-    case "imageWithTitleSection":
-      Component = ImageWithTitleSection;
-      break;
+    // case "homeServicesSection":
+    //   Component = HomeServicesSection;
+    //   break;
+    // case "homeContactUsSection":
+    //   Component = HomeContactUsSection;
+    //   break;
+    // case "workSection":
+    //   Component = WorkSection;
+    //   break;
+    // case "homeOurProsSection":
+    //   Component = HomeOurProsSection;
+    //   break;
+    // case "solutionSection":
+    //   Component = SolutionSection;
+    //   break;
+    // case "homeAboutUsSection":
+    //   Component = HomeAboutUsSection;
+    //   break;
+    // case "jamstackCTESection":
+    //   Component = JamstackCTESection;
+    //   break;
+    // case "homeBlogSection":
+    //   Component = HomeBlogSection;
+    //   break;
+    // case "testimonialsSection":
+    //   Component = TestimonialsSection;
+    //   break;
+    // case "reviewsSection":
+    //   Component = ReviewsSection;
+    //   break;
+    // case "titleHoverImageSection":
+    //   Component = TitleHoverImageSection;
+    //   break;
+    // case "homeVideoSection":
+    //   Component = VideoSection;
+    //   break;
+    // case "imageWithTitleSection":
+    //   Component = ImageWithTitleSection;
+    //   break;
     default:
       break;
   }
