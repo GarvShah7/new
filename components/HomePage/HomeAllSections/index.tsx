@@ -90,12 +90,12 @@ const HomeAllSections = ({ block, ...props }) => {
     | React.JSX.IntrinsicAttributes;
 
   switch (block?._type) {
-    case "homeHeroSection":
-      Component = HomeHeroSection;
-      break;
-    // case "homeServicesSection":
-    //   Component = HomeServicesSection;
+    // case "homeHeroSection":
+    //   Component = HomeHeroSection;
     //   break;
+    case "homeServicesSection":
+      Component = HomeServicesSection;
+      break;
     // case "homeContactUsSection":
     //   Component = HomeContactUsSection;
     //   break;
