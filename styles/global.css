@@ -1522,6 +1522,35 @@ h6 {
     opacity: 0;
   }
 }
+
+@keyframes topToBottom {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    -ms-transform: translateY(-50px);
+  }
+  10% {
+    opacity: 1;
+    -ms-transform: translateY(0px);
+  }
+  25% {
+    opacity: 1;
+    -ms-transform: translateY(0px);
+  }
+  30% {
+    opacity: 0;
+    -ms-transform: translateY(50px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .scroll-to-top {
   width: 2.5em;
   height: 2.5em;
@@ -2188,6 +2217,7 @@ div.toggleBox
   font-size: 2em;
   color: #ffffff;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(
     to right,
@@ -2381,6 +2411,7 @@ div.toggleBox
   font-size: 1em;
   text-transform: capitalize;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(
     to right,
@@ -2457,6 +2488,7 @@ div.toggleBox
   li
   a {
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(
     to right,
@@ -2487,6 +2519,7 @@ div .navigation ul.navItemList .navItem > a {
   font-size: 1.125em;
   line-height: 1.4;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(
     to right,
