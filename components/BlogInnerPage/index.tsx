@@ -113,9 +113,9 @@ const BlogInnerPage: React.FC<{
               <h1>{title}</h1>
               {button && <Button block={button} />}
             </div>
-            {/* <div className="rightSide innerBannerImage">
+            <div className="rightSide innerBannerImage">
               {featuredImage && <Image block={featuredImage} />}
-            </div> */}
+            </div>
           </div>
         </div>
       </section>
