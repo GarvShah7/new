@@ -9,7 +9,7 @@ import React from "react";
 import HomeAllSections from "../components/HomePage/HomeAllSections";
 import Layout from "../components/Common/Layout";
 import { getMetaObjects } from "../app/api/utils/helper";
-import {  getHomePageData } from "./api/getHomePage";
+import { getHomePageData } from "./api/getHomePage";
 export type PageProps = {
   getPage: GetHomePageQuery["allHome"];
   allServicesTypes: GetHomePageQuery["allServiceType"];
@@ -33,7 +33,6 @@ const Home: NextPage<PageProps> = ({
   const { header, footer, sections, seo } = home || {};
   const { meta_title, meta_tags, noFollow, noIndex } = seo || {};
   const tags = meta_tags && getMetaObjects(meta_tags as MetaTagFragment[]);
-  const sanity_client = getClient();
   return (
     <div>
       <Layout

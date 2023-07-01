@@ -13,7 +13,7 @@ const SideContentTitle: React.FC<{
   sideTitle: string[];
   blogInnerSideContent: BlogInnerSideContentFragment;
 }> = ({ contentTitle, sideTitle, blogInnerSideContent }) => {
-  const { blogData } = useBlogProvider()
+  const { blogData } = useBlogProvider();
   const { data, methods } = blogData;
   const { pageHeight } = data;
   const [currUrl, setCurrUrl] = useState("");
@@ -59,7 +59,6 @@ const SideContentTitle: React.FC<{
                 </>
               );
             })}
-            {/* {sideTitle?.map((item, idx) => (<li key={idx}> <Link to={'#' + item?.replace(/\s|\?/g, '_')}>{item}</Link></li>))} */}
           </ul>
         </div>
       </section>

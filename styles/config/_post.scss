@@ -52,16 +52,12 @@
                                     height: 1px;
                                     width: 3.438em;
                                     margin: 0 0 0 1.250em;
-                                    // @include media(medium-small){
-                                    //     display: none;
-                                    // }
+                                   
                                 }
                             }
                             .rightSide{
                                 ul{
-                                    // display: grid;
-                                    // grid-template-columns: auto auto auto;
-                                    // grid-row-gap: 0.7em;
+                           
                                     display: flex;
                                     flex-wrap: wrap;
                                     max-width: 35em;
@@ -72,13 +68,7 @@
                                     @include media(medium){
                                         grid-template-columns: auto auto auto;
                                     }
-                                    // @include media(small){
-                                    //     display: flex;
-                                    //     flex-wrap: wrap;
-                                    // }
-                                    // @include media(small){
-                                    //     grid-template-columns: auto auto;
-                                    // }
+                                
                                     @include media(medium-small){
                                         padding: 2em 0 0;
                                     }
@@ -165,9 +155,7 @@
                 background-color: $gray03-color;
                 border-radius: $border-radius-12;
                 margin-bottom: 1.563em;
-                // @include media(medium){
-                //     display: inline-block;
-                // }
+             
                 img{
                     max-width: 100%;
                     width: 100%;
@@ -272,9 +260,7 @@
                                 @include media(small){
                                     font-size: $font-size-17;
                                 }
-                                // @include media(very-small){
-                                //     font-size: $font-size-16;
-                                // }
+                             
                             }
                             h6{
                                 font-weight: $font-weight-500;

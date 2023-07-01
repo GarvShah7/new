@@ -37,7 +37,7 @@
     grid-template-columns: 24em 24em;
     grid-column-gap:3.125em;
     justify-content: center;
-    // margin: 14em 0 0;
+   
     margin:8em 0 0;
     &.col-3{
         grid-template-columns: 24em 24em 24em;
@@ -68,7 +68,7 @@
         grid-column-gap:3em;
     }
     @include media(large){
-        // margin: 13em 0 0;
+        
         margin: 7em 0 0;
         grid-column-gap:2em;
     }
@@ -76,7 +76,7 @@
         grid-template-columns: 24em;
     }
     @include media(medium-small){
-        // margin: 10em 0 0;
+      
         margin: 5em 0 0;
     }
     @include media(very-small){
