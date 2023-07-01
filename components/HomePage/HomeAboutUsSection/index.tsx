@@ -2,14 +2,13 @@ import clsx from "clsx";
 import { HomeAboutUsSectionFragment } from "../../../app/api/generated/graphql/graphql";
 import TitleSubtitle from "../../Common/TitleSubtitle";
 import RichTextSection from "../../Common/RichTextSection";
-import DynamicComponent from "../../DynamicComponent";
 import Image from "../../Common/Image";
 
-const HomeAboutUsSection: React.FC<{ block: HomeAboutUsSectionFragment }> =  ({
+const HomeAboutUsSection: React.FC<{ block: HomeAboutUsSectionFragment }> = ({
   block,
 }) => {
   const { titleSubtitle, aboutDescription, image, sectionTheme } = block || {};
-  
+
   return (
     <section
       className={clsx(
@@ -26,9 +25,7 @@ const HomeAboutUsSection: React.FC<{ block: HomeAboutUsSectionFragment }> =  ({
             <div className="leftSide font-Montserrat">
               {aboutDescription && <RichTextSection block={aboutDescription} />}
             </div>
-            <div className="rightSide">
-              {image && <Image block={image} />}
-            </div>
+            <div className="rightSide">{image && <Image block={image} />}</div>
           </div>
         </div>
       </div>
