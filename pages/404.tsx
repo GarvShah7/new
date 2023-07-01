@@ -31,7 +31,7 @@ const fourOfour: NextPage<PageProps> = ({
   useEffect(() => {
     router.push("/404");
   }, []);
-  const { sections,footer,header, seo } = (page as AllPageFragment) || {};
+  const { sections, footer, header, seo } = (page as AllPageFragment) || {};
   const { meta_title, meta_tags, noFollow, noIndex } = seo || {};
   const tags = meta_tags && getMetaObjects(meta_tags as MetaTagFragment[]);
   const sanity_client = getClient();
@@ -60,7 +60,13 @@ const fourOfour: NextPage<PageProps> = ({
 };
 export default fourOfour;
 export async function getStaticProps() {
-const {allServicesTypes,hireDedicatedPages,hireDedicatedType,page,servicesPage} = await getFourZeroPageData()
+  const {
+    allServicesTypes,
+    hireDedicatedPages,
+    hireDedicatedType,
+    page,
+    servicesPage,
+  } = await getFourZeroPageData();
   return {
     props: {
       page,
