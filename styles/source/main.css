@@ -20,7 +20,6 @@
 }
 .headerSection.bg-black .container .headerContent .navigation .navItemList li a {
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(to right, #000EE6, #000EE6 50%, #FFFFFF 50%);
   background-size: 200% 100%;

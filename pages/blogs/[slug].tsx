@@ -1,15 +1,12 @@
 import { NextPage } from "next";
-import {
-  BlogInnerSideContentFragment,
-  GetBlogInnerPageQuery,
-  MetaTagFragment,
-} from "../../app/api/generated/graphql/graphql";
+import { BlogInnerFragment, BlogInnerSideContentFragment, GetBlogInnerPageQuery, MetaTagFragment } from "../../app/api/generated/graphql/graphql";
 import { BlogService } from "../../app/api/models";
 import { getClient } from "../../app/api/lib/sanity-client";
 import Layout from "../../components/Common/Layout";
 import { reduce_to_single } from "../../app/api/utils/reduce-to-single";
 import BlogInnerPage from "../../components/BlogInnerPage";
 import React from "react";
+import { useBlogProvider } from "../../app/api/generated/hooks/globalContext";
 import { getMetaObjects } from "../../app/api/utils/helper";
 import { getBlogDetailPage } from "../api/getBlogDetailPage";
 
@@ -32,37 +29,32 @@ const allPage: NextPage<PageProps> = ({
   hireDedicatedPages,
   hireDedicatedType,
 }) => {
-  {
-    /*eslint-disable-next-line @typescript-eslint/ban-ts-comment*/
-  }
-  {
-    /*@ts-ignore */
-  }
+   {/*eslint-disable-next-line @typescript-eslint/ban-ts-comment*/}
+  {/*@ts-ignore */}
   const page = reduce_to_single(page_data);
-  const bloginnersidecontent =
-    blog_inner_side_content as BlogInnerSideContentFragment;
-  const { seo, footer, header } = page || {};
-  const { meta_title, meta_tags, noFollow, noIndex } = seo || {};
-  const tags = meta_tags && getMetaObjects(meta_tags as MetaTagFragment[]);
+  const bloginnersidecontent = blog_inner_side_content as BlogInnerSideContentFragment
+  const {seo,footer,header} = page || {}
+  const {meta_title,meta_tags,noFollow,noIndex} = seo || {}
+  const tags = meta_tags && getMetaObjects(meta_tags as MetaTagFragment[])
   const sanity_client = getClient();
   return (
     <React.Fragment>
-      <Layout
-        header={header || {}}
-        footer={footer || {}}
-        SeoTitle={meta_title || ""}
-        tags={tags as any}
-        allServicesTypes={allServicesTypes}
-        hireDedicatedPages={hireDedicatedPages}
-        hireDedicatedType={hireDedicatedType}
-        servicesPage={servicesPage}
-      >
-        <BlogInnerPage
-          block={page}
-          extraProps={blog_data}
-          blogInnerSideContent={bloginnersidecontent}
-        />
-      </Layout>
+        <Layout
+         header={header || {}}
+         footer={footer || {}}
+          SeoTitle={meta_title || ""}
+          tags={tags as any}
+          allServicesTypes={allServicesTypes}
+          hireDedicatedPages={hireDedicatedPages}
+          hireDedicatedType={hireDedicatedType}
+          servicesPage={servicesPage}
+        >
+          <BlogInnerPage
+            block={page}
+            extraProps={blog_data}
+            blogInnerSideContent={bloginnersidecontent}
+          />
+        </Layout>
     </React.Fragment>
   );
 };
@@ -84,15 +76,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }: { params: { slug: string } }) {
   const getslug = params.slug;
-  const {
-    allServicesTypes,
-    blog_inner_side_content,
-    hireDedicatedPages,
-    hireDedicatedType,
-    page_data,
-    servicesPage,
-    data,
-  } = await getBlogDetailPage(getslug);
+  const {allServicesTypes,blog_data,blog_inner_side_content,hireDedicatedPages,hireDedicatedType,page_data,servicesPage,data } = await getBlogDetailPage(getslug)
   return {
     props: {
       page_data,

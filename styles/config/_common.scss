@@ -323,7 +323,7 @@
     font-weight: $font-weight-500;
     line-height: $line-height-medium;
     color: $white-opc-50;
-
+    // padding: 0 0 1em;
     padding: 0 0 0.7em;
 
     &.color-black {
@@ -377,9 +377,45 @@
         }
     }
 
+    @include media(medium) {
+        +.titledescsbsSection {
+            // &.sectionInnerSpace{
+            //     margin-top: -4em;
+            //     @include media(medium){
+            //         margin-top: -2em;
+            //     }
+            // }
+        }
+    }
 
-
-   
+    // &.bg-black{
+    //     position: relative;
+    //     background-color: transparent;
+    //     &:before{
+    //         content: "";
+    //         background-color: $black-color;
+    //         width: 100%;
+    //         height: 33em;
+    //         position:absolute;
+    //         left: 0;
+    //         right: 0;
+    //         top:0;
+    //         bottom: 0;
+    //         z-index: -1;
+    //         @include media(extra-large){
+    //             height: 32em;
+    //         }
+    //         @include media(large){
+    //             height: 29em;
+    //         }
+    //         @include media(large-medium){
+    //             height: 28em;
+    //         }
+    //         @include media(medium){
+    //             height: 36em;
+    //         }
+    //     }
+    // }
     &.innerBlogBannerSection {
         .container {
             .innerPageBannerContent {
@@ -402,7 +438,7 @@
 
     @include media(large) {
         padding: 6em 0 0;
-      
+        // margin-bottom: 8em;
     }
 
     @include media(medium) {
@@ -581,11 +617,16 @@
             &.gridBox {
                 @include media(medium) {
                     grid-template-columns: 1fr;
-        
+                    // grid-row-gap: 2.5em;
                     grid-row-gap: 0;
                 }
 
-              
+                // @include media(small){
+                //     grid-row-gap: 2em;
+                // }
+                // @include media(small){
+                //     grid-row-gap: 1.5em;
+                // }
                 .leftSide {
                     &.withBtmPad {
                         padding-bottom: 2em;
@@ -876,8 +917,7 @@ $wordCount: 5;
     }
 }
 
-@keyframes 
- topToBottom {
+@-moz-keyframes topToBottom {
     0% {
         opacity: 0;
     }

@@ -1441,7 +1441,7 @@ h6 {
   color: #000000;
 }
 
-@keyframes topToBottom {
+@-moz-keyframes topToBottom {
   0% {
     opacity: 0;
   }
@@ -2188,7 +2188,6 @@ div.toggleBox
   font-size: 2em;
   color: #ffffff;
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(
     to right,
@@ -2382,7 +2381,6 @@ div.toggleBox
   font-size: 1em;
   text-transform: capitalize;
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(
     to right,
@@ -2459,7 +2457,6 @@ div.toggleBox
   li
   a {
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(
     to right,
@@ -2490,7 +2487,6 @@ div .navigation ul.navItemList .navItem > a {
   font-size: 1.125em;
   line-height: 1.4;
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(
     to right,

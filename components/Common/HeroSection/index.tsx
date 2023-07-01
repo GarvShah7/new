@@ -2,7 +2,7 @@ import clsx from "clsx";
 import { Fragment } from "react";
 
 import { HeroSectionFragment } from "../../../app/api/generated/graphql/graphql";
-// import DynamicComponent from "../../DynamicComponent";
+import DynamicComponent from "../../DynamicComponent";
 import { PortableText } from "@portabletext/react";
 import Image from "../Image";
 

@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import DynamicComponent from "../../DynamicComponent";
 import { getDateString } from "../../../app/api/utils/helper/getDateString";
 import { HomeBlogInnerFragment } from "../../../app/api/generated/graphql/graphql";
 import Link from "../Link";

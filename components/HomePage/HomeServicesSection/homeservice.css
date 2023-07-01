@@ -1,20 +1,7 @@
-.serviceSection.withoutNumber
-  .container
-  .serviceContent
-  .serviceList
-  li
-  .serviceDetails
-  .serviceTitle {
+.serviceSection.withoutNumber .container .serviceContent .serviceList li .serviceDetails .serviceTitle {
   min-height: auto;
 }
-.serviceSection.withoutNumber
-  .container
-  .serviceContent
-  .serviceList
-  li
-  .serviceDetails
-  .serviceTitle
-  h3 {
+.serviceSection.withoutNumber .container .serviceContent .serviceList li .serviceDetails .serviceTitle h3 {
   width: min-intrinsic;
   width: -webkit-min-content;
   width: -moz-min-content;
@@ -69,13 +56,7 @@
   display: flex;
   flex-direction: column;
 }
-.serviceSection
-  .container
-  .serviceContent
-  .serviceList
-  li
-  .serviceDetails
-  .serviceTitle {
+.serviceSection .container .serviceContent .serviceList li .serviceDetails .serviceTitle {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -97,13 +78,7 @@
   padding: 0 0 0.633em;
 }
 @media (max-width: 767px) {
-  .serviceSection
-    .container
-    .serviceContent
-    .serviceList
-    li
-    .serviceDetails
-    h3 {
+  .serviceSection .container .serviceContent .serviceList li .serviceDetails h3 {
     font-size: 1.75em;
     min-height: auto;
   }
@@ -118,69 +93,29 @@
   width: 100%;
 }
 @media (max-width: 767px) {
-  .serviceSection
-    .container
-    .serviceContent
-    .serviceList
-    li
-    .serviceDetails
-    > p {
+  .serviceSection .container .serviceContent .serviceList li .serviceDetails > p {
     max-width: 100%;
   }
 }
-.serviceSection
-  .container
-  .serviceContent
-  .serviceList
-  li
-  .serviceDetails
-  > ul {
+.serviceSection .container .serviceContent .serviceList li .serviceDetails > ul {
   padding: 2.188em 0 0;
 }
 @media (max-width: 999px) {
-  .serviceSection
-    .container
-    .serviceContent
-    .serviceList
-    li
-    .serviceDetails
-    > ul {
+  .serviceSection .container .serviceContent .serviceList li .serviceDetails > ul {
     padding: 2em 0 0;
     margin: 0 0 2em;
   }
 }
 @media (max-width: 767px) {
-  .serviceSection
-    .container
-    .serviceContent
-    .serviceList
-    li
-    .serviceDetails
-    > ul {
+  .serviceSection .container .serviceContent .serviceList li .serviceDetails > ul {
     padding: 1.5em 0 0;
     margin: 0 0 2.5em;
   }
 }
-.serviceSection
-  .container
-  .serviceContent
-  .serviceList
-  li
-  .serviceDetails
-  > ul
-  > li:last-child
-  a {
+.serviceSection .container .serviceContent .serviceList li .serviceDetails > ul > li:last-child a {
   padding-bottom: 0;
 }
-.serviceSection
-  .container
-  .serviceContent
-  .serviceList
-  li
-  .serviceDetails
-  > ul
-  > li
-  a {
+.serviceSection .container .serviceContent .serviceList li .serviceDetails > ul > li a {
   pointer-events: none;
   font-weight: 500;
   font-size: 1.125em;
@@ -191,89 +126,39 @@
   display: flex;
   align-items: center;
 }
-.serviceSection
-  .container
-  .serviceContent
-  .serviceList
-  li
-  .serviceDetails
-  > ul
-  > li
-  a:hover {
-  color: #000ee6;
+.serviceSection .container .serviceContent .serviceList li .serviceDetails > ul > li a:hover {
+  color: #000EE6;
 }
 @media (max-width: 999px) {
-  .serviceSection
-    .container
-    .serviceContent
-    .serviceList
-    li
-    .serviceDetails
-    > ul
-    > li
-    a {
+  .serviceSection .container .serviceContent .serviceList li .serviceDetails > ul > li a {
     font-size: 1.063em;
   }
 }
 @media (max-width: 767px) {
-  .serviceSection
-    .container
-    .serviceContent
-    .serviceList
-    li
-    .serviceDetails
-    > ul
-    > li
-    a {
+  .serviceSection .container .serviceContent .serviceList li .serviceDetails > ul > li a {
     font-size: 1em;
   }
 }
-.serviceSection
-  .container
-  .serviceContent
-  .serviceList
-  li
-  .serviceDetails
-  > ul
-  > li
-  a:before {
+.serviceSection .container .serviceContent .serviceList li .serviceDetails > ul > li a:before {
   content: "";
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   width: 6px;
   height: 6px;
   border-radius: 6px;
   display: inline-block;
   margin: 0 0.938em 0 0;
 }
-.serviceSection
-  .container
-  .serviceContent
-  .serviceList
-  li
-  .serviceDetails
-  .arrowLink {
+.serviceSection .container .serviceContent .serviceList li .serviceDetails .arrowLink {
   margin-top: auto;
   padding: 4em 0 0;
 }
 @media (max-width: 999px) {
-  .serviceSection
-    .container
-    .serviceContent
-    .serviceList
-    li
-    .serviceDetails
-    .arrowLink {
+  .serviceSection .container .serviceContent .serviceList li .serviceDetails .arrowLink {
     padding: 3em 0 0;
   }
 }
 @media (max-width: 767px) {
-  .serviceSection
-    .container
-    .serviceContent
-    .serviceList
-    li
-    .serviceDetails
-    .arrowLink {
+  .serviceSection .container .serviceContent .serviceList li .serviceDetails .arrowLink {
     padding: 1em 0 0;
   }
 }
@@ -289,66 +174,24 @@
     grid-template-columns: 1fr;
   }
 }
-.serviceSection.bg-black
-  .container
-  .serviceContent
-  .serviceList
-  li
-  .serviceDetails
-  h4 {
-  color: #ffffff;
+.serviceSection.bg-black .container .serviceContent .serviceList li .serviceDetails h4 {
+  color: #FFFFFF;
 }
-.serviceSection.bg-black
-  .container
-  .serviceContent
-  .serviceList
-  li
-  .serviceDetails
-  h3 {
-  color: #ffffff;
+.serviceSection.bg-black .container .serviceContent .serviceList li .serviceDetails h3 {
+  color: #FFFFFF;
 }
-.serviceSection.bg-black
-  .container
-  .serviceContent
-  .serviceList
-  li
-  .serviceDetails
-  > p {
+.serviceSection.bg-black .container .serviceContent .serviceList li .serviceDetails > p {
   color: rgba(255, 255, 255, 0.6);
 }
-.serviceSection.bg-black
-  .container
-  .serviceContent
-  .serviceList
-  li
-  .serviceDetails
-  > ul
-  > li
-  a {
-  color: #ffffff;
+.serviceSection.bg-black .container .serviceContent .serviceList li .serviceDetails > ul > li a {
+  color: #FFFFFF;
 }
-.serviceSection.bg-black
-  .container
-  .serviceContent
-  .serviceList
-  li
-  .serviceDetails
-  > ul
-  > li
-  a:hover {
-  color: #000ee6;
+.serviceSection.bg-black .container .serviceContent .serviceList li .serviceDetails > ul > li a:hover {
+  color: #000EE6;
 }
-.serviceSection.bg-black
-  .container
-  .serviceContent
-  .serviceList
-  li
-  .serviceDetails
-  > ul
-  > li
-  a:before {
+.serviceSection.bg-black .container .serviceContent .serviceList li .serviceDetails > ul > li a:before {
   content: "";
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 
 /*# sourceMappingURL=homeservice.css.map */

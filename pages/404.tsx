@@ -1,12 +1,13 @@
 import { NextPage } from "next";
 import { useRouter } from "next/router";
-import React, { useEffect } from "react";
+import React, { Fragment, useEffect } from "react";
 import {
   AllPageFragment,
   GetAllPageQuery,
   MetaTagFragment,
 } from "../app/api/generated/graphql/graphql";
 import { getClient } from "../app/api/lib/sanity-client";
+import { PageService } from "../app/api/models";
 import Layout from "../components/Common/Layout";
 import Sections from "../components/Common/Sections";
 import { getMetaObjects } from "../app/api/utils/helper";
@@ -30,10 +31,10 @@ const fourOfour: NextPage<PageProps> = ({
   useEffect(() => {
     router.push("/404");
   }, []);
-  const { sections, footer, header, seo } = (page as AllPageFragment) || {};
-  const { meta_title, meta_tags } = seo || {};
+  const { sections,footer,header, seo } = (page as AllPageFragment) || {};
+  const { meta_title, meta_tags, noFollow, noIndex } = seo || {};
   const tags = meta_tags && getMetaObjects(meta_tags as MetaTagFragment[]);
-
+  const sanity_client = getClient();
   return (
     <div>
       <Layout
@@ -59,13 +60,7 @@ const fourOfour: NextPage<PageProps> = ({
 };
 export default fourOfour;
 export async function getStaticProps() {
-  const {
-    allServicesTypes,
-    hireDedicatedPages,
-    hireDedicatedType,
-    page,
-    servicesPage,
-  } = await getFourZeroPageData();
+const {allServicesTypes,hireDedicatedPages,hireDedicatedType,page,servicesPage} = await getFourZeroPageData()
   return {
     props: {
       page,
