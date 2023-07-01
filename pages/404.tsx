@@ -1,12 +1,13 @@
 import { NextPage } from "next";
 import { useRouter } from "next/router";
-import React, { useEffect } from "react";
+import React, { Fragment, useEffect } from "react";
 import {
   AllPageFragment,
   GetAllPageQuery,
   MetaTagFragment,
 } from "../app/api/generated/graphql/graphql";
 import { getClient } from "../app/api/lib/sanity-client";
+import { PageService } from "../app/api/models";
 import Layout from "../components/Common/Layout";
 import Sections from "../components/Common/Sections";
 import { getMetaObjects } from "../app/api/utils/helper";
