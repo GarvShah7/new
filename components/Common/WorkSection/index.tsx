@@ -25,7 +25,7 @@ const WorkSection: React.FC<{ block: WorkSectionFragment }> = ({ block }) => {
                   {image && (
                     <Image
                       block={image}
-                      priority={true}
+                      priority
                       className="w-full object-fill h-[28.5em]"
                     />
                   )}

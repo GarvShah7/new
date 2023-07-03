@@ -45,7 +45,7 @@ const ImageWithTitleSection: React.FC<{
                     <div className="slide w-[24em] ml-[1em] grayscale hover:grayscale-0">
                       {items?.image && (
                         <Image
-                          priority={true}
+                          priority
                           block={items?.image}
                           className="h-[18em] w-full max-w-[100%] object-cover"
                         />

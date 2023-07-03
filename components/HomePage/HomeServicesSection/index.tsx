@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import { HomeServicesSectionFragment } from "../../../app/api/generated/graphql/graphql";
 import ServicesDetails from "./ServiceDetails";
-import DynamicComponent from "../../DynamicComponent";
 import TitleSubtitle from "../../Common/TitleSubtitle";
 const HomeServicesSection: React.FC<{ block: HomeServicesSectionFragment }> = ({
   block,
@@ -35,7 +34,7 @@ const HomeServicesSection: React.FC<{ block: HomeServicesSectionFragment }> = ({
             {servicesDetails?.map((details, index) => {
               return (
                 <li key={index}>
-                  {details && <ServicesDetails block={details} key={index} />}
+                  {details && <ServicesDetails block={details} />}
                 </li>
               );
             })}

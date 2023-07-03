@@ -47,7 +47,7 @@ const JamstackCTESection: React.FC<{ block: JamstackCteSectionFragment }> = ({
               </div>
             </div>
             <div className="rightSide text-center">
-              {image && <Image block={image} priority={true} />}
+              {image && <Image block={image} priority />}
             </div>
           </div>
         </div>
