@@ -93,15 +93,15 @@ const HomeAllSections = ({ block, ...props }) => {
     // case "homeHeroSection":
     //   Component = HomeHeroSection;
     //   break;
-    case "homeServicesSection":
-      Component = HomeServicesSection;
-      break;
+    // case "homeServicesSection":
+    //   Component = HomeServicesSection;
+    //   break;
     // case "homeContactUsSection":
     //   Component = HomeContactUsSection;
     //   break;
-    // case "workSection":
-    //   Component = WorkSection;
-    //   break;
+    case "workSection":
+      Component = WorkSection;
+      break;
     // case "homeOurProsSection":
     //   Component = HomeOurProsSection;
     //   break;
