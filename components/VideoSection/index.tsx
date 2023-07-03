@@ -11,7 +11,7 @@ const VideoSection: React.FC<{ block: HomeVideoSectionFragment }> = ({
     <section className="videoSection">
       <div className="w-full">
         <div className="videoContent">
-          {image && <Image block={image} />}
+          {image && <Image block={image} priority={true} />}
         </div>
       </div>
     </section>

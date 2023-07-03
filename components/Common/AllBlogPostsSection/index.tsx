@@ -22,7 +22,7 @@ const AllBlogPosts: React.FC<{ item: HomeBlogInnerFragment }> = ({ item }) => {
           className="link withArrow blackLink"
         >
           {" "}
-          {featuredImage && <Image block={featuredImage} />}
+          {featuredImage && <Image block={featuredImage} priority={true} />}
         </Link>
       </div>
 

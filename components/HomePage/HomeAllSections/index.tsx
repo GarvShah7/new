@@ -99,9 +99,9 @@ const HomeAllSections = ({ block, ...props }) => {
     // case "homeContactUsSection":
     //   Component = HomeContactUsSection;
     //   break;
-    case "workSection":
-      Component = WorkSection;
-      break;
+    // case "workSection":
+    //   Component = WorkSection;
+    //   break;
     // case "homeOurProsSection":
     //   Component = HomeOurProsSection;
     //   break;
@@ -129,9 +129,9 @@ const HomeAllSections = ({ block, ...props }) => {
     // case "homeVideoSection":
     //   Component = VideoSection;
     //   break;
-    // case "imageWithTitleSection":
-    //   Component = ImageWithTitleSection;
-    //   break;
+    case "imageWithTitleSection":
+      Component = ImageWithTitleSection;
+      break;
     default:
       break;
   }
