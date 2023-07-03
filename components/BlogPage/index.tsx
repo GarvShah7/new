@@ -11,14 +11,14 @@ import React from "react";
 import ReviewsSection from "../Common/ReviewsSection";
 import BlogPostCardSection from "../BlogPostCardSection";
 import { PortableText } from "@portabletext/react";
-import notFoundImage from "../../app/assets/images/not_found.svg";
+import notFoundImage from '../../app/assets/images/not_found.svg'
 
 const BlogPage: React.FC<{
   block: BlogFragment;
   blogPostCard: BlogPostCardFragment[];
   allCategory: CategoryFragment[];
 }> = ({ block, blogPostCard, allCategory }) => {
-  const { hero, reviewsSection } = block || {};
+  const { hero,reviewsSection } = block || {};
   const { title, description } = hero || {};
   const { customeRichTextRaw } = description || {};
   const emptyQuery = "";

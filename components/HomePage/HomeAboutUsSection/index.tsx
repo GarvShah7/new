@@ -27,7 +27,7 @@ const HomeAboutUsSection: React.FC<{ block: HomeAboutUsSectionFragment }> =  ({
               {aboutDescription && <RichTextSection block={aboutDescription} />}
             </div>
             <div className="rightSide">
-              {image && <Image block={image}  />}
+              {image && <Image block={image} />}
             </div>
           </div>
         </div>

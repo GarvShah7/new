@@ -25,17 +25,11 @@ const SolutionSection: React.FC<{ block: SolutionSectionFragment }> = ({
             {solutionDetails?.map((buttonTitle, index) => {
               const { description, image, title } = buttonTitle || {};
               return (
-                <div
-                  className="tabBox inline-block mb-[12px] ml-[15px]"
-                  key={index}
-                >
+                <div className="tabBox inline-block mb-[12px] ml-[15px]" key={index}>
                   <button
-                    className={clsx(
-                      "tab black bg-black hover:bg-blue text-white text-[1em] font-[500] rounded-[10px] px-[0.75em] py-[0.3em] border-2 border-black hover:border-blue transition-all delay-150 ease-linear",
-                      {
-                        active: sortedDetails == buttonTitle?.title!,
-                      }
-                    )}
+                    className={clsx("tab black bg-black hover:bg-blue text-white text-[1em] font-[500] rounded-[10px] px-[0.75em] py-[0.3em] border-2 border-black hover:border-blue transition-all delay-150 ease-linear", {
+                      active: sortedDetails == buttonTitle?.title!,
+                    })}
                     onClick={() => setSortedDetails(title && title)}
                   >
                     {buttonTitle?.title}

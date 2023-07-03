@@ -9,7 +9,7 @@ import React from "react";
 import HomeAllSections from "../components/HomePage/HomeAllSections";
 import Layout from "../components/Common/Layout";
 import { getMetaObjects } from "../app/api/utils/helper";
-import { getHomePageData } from "./api/getHomePage";
+import {  getHomePageData } from "./api/getHomePage";
 export type PageProps = {
   getPage: GetHomePageQuery["allHome"];
   allServicesTypes: GetHomePageQuery["allServiceType"];

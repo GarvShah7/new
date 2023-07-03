@@ -43,13 +43,7 @@ const ImageWithTitleSection: React.FC<{
                 return (
                   <React.Fragment key={index}>
                     <div className="slide w-[24em] ml-[1em] grayscale hover:grayscale-0">
-                      {items?.image && (
-                        <Image
-                          priority
-                          block={items?.image}
-                          className="h-[18em] w-full max-w-[100%] object-cover"
-                        />
-                      )}
+                     {items?.image &&  <Image block={items?.image} className="h-[18em] w-full max-w-[100%] object-cover"/>}
                       <h6>{items?.title}</h6>
                     </div>
                   </React.Fragment>

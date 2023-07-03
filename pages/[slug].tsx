@@ -30,17 +30,18 @@ const allPage: NextPage<PageProps> = ({
   hireDedicatedPages,
   hireDedicatedType,
 }) => {
-  const { sections, footer, header, seo } = (page as AllPageFragment) || {};
+
+  const { sections ,footer,header,seo} = (page as AllPageFragment) || {};
   const sanity_client = getClient();
-  const { meta_title, meta_tags, noFollow, noIndex } = seo || {};
-  const tags = meta_tags && getMetaObjects(meta_tags as MetaTagFragment[]);
+  const {meta_title,meta_tags,noFollow,noIndex} = seo || {}
+  const tags = meta_tags && getMetaObjects(meta_tags as MetaTagFragment[])
   return (
     <div>
       <Layout
         SeoTitle={meta_title || ""}
         tags={tags as any}
-        footer={footer || {}}
-        header={header || {}}
+      footer={footer || {}}
+      header={header || {}}
         allServicesTypes={allServicesTypes}
         hireDedicatedPages={hireDedicatedPages}
         hireDedicatedType={hireDedicatedType}
@@ -70,6 +71,7 @@ export async function getStaticPaths() {
     params: { slug: post?.slug?.current },
   }));
 
+
   return {
     paths,
     fallback: false,
@@ -78,14 +80,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }: { params: { slug: string } }) {
   const getslug = params.slug;
-  const {
-    allServicesTypes,
-    hireDedicatedPages,
-    hireDedicatedType,
-    page,
-    servicesCard,
-    servicesPage,
-  } = await getAllPageData(getslug);
+  const {allServicesTypes,hireDedicatedPages,hireDedicatedType,page,servicesCard,servicesPage} = await getAllPageData(getslug)
   return {
     props: {
       page,

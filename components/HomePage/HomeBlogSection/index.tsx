@@ -25,11 +25,14 @@ const HomeBlogSection: React.FC<{
             {extraProps?.map((item, index) => {
               const { slug } = item || {};
               return (
+             
                 <React.Fragment>
                   <div className="postBox">
                     {item && <AllBlogPosts item={item} key={index} />}
                   </div>
                 </React.Fragment>
+
+       
               );
             })}
           </div>
