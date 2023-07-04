@@ -1,5 +1,3 @@
-import React, { useState, useEffect, lazy, Suspense } from "react";
-import clsx from "clsx";
 import {
   FooterFragment,
   HeaderFragment,
@@ -7,9 +5,12 @@ import {
   HomeNavServicesFragment,
   ServiceTypeFragment,
 } from "../../app/api/generated/graphql/graphql";
-
-const NavOpen = lazy(() => import("./NavOpen"));
-const NavClose = lazy(() => import("./NavClose"));
+import clsx from "clsx";
+import { useState } from "react";
+import React from "react";
+import dynamic from "next/dynamic";
+const NavOpen = dynamic(() => import("./NavOpen"));
+const NavClose = dynamic(() => import("./NavClose"));
 
 export type HeaderProps = {
   block?: HeaderFragment;
@@ -30,37 +31,30 @@ const Header: React.FC<HeaderProps> = ({
 }) => {
   const { sectionTheme } = block || {};
   const [navOpen, setNavOpen] = useState(false);
-
-  useEffect(() => {
-    if (navOpen) {
+  const openNav = (val: boolean) => {
+    if (val) {
       document.body.classList.add("modal-open");
     } else {
       document.body.classList.remove("modal-open");
     }
-  }, [navOpen]);
-
-  const openNav = (val: boolean) => {
     setNavOpen(val);
   };
-
   return (
     <div className="block bg-black">
       <header className={clsx("headerSection", sectionTheme ?? "bg-white")}>
-        <Suspense fallback={<div>Loading...</div>}>
-          {!navOpen && (
-            <NavOpen
-              onClickOpenNav={openNav}
-              hireDedicatedPages={hireDedicatedPages}
-              hireDedicatedType={hireDedicatedType}
-              servicesPage={servicesPage}
-              allServicesTypes={allServicesTypes}
-              block={block}
-            />
-          )}
-          {navOpen && (
-            <NavClose block={block} onClickOpenNav={openNav} footer={footer} />
-          )}
-        </Suspense>
+        {!navOpen && (
+          <NavOpen
+            onClickOpenNav={openNav}
+            hireDedicatedPages={hireDedicatedPages}
+            hireDedicatedType={hireDedicatedType}
+            servicesPage={servicesPage}
+            allServicesTypes={allServicesTypes}
+            block={block}
+          />
+        )}
+        {navOpen && (
+          <NavClose block={block} onClickOpenNav={openNav} footer={footer} />
+        )}
       </header>
     </div>
   );
