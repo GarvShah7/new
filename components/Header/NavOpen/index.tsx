@@ -95,7 +95,7 @@ const NavOpen: React.FC<NavOpenProps> = ({
                     extractedSubItems && extractedSubItems?.length - 1
                   }`}
                 >
-                  {extractedSubItems
+                  {/* {extractedSubItems
                     ?.filter((i) => i?.data?.length != 0)
                     ?.map((i, index) => {
                       return (
@@ -103,7 +103,7 @@ const NavOpen: React.FC<NavOpenProps> = ({
                           {i && <ServicesNavbar block={i} />}
                         </div>
                       );
-                    })}
+                    })} */}
                 </div>
               </div>
             </li>
