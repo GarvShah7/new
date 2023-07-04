@@ -40,23 +40,24 @@ const Header: React.FC<HeaderProps> = ({
     setNavOpen(val);
   };
   return (
-    <div className="block bg-black">
-      <header className={clsx("headerSection", sectionTheme ?? "bg-white")}>
-        {!navOpen && (
-          <NavOpen
-            onClickOpenNav={openNav}
-            hireDedicatedPages={hireDedicatedPages}
-            hireDedicatedType={hireDedicatedType}
-            servicesPage={servicesPage}
-            allServicesTypes={allServicesTypes}
-            block={block}
-          />
-        )}
-        {navOpen && (
-          <NavClose block={block} onClickOpenNav={openNav} footer={footer} />
-        )}
-      </header>
-    </div>
+    // <div className="block bg-black">
+    //   <header className={clsx("headerSection", sectionTheme ?? "bg-white")}>
+    //     {!navOpen && (
+    //       <NavOpen
+    //         onClickOpenNav={openNav}
+    //         hireDedicatedPages={hireDedicatedPages}
+    //         hireDedicatedType={hireDedicatedType}
+    //         servicesPage={servicesPage}
+    //         allServicesTypes={allServicesTypes}
+    //         block={block}
+    //       />
+    //     )}
+    //     {navOpen && (
+    //       <NavClose block={block} onClickOpenNav={openNav} footer={footer} />
+    //     )}
+    //   </header>
+    // </div>
+    <></>
   );
 };
 
