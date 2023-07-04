@@ -15,7 +15,6 @@ const Footer: React.FC<{ block: FooterFragment }> = ({ block }) => {
     footerbar,
     image,
     title,
-    // footerImage,
     footerNavItems,
     footerLogo,
     sectionTheme,
@@ -95,15 +94,6 @@ const Footer: React.FC<{ block: FooterFragment }> = ({ block }) => {
     //         <h6 className="font-Montserrat font-[500] text-[1em] leading-[1.4] text-black">
     //           {footerbar}
     //         </h6>
-    //         <ul className="socialWrap flex items-center justify-end">
-    //           {footerLogo?.map((logo, index) => {
-    //             return (
-    //               <li key={index} className="pl-[0.625em]">
-    //                 <DynamicComponent block={logo} />
-    //               </li>
-    //             );
-    //           })}
-    //         </ul>
     //       </div>
     //     </div>
     //   </div>
