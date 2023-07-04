@@ -72,7 +72,7 @@ const NavOpen: React.FC<NavOpenProps> = ({
     <div className="max-w-[1440px] w-[90%] mx-auto">
       <div className="py-[3.125em] flex justify-between items-center z-[999]">
         <div className="logo">
-          <Link href="/">{logo && <Image block={logo} priority />}</Link>
+          <Link href="/">{logo && <Image block={logo} />}</Link>
         </div>
         <nav className="navigation">
           <ul className="flex items-center font-Montserrat">
