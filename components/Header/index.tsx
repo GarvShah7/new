@@ -52,9 +52,9 @@ const Header: React.FC<HeaderProps> = ({
             block={block}
           />
         )}
-        {navOpen && (
+        {/* {navOpen && (
           <NavClose block={block} onClickOpenNav={openNav} footer={footer} />
-        )}
+        )} */}
       </header>
     </div>
   );
