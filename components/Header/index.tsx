@@ -49,7 +49,7 @@ const Header: React.FC<HeaderProps> = ({
             hireDedicatedType={hireDedicatedType}
             servicesPage={servicesPage}
             allServicesTypes={allServicesTypes}
-            // block={block}
+            block={block}
           />
         )}
         {navOpen && (
