@@ -34,6 +34,8 @@ const Header: React.FC<HeaderProps> = ({
   const openNav = (val: boolean) => {
     if (val) {
       document.body.classList.add("modal-open");
+    } else {
+      document.body.classList.remove("modal-open");
     }
     setNavOpen(val);
   };
