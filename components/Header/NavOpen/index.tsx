@@ -121,7 +121,7 @@ const NavOpen: React.FC<NavOpenProps> = ({
                   isLinkActive ? "none" : "block"
                 }`}
               >
-                <div className="dropdownGrid col-1">
+                {/* <div className="dropdownGrid col-1">
                   {extractedSubItemsOfHireDedicated?.map((i, index) => {
                     return (
                       <div className="dropdownBox" key={index}>
@@ -129,7 +129,7 @@ const NavOpen: React.FC<NavOpenProps> = ({
                       </div>
                     );
                   })}
-                </div>
+                </div> */}
               </div>
             </li>
             {/* dropdown */}
