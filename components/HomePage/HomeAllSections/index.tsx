@@ -135,9 +135,9 @@ const HomeAllSections = ({ block, ...props }) => {
   //   default:
   //     break;
   // }
-  // // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // // @ts-ignore
-  // return Component ? <Component block={block} {...props} /> : null;
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
+  return Component ? <Component block={block} {...props} /> : null;
 };
 
 export default HomeAllSections;
