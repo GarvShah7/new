@@ -12,8 +12,7 @@ import dynamic from "next/dynamic";
 const ServicesNavbar = dynamic(() => import("../ServicesNavabar"));
 const Image = dynamic(() => import("../../Common/Image"));
 const Link = dynamic(() => import("next/link"));
-const NextImage = dynamic(() => import('next/image'))
-
+const NextImage = dynamic(() => import("next/image"));
 
 export type NavOpenProps = {
   block?: HeaderFragment;
@@ -73,7 +72,7 @@ const NavOpen: React.FC<NavOpenProps> = ({
     <div className="max-w-[1440px] w-[90%] mx-auto">
       <div className="py-[3.125em] flex justify-between items-center z-[999]">
         <div className="logo">
-          <Link href="/">{logo && <Image block={logo} />}</Link>
+          <Link href="/">{logo && <Image block={logo} priority />}</Link>
         </div>
         <nav className="navigation">
           <ul className="flex items-center font-Montserrat">
@@ -136,9 +135,7 @@ const NavOpen: React.FC<NavOpenProps> = ({
             {/* dropdown */}
             {navItems?.map((item: NavbarLinksFragment, index) => {
               return (
-                <React.Fragment key={index}>
-                  {NavItems(item)}
-                  </React.Fragment>
+                <React.Fragment key={index}>{NavItems(item)}</React.Fragment>
               );
             })}
             <li
