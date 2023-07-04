@@ -109,13 +109,13 @@ const NavOpen: React.FC<NavOpenProps> = ({
             </li>
             {/* ====== */}
             <li className="navItem dropdown hireDeveloperIte ml-[3.125em]">
-              <Link
+              {/* <Link
                 href="/services"
                 target="_self"
                 className="text-[1.125em] text-black font-[500] hover:text-[#000ee6]"
               >
                 Hire Developers
-              </Link>
+              </Link> */}
               <div
                 className={`dropdown-content absolute ${
                   isLinkActive ? "none" : "block"
