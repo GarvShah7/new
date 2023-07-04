@@ -32,11 +32,11 @@ const Header: React.FC<HeaderProps> = ({
   const { sectionTheme } = block || {};
   const [navOpen, setNavOpen] = useState(false);
   const openNav = (val: boolean) => {
-    // if (val) {
-    //   document.body.classList.add("modal-open");
-    // } else {
-    //   document.body.classList.remove("modal-open");
-    // }
+    if (val) {
+      document.body.classList.add("modal-open");
+    } else {
+      document.body.classList.remove("modal-open");
+    }
     setNavOpen(val);
   };
   return (
