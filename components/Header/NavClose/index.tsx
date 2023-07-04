@@ -101,6 +101,9 @@ const NavClose: React.FC<NavCloseProps> = ({
                 <li>
                   <Link href={`mailto:${email || ""}`}>{email}</Link>
                 </li>
+                <li className="address">
+                  <a>{address}</a>
+                </li>
               </ul>
             </div>
           </div>
