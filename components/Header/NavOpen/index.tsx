@@ -134,9 +134,7 @@ const NavOpen: React.FC<NavOpenProps> = ({
             </li>
             {/* dropdown */}
             {navItems?.map((item: NavbarLinksFragment, index) => {
-              return (
-                <React.Fragment key={index}>{NavItems(item)}</React.Fragment>
-              );
+              return <div key={index}>{NavItems(item)}</div>;
             })}
             <li
               className="navItem withToggle ml-[4em]"
