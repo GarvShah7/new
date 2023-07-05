@@ -10,9 +10,14 @@ import toggle from "../../../app/assets/images/toggle.png";
 import dynamic from "next/dynamic";
 
 const ServicesNavbar = dynamic(() => import("../ServicesNavabar"));
-const Image = dynamic(() => import("../../Common/Image"));
-const Link = dynamic(() => import("next/link"));
-const NextImage = dynamic(() => import("next/image"));
+// const Image = dynamic(() => import("../../Common/Image"));
+// const Link = dynamic(() => import("next/link"));
+// const NextImage = dynamic(() => import("next/image"));
+
+// import ServicesNavabar from "../ServicesNavabar";
+import Image from "../../Common/Image";
+import Link from "next/link";
+import NextImage from "next/image";
 
 export type NavOpenProps = {
   block?: HeaderFragment;
