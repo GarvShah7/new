@@ -125,7 +125,7 @@ const NavOpen: React.FC<NavOpenProps> = ({
                   {extractedSubItemsOfHireDedicated?.map((i, index) => {
                     return (
                       <div className="dropdownBox" key={index}>
-                        {i && <ServicesNavbar block={i} />}
+                        {<ServicesNavbar block={i} />}
                       </div>
                     );
                   })}
