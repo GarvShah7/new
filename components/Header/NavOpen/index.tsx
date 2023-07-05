@@ -12,7 +12,7 @@ import dynamic from "next/dynamic";
 const ServicesNavbar = dynamic(() => import("../ServicesNavabar"));
 const Image = dynamic(() => import("../../Common/Image"));
 const Link = dynamic(() => import("next/link"));
-const NextImage = dynamic(() => import("next/image"));
+// const NextImage = dynamic(() => import("next/image"));
 
 export type NavOpenProps = {
   block?: HeaderFragment;
@@ -143,7 +143,7 @@ const NavOpen: React.FC<NavOpenProps> = ({
               onClick={() => onClickOpenNav(true)}
             >
               <div className="toggleIcon">
-                <NextImage src={toggle} alt="toggle" className="w-auto" />
+                {/* <NextImage src={toggle} alt="toggle" className="w-auto" /> */}
               </div>
             </li>
           </ul>
