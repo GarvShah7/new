@@ -52,7 +52,7 @@ const NavOpen: React.FC<NavOpenProps> = ({
   const NavItems = (item: NavbarLinksFragment) => {
     const { navLabel, navLink } = item || {};
     return (
-      <>
+      <React.Fragment>
         <li
           className="navItem ml-[3.125em]"
           onClick={() => onClickOpenNav(false)}
@@ -64,7 +64,7 @@ const NavOpen: React.FC<NavOpenProps> = ({
             {navLabel}
           </Link>
         </li>
-      </>
+      </React.Fragment>
     );
   };
 
@@ -134,7 +134,9 @@ const NavOpen: React.FC<NavOpenProps> = ({
             </li>
             {/* dropdown */}
             {navItems?.map((item: NavbarLinksFragment, index) => {
-              return <div key={index}>{NavItems(item)}</div>;
+              return (
+                <React.Fragment key={index}>{NavItems(item)}</React.Fragment>
+              );
             })}
             <li
               className="navItem withToggle ml-[4em]"
