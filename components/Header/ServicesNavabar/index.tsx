@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { AllPageFragment, HomeNavServicesFragment } from "../../../app/api/generated/graphql/graphql";
+import { HomeNavServicesFragment } from "../../../app/api/generated/graphql/graphql";
 import Image from "../../Common/Image";
 import Link from "../../Common/Link";
 export type ServicesNavbarFragment = {
@@ -22,12 +22,12 @@ const ServicesNavbar: React.FC<{
       <ul className="dropdownLinkGrid">
         {block?.data?.map((item, index) => {
           const { slug, logo, title } = item || {};
-          const {current} = slug || {}
+          const { current } = slug || {};
           return (
             <li key={index}>
               <Link to={current} onClick={linkClass}>
                 <div className="logoIcon">
-                  {logo && <Image block={logo} />}
+                  {logo && <Image block={logo} priority />}
                 </div>
                 <span>{title}</span>
               </Link>

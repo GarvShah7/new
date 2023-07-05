@@ -9,7 +9,7 @@ const Image: React.FC<
   const { path, metadata, url } = asset || {};
   const { dimensions } = metadata || {};
   const { height, width } = dimensions || {};
-    const sizes = [320, 420, 720, 1024, 1080, 1440, 1920];
+  const sizes = [320, 420, 720, 1024, 1080, 1440, 1920];
 
   // Calculate the largest width available
   const largestWidth = Math.max(...sizes);
@@ -18,7 +18,7 @@ const Image: React.FC<
   const sizesString = sizes
     .map((size) => `(max-width: ${size}px) ${size}px`)
     .concat(`${largestWidth}px`)
-    .join(', ');
+    .join(",");
   return url ? (
     <NextImage
       src={url}
@@ -27,8 +27,7 @@ const Image: React.FC<
       {...props}
       alt={altText || ""}
       sizes={sizesString}
-    
-      
+      priority
     />
   ) : (
     <SampleImageComponent value={block} isInline={false} />
