@@ -3,6 +3,12 @@
     "id": "..\\components\\Header\\NavOpen\\index.tsx -> ../../Common/Image",
     "files": []
   },
+  "..\\components\\Header\\NavOpen\\index.tsx -> ../ServicesNavabar": {
+    "id": "..\\components\\Header\\NavOpen\\index.tsx -> ../ServicesNavabar",
+    "files": [
+      "static/chunks/components_Header_ServicesNavabar_index_tsx.js"
+    ]
+  },
   "..\\components\\Header\\NavOpen\\index.tsx -> next/image": {
     "id": "..\\components\\Header\\NavOpen\\index.tsx -> next/image",
     "files": []

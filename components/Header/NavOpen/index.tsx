@@ -9,7 +9,7 @@ import {
 import toggle from "../../../app/assets/images/toggle.png";
 import dynamic from "next/dynamic";
 
-// const ServicesNavbar = dynamic(() => import("../ServicesNavabar"));
+const ServicesNavbar = dynamic(() => import("../ServicesNavabar"));
 const Image = dynamic(() => import("../../Common/Image"));
 const Link = dynamic(() => import("next/link"));
 const NextImage = dynamic(() => import("next/image"));
@@ -95,7 +95,7 @@ const NavOpen: React.FC<NavOpenProps> = ({
                     extractedSubItems && extractedSubItems?.length - 1
                   }`}
                 >
-                  {/* {extractedSubItems
+                  {extractedSubItems
                     ?.filter((i) => i?.data?.length != 0)
                     ?.map((i, index) => {
                       return (
@@ -103,25 +103,25 @@ const NavOpen: React.FC<NavOpenProps> = ({
                           {i && <ServicesNavbar block={i} />}
                         </div>
                       );
-                    })} */}
+                    })}
                 </div>
               </div>
             </li>
             {/* ====== */}
             <li className="navItem dropdown hireDeveloperIte ml-[3.125em]">
-              {/* <Link
+              <Link
                 href="/services"
                 target="_self"
                 className="text-[1.125em] text-black font-[500] hover:text-[#000ee6]"
               >
                 Hire Developers
-              </Link> */}
+              </Link>
               <div
                 className={`dropdown-content absolute ${
                   isLinkActive ? "none" : "block"
                 }`}
               >
-                {/* <div className="dropdownGrid col-1">
+                <div className="dropdownGrid col-1">
                   {extractedSubItemsOfHireDedicated?.map((i, index) => {
                     return (
                       <div className="dropdownBox" key={index}>
@@ -129,7 +129,7 @@ const NavOpen: React.FC<NavOpenProps> = ({
                       </div>
                     );
                   })}
-                </div> */}
+                </div>
               </div>
             </li>
             {/* dropdown */}
