@@ -18,7 +18,7 @@ const Image: React.FC<
   const sizesString = sizes
     .map((size) => `(max-width: ${size}px) ${size}px`)
     .concat(`${largestWidth}px`)
-    .join(",");
+    .join(", ");
   return url ? (
     <NextImage
       src={url}
@@ -27,7 +27,6 @@ const Image: React.FC<
       {...props}
       alt={altText || ""}
       sizes={sizesString}
-      priority
     />
   ) : (
     <SampleImageComponent value={block} isInline={false} />

@@ -26,9 +26,7 @@ const ServicesNavbar: React.FC<{
           return (
             <li key={index}>
               <Link to={current} onClick={linkClass}>
-                <div className="logoIcon">
-                  {logo && <Image block={logo} priority />}
-                </div>
+                <div className="logoIcon">{logo && <Image block={logo} />}</div>
                 <span>{title}</span>
               </Link>
             </li>
