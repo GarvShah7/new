@@ -99,7 +99,7 @@ const NavOpen: React.FC<NavOpenProps> = ({
                     ?.filter((i) => i?.data?.length != 0)
                     ?.map((i, index) => {
                       return (
-                        <div className="dropdownBox" key={index}>
+                        <div className="dropdownBox" key={i.label}>
                           {i && <ServicesNavbar block={i} />}
                         </div>
                       );
