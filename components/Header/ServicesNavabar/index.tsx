@@ -1,6 +1,9 @@
 import React from "react";
 import { useState } from "react";
-import { HomeNavServicesFragment } from "../../../app/api/generated/graphql/graphql";
+import {
+  AllPageFragment,
+  HomeNavServicesFragment,
+} from "../../../app/api/generated/graphql/graphql";
 import Image from "../../Common/Image";
 import Link from "../../Common/Link";
 export type ServicesNavbarFragment = {
