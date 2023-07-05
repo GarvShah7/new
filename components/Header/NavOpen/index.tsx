@@ -48,7 +48,7 @@ const NavOpen: React.FC<NavOpenProps> = ({
       );
     return { label: item?.label, data: data };
   });
-  const [isLinkActive, setLinkActive] = useState(false);
+  const [isLinkActive] = useState(false);
   const NavItems = (item: NavbarLinksFragment) => {
     const { navLabel, navLink } = item || {};
     return (
