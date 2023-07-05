@@ -143,7 +143,12 @@ const NavOpen: React.FC<NavOpenProps> = ({
               onClick={() => onClickOpenNav(true)}
             >
               <div className="toggleIcon">
-                <NextImage src={toggle} alt="toggle" className="w-auto" />
+                <NextImage
+                  src={toggle}
+                  alt="toggle"
+                  className="w-auto"
+                  priority
+                />
               </div>
             </li>
           </ul>
