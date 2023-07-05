@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback, useMemo } from "react";
 import {
   HeaderFragment,
   HireDedicatedPageTypesFragment,
@@ -33,40 +33,53 @@ const NavOpen: React.FC<NavOpenProps> = ({
 }) => {
   const { navItems, logo } = block || {};
 
-  const extractedSubItems = allServicesTypes?.map((i) => {
-    const data =
-      servicesPage &&
-      servicesPage.filter((item) => item?.service_types?.label == i?.label);
-    return { label: i?.label, data: data };
-  });
+  const extractedSubItems = useMemo(() => {
+    return allServicesTypes?.map((i) => {
+      const data =
+        servicesPage &&
+        servicesPage.filter((item) => item?.service_types?.label === i?.label);
+      return { label: i?.label, data: data };
+    });
+  }, [allServicesTypes, servicesPage]);
 
-  const extractedSubItemsOfHireDedicated = hireDedicatedType?.map((item) => {
-    const data =
-      hireDedicatedPages &&
-      hireDedicatedPages?.filter(
-        (i) => i?.hire_dedicated_page_types?.label == item?.label
-      );
-    return { label: item?.label, data: data };
-  });
+  const extractedSubItemsOfHireDedicated = useMemo(() => {
+    return hireDedicatedType?.map((item) => {
+      const data =
+        hireDedicatedPages &&
+        hireDedicatedPages?.filter(
+          (i) => i?.hire_dedicated_page_types?.label === item?.label
+        );
+      return { label: item?.label, data: data };
+    });
+  }, [hireDedicatedType, hireDedicatedPages]);
+
   const [isLinkActive, setLinkActive] = useState(false);
-  const NavItems = (item: NavbarLinksFragment) => {
-    const { navLabel, navLink } = item || {};
-    return (
-      <React.Fragment>
-        <li
-          className="navItem ml-[3.125em]"
-          onClick={() => onClickOpenNav(false)}
-        >
-          <Link
-            href={navLink as string}
-            className="text-[1.125em] text-black font-[500] hover:text-[#000ee6]"
-          >
-            {navLabel}
-          </Link>
-        </li>
-      </React.Fragment>
-    );
-  };
+  const handleClickOpenNav = useCallback(() => {
+    onClickOpenNav(false);
+  }, [onClickOpenNav]);
+
+  const handleClickToggle = useCallback(() => {
+    onClickOpenNav(true);
+  }, [onClickOpenNav]);
+
+  const NavItems = useCallback(
+    (item: NavbarLinksFragment) => {
+      const { navLabel, navLink } = item || {};
+      return (
+        <React.Fragment key={navLabel}>
+          <li className="navItem ml-[3.125em]" onClick={handleClickOpenNav}>
+            <Link
+              href={navLink as string}
+              className="text-[1.125em] text-black font-[500] hover:text-[#000ee6]"
+            >
+              {navLabel}
+            </Link>
+          </li>
+        </React.Fragment>
+      );
+    },
+    [handleClickOpenNav]
+  );
 
   return (
     <div className="max-w-[1440px] w-[90%] mx-auto">
@@ -96,10 +109,10 @@ const NavOpen: React.FC<NavOpenProps> = ({
                   }`}
                 >
                   {extractedSubItems
-                    ?.filter((i) => i?.data?.length != 0)
-                    ?.map((i, index) => {
+                    ?.filter((i) => i?.data?.length !== 0)
+                    ?.map((i) => {
                       return (
-                        <div className="dropdownBox" key={index}>
+                        <div className="dropdownBox" key={i.label}>
                           {i && <ServicesNavbar block={i} />}
                         </div>
                       );
@@ -122,9 +135,9 @@ const NavOpen: React.FC<NavOpenProps> = ({
                 }`}
               >
                 <div className="dropdownGrid col-1">
-                  {extractedSubItemsOfHireDedicated?.map((i, index) => {
+                  {extractedSubItemsOfHireDedicated?.map((i) => {
                     return (
-                      <div className="dropdownBox" key={index}>
+                      <div className="dropdownBox" key={i.label}>
                         {i && <ServicesNavbar block={i} />}
                       </div>
                     );
@@ -133,22 +146,19 @@ const NavOpen: React.FC<NavOpenProps> = ({
               </div>
             </li>
             {/* dropdown */}
-            {navItems?.map((item: NavbarLinksFragment, index) => {
+            {navItems?.map((item: NavbarLinksFragment) => {
               return (
-                <React.Fragment key={index}>{NavItems(item)}</React.Fragment>
+                <React.Fragment key={item.navLabel}>
+                  {NavItems(item)}
+                </React.Fragment>
               );
             })}
             <li
               className="navItem withToggle ml-[4em]"
-              onClick={() => onClickOpenNav(true)}
+              onClick={handleClickToggle}
             >
               <div className="toggleIcon">
-                <NextImage
-                  src={toggle}
-                  alt="toggle"
-                  className="w-auto"
-                  priority
-                />
+                <NextImage src={toggle} alt="toggle" className="w-auto" />
               </div>
             </li>
           </ul>
